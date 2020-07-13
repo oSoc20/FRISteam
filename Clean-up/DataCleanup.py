@@ -50,8 +50,8 @@ def getRequestData():
 
 def  GetProjectByUuid(uuid): 
     response = requests.get("https://4234f99e6d2a.ngrok.io/api/projects/" + uuid)
-    data = response.json()
-    print(data)
+    project = response.json()
+    print(project['abstract']['englishAbstract'])
 
     # result:
     # {'id': '6fa0f7de-4502-4995-92ae-5467e49df1b3', 'englishKeywords': ['Ion channels', 'Positive allosteric modulators', 'Crystallography'], 'dutchKeywords': [], 'dataProvider': {'id': '54937891', 'name': 'KULeuven'}, 'doi': None, 'title': {'englishTitle': 'Structure-based discovery of positive allosteric modulators of the alpha7 nicotinic ecetylcholine receptor as cognition enhancers.', 'dutchTitle': 'Structuur-gebaseerde ontwikkeling van positieve allostere modulatoren van de alpha7 nicotine acetylcholine receptor met klinische toepassing als cognitie verbeteraars.'}, 'empty': False, 'abstract': {'id': 148096734, 'englishAbstract': '&lt;p&gt;Nicotinic acetylcholine receptors (nAChRs) areÂ\xa0relevant therapeutic targets for diseases of the brain. The most promising target for disorders associated with cognitive dysfunction is the alpha7 subtype. The scientific goal is to develop novel molecules targeting the Î±7 nicotinic acetylcholine receptor and that improve cognition in schizophrenia and Alzheimerâ€™s disease, both of which are disordersÂ\xa0for which there remains an unmet medical need. The main goal is to obtain a patent for the novel compounds and to negotiate a license with a pharmaceutical company. A 3-dimensional structure of the alpha7 subtype of nAChR is notÂ\xa0yet available, but detailed insight of protein structures at atomic level yields invaluable information about protein function and can facilitate theÂ\xa0discovery and development of new drugs. A marine snail protein (calledÂ\xa0acetylcholine binding protein) has been engineered to mimic the human alpha7 nAChR and offers a realistic template for structure-based drug design. The goal of this project is the development of novel high affinity lead compounds with activity as positive allosteric modulators for alpha7 nAChR. These compounds 
@@ -64,5 +64,5 @@ def getJSONData():
 
 
 # getJSONData()
-getRequestData()
-# GetProjectByUuid("6fa0f7de-4502-4995-92ae-5467e49df1b3")
+# getRequestData()
+GetProjectByUuid("6fa0f7de-4502-4995-92ae-5467e49df1b3")
