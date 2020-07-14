@@ -1,3 +1,8 @@
 
 Clean-up/soapdata.json
 Strategies/Synonyms/__pycache__/
+Strategies/Unpaywall Check/__pycache__/
+Strategies/TextRank/__pycache__/
+Strategies/Network Relation/__pycache__/
+Strategies/Rake/__pycache__/
+Strategies/__pycache__/
