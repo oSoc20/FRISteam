@@ -1,3 +1,6 @@
+"""
+Test module for the synonyms module
+"""
 import unittest
 import sys
 from synonyms import get_synonym_by_word , get_synonym_by_word_list
