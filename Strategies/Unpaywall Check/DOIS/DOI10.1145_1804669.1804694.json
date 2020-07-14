@@ -1,0 +1,34 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1145/1804669.1804694",
+  "doi_url": "https://doi.org/10.1145/1804669.1804694",
+  "genre": "proceedings-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 13th International Conference on Database Theory - ICDT '10",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2010-01-01",
+  "publisher": "ACM Press",
+  "title": "Static analysis of schema-mappings ensuring oblivious termination",
+  "updated": "2020-03-20T08:22:35.262737",
+  "year": 2010,
+  "z_authors": [
+    {
+      "family": "Marnette",
+      "given": "Bruno",
+      "sequence": "first"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    }
+  ]
+}

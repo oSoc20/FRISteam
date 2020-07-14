@@ -1,0 +1,95 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "2460c9cd9694d552451",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:pure.ed.ac.uk:publications/aadb8e25-17d4-4066-ab8b-fc5c23e57ffc",
+    "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+    "updated": "2020-05-17T22:23:46.394066",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/2594538.2594551",
+    "url_for_landing_page": "http://doi.acm.org/10.1145/2594538.2594551",
+    "url_for_pdf": "https://dl.acm.org/doi/pdf/10.1145/2594538.2594551",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1145/2594538.2594551",
+  "doi_url": "https://doi.org/10.1145/2594538.2594551",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 33rd ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems - PODS '14",
+  "oa_locations": [
+    {
+      "endpoint_id": "2460c9cd9694d552451",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/aadb8e25-17d4-4066-ab8b-fc5c23e57ffc",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-17T22:23:46.394066",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/2594538.2594551",
+      "url_for_landing_page": "http://doi.acm.org/10.1145/2594538.2594551",
+      "url_for_pdf": "https://dl.acm.org/doi/pdf/10.1145/2594538.2594551",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/aadb8e25-17d4-4066-ab8b-fc5c23e57ffc",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-23T23:17:34.090629",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17894324/Fan_Geerts_ET_AL_ET_AL_2014_On_Scale_Independence_for_Querying_Big_Data.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17894324/Fan_Geerts_ET_AL_ET_AL_2014_On_Scale_Independence_for_Querying_Big_Data.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17894324/Fan_Geerts_ET_AL_ET_AL_2014_On_Scale_Independence_for_Querying_Big_Data.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/aadb8e25-17d4-4066-ab8b-fc5c23e57ffc",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-07-03T13:55:33.565212",
+      "url": "https://www.research.ed.ac.uk/portal/files/17894324/Fan_Geerts_ET_AL_ET_AL_2014_On_Scale_Independence_for_Querying_Big_Data.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/20.500.11820/aadb8e25-17d4-4066-ab8b-fc5c23e57ffc",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17894324/Fan_Geerts_ET_AL_ET_AL_2014_On_Scale_Independence_for_Querying_Big_Data.pdf",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2014-01-01",
+  "publisher": "ACM Press",
+  "title": "On scale independence for querying big data",
+  "updated": "2020-07-14T09:25:08.371086",
+  "year": 2014,
+  "z_authors": [
+    {
+      "family": "Fan",
+      "given": "Wenfei",
+      "sequence": "first"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    },
+    {
+      "family": "Libkin",
+      "given": "Leonid",
+      "sequence": "additional"
+    }
+  ]
+}

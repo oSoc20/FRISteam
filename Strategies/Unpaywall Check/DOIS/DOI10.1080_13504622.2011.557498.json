@@ -1,0 +1,44 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1080/13504622.2011.557498",
+  "doi_url": "https://doi.org/10.1080/13504622.2011.557498",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1350-4622",
+  "journal_issns": "1350-4622,1469-5871",
+  "journal_name": "Environmental Education Research",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2011-08-01",
+  "publisher": "Informa UK Limited",
+  "title": "Participatory planning for project sustainability of environmental education projects: a case study of the Secondary Teacher Training Environmental Education Project (St2eep) in Zimbabwe",
+  "updated": "2020-03-19T13:21:01.696259",
+  "year": 2011,
+  "z_authors": [
+    {
+      "family": "Van Ongevalle",
+      "given": "Jan",
+      "sequence": "first"
+    },
+    {
+      "family": "Van Petegem",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "family": "Deprez",
+      "given": "Steff",
+      "sequence": "additional"
+    },
+    {
+      "family": "Chimbodza",
+      "given": "Iris Jane\u2010Mary",
+      "sequence": "additional"
+    }
+  ]
+}

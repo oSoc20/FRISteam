@@ -1,0 +1,74 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1007/978-94-007-5104-0_7",
+  "doi_url": "https://doi.org/10.1007/978-94-007-5104-0_7",
+  "genre": "book-chapter",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "2213-204X",
+  "journal_issns": "2213-204X,2213-2031",
+  "journal_name": "RILEM State-of-the-Art Reports",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2012-09-04",
+  "publisher": "Springer Netherlands",
+  "title": "Hot Recycling of Bituminous Mixtures",
+  "updated": "2020-03-17T23:10:09.941815",
+  "year": 2012,
+  "z_authors": [
+    {
+      "family": "de la Roche",
+      "given": "Chantal",
+      "sequence": "first"
+    },
+    {
+      "family": "Van de Ven",
+      "given": "Martin",
+      "sequence": "additional"
+    },
+    {
+      "family": "Planche",
+      "given": "Jean-Pascal",
+      "sequence": "additional"
+    },
+    {
+      "family": "Van den Bergh",
+      "given": "Wim",
+      "sequence": "additional"
+    },
+    {
+      "family": "Grenfell",
+      "given": "James",
+      "sequence": "additional"
+    },
+    {
+      "family": "Gabet",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "family": "Mouillet",
+      "given": "Virginie",
+      "sequence": "additional"
+    },
+    {
+      "family": "Porot",
+      "given": "Laurent",
+      "sequence": "additional"
+    },
+    {
+      "family": "Farcas",
+      "given": "Fabienne",
+      "sequence": "additional"
+    },
+    {
+      "family": "Ruot",
+      "given": "Carole",
+      "sequence": "additional"
+    }
+  ]
+}

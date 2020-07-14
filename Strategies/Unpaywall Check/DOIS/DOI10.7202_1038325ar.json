@@ -1,0 +1,62 @@
+{
+  "best_oa_location": {
+    "endpoint_id": null,
+    "evidence": "open (via free pdf)",
+    "host_type": "publisher",
+    "is_best": true,
+    "license": null,
+    "pmh_id": null,
+    "repository_institution": null,
+    "updated": "2020-01-09T04:49:13.960887",
+    "url": "http://www.erudit.org/fr/revues/annuaire/2015-n58-annuaire02870/1038325ar.pdf",
+    "url_for_landing_page": "https://doi.org/10.7202/1038325ar",
+    "url_for_pdf": "http://www.erudit.org/fr/revues/annuaire/2015-n58-annuaire02870/1038325ar.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.7202/1038325ar",
+  "doi_url": "https://doi.org/10.7202/1038325ar",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0827-0198",
+  "journal_issns": "1923-0893,0827-0198",
+  "journal_name": "L\u2019Annuaire th\u00e9\u00e2tral",
+  "oa_locations": [
+    {
+      "endpoint_id": null,
+      "evidence": "open (via free pdf)",
+      "host_type": "publisher",
+      "is_best": true,
+      "license": null,
+      "pmh_id": null,
+      "repository_institution": null,
+      "updated": "2020-01-09T04:49:13.960887",
+      "url": "http://www.erudit.org/fr/revues/annuaire/2015-n58-annuaire02870/1038325ar.pdf",
+      "url_for_landing_page": "https://doi.org/10.7202/1038325ar",
+      "url_for_pdf": "http://www.erudit.org/fr/revues/annuaire/2015-n58-annuaire02870/1038325ar.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "bronze",
+  "published_date": "2016-12-13",
+  "publisher": "Consortium Erudit",
+  "title": "Le th\u00e9\u00e2tre du r\u00e9el\u00a0: une nouvelle vague flamande entre fiction et non-fiction",
+  "updated": "2020-03-12T08:08:40.100022",
+  "year": 2016,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "Universit\u00e9 libre de Bruxelles\u00a0\u2013 Universit\u00e9 d\u2019Anvers"
+        }
+      ],
+      "family": "Wynants",
+      "given": "Nele",
+      "sequence": "first"
+    }
+  ]
+}

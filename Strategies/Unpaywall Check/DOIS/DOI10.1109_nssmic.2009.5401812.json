@@ -1,0 +1,39 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1109/nssmic.2009.5401812",
+  "doi_url": "https://doi.org/10.1109/nssmic.2009.5401812",
+  "genre": "proceedings-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "2009 IEEE Nuclear Science Symposium Conference Record (NSS/MIC)",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2009-10-01",
+  "publisher": "IEEE",
+  "title": "Impact of fully 4D reconstruction on kinetic parameter estimates",
+  "updated": "2020-03-23T14:06:14.579923",
+  "year": 2009,
+  "z_authors": [
+    {
+      "family": "Gravel",
+      "given": "P.",
+      "sequence": "first"
+    },
+    {
+      "family": "Verhaeghe",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Reader",
+      "given": "A.J.",
+      "sequence": "additional"
+    }
+  ]
+}

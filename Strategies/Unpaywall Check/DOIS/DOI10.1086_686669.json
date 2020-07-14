@@ -1,0 +1,114 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "8da803012a7aa37d990",
+    "evidence": "oa repository (via OAI-PMH title and first author match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:RePEc:lic:licosd:36515",
+    "repository_institution": null,
+    "updated": "2020-05-27T07:30:49.877647",
+    "url": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+    "url_for_landing_page": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+    "url_for_pdf": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1086/686669",
+  "doi_url": "https://doi.org/10.1086/686669",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0013-0079",
+  "journal_issns": "0013-0079,1539-2988",
+  "journal_name": "Economic Development and Cultural Change",
+  "oa_locations": [
+    {
+      "endpoint_id": "8da803012a7aa37d990",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:RePEc:lic:licosd:36515",
+      "repository_institution": null,
+      "updated": "2020-05-27T07:30:49.877647",
+      "url": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+      "url_for_landing_page": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+      "url_for_pdf": "http://feb.kuleuven.be/drc/licos/publications/dp/DP%20365%20Complete.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "c:irua:125097",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-08T10:18:54.225979",
+      "url": "https://repository.uantwerpen.be/docman/irua/98c93c/5ba0b0bb.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/1250970151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/98c93c/5ba0b0bb.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "84d9e3e5b89b788a65e",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:econstor.eu:10419/126491",
+      "repository_institution": "Econstor - Econstor",
+      "updated": "2020-05-19T09:12:26.027173",
+      "url": "https://www.econstor.eu/bitstream/10419/126491/1/819399868.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/10419/126491",
+      "url_for_pdf": "https://www.econstor.eu/bitstream/10419/126491/1/819399868.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "8da803012a7aa37d990",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:RePEc:ete:licosp:488089",
+      "repository_institution": null,
+      "updated": "2020-03-30T02:42:33.492294",
+      "url": "https://lirias.kuleuven.be/retrieve/308118",
+      "url_for_landing_page": "https://lirias.kuleuven.be/retrieve/308118",
+      "url_for_pdf": "https://lirias.kuleuven.be/retrieve/308118",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2016-07-01",
+  "publisher": "University of Chicago Press",
+  "title": "The Challenge of Measuring Hunger through Survey",
+  "updated": "2020-06-25T02:56:27.281610",
+  "year": 2016,
+  "z_authors": [
+    {
+      "family": "De Weerdt",
+      "given": "Joachim",
+      "sequence": "first"
+    },
+    {
+      "family": "Beegle",
+      "given": "Kathleen",
+      "sequence": "additional"
+    },
+    {
+      "family": "Friedman",
+      "given": "Jed",
+      "sequence": "additional"
+    },
+    {
+      "family": "Gibson",
+      "given": "John",
+      "sequence": "additional"
+    }
+  ]
+}

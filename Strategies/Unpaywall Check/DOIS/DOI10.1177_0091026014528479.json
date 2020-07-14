@@ -1,0 +1,64 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1177/0091026014528479",
+  "doi_url": "https://doi.org/10.1177/0091026014528479",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0091-0260",
+  "journal_issns": "0091-0260,1945-7421",
+  "journal_name": "Public Personnel Management",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2014-04-27",
+  "publisher": "SAGE Publications",
+  "title": "Mind-Sets of Boundaryless Careers in the Public Sector",
+  "updated": "2020-03-07T09:14:02.474303",
+  "year": 2014,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "University of Antwerp, Belgium"
+        }
+      ],
+      "family": "De Caluw\u00e9",
+      "given": "Chiara",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Antwerp, Belgium"
+        }
+      ],
+      "family": "Van Dooren",
+      "given": "Wouter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Antwerp, Belgium"
+        }
+      ],
+      "family": "Delafortry",
+      "given": "Anita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Antwerp, Belgium"
+        }
+      ],
+      "family": "Janvier",
+      "given": "Ria",
+      "sequence": "additional"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "79eb578bc3d8954cc55",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:pure.atira.dk:publications/53e5ea6a-b002-4e7f-9baf-bf2e6d2abaa5",
+    "repository_institution": "University of Copenhagen - Research at the University of Copenhagen",
+    "updated": "2020-05-24T12:47:39.960035",
+    "url": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+    "url_for_landing_page": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+    "url_for_pdf": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1080/19439341003786729",
+  "doi_url": "https://doi.org/10.1080/19439341003786729",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1943-9407",
+  "journal_issns": "1943-9342,1943-9407",
+  "journal_name": "Journal of Development Effectiveness",
+  "oa_locations": [
+    {
+      "endpoint_id": "79eb578bc3d8954cc55",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:pure.atira.dk:publications/53e5ea6a-b002-4e7f-9baf-bf2e6d2abaa5",
+      "repository_institution": "University of Copenhagen - Research at the University of Copenhagen",
+      "updated": "2020-05-24T12:47:39.960035",
+      "url": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+      "url_for_landing_page": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+      "url_for_pdf": "https://curis.ku.dk/ws/files/41824362/JDEff_2010_IE_and_CC.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "243eae1c12a71283272",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:lup.lub.lu.se:7e6cc4c0-90fe-42bb-bb4d-5c2946820ab1",
+      "repository_institution": "Lund University - Lund University Publications",
+      "updated": "2020-06-08T13:29:51.547846",
+      "url": "https://lup.lub.lu.se/search/ws/files/1636517/5425610.pdf",
+      "url_for_landing_page": "https://lup.lub.lu.se/record/5152431",
+      "url_for_pdf": "https://lup.lub.lu.se/search/ws/files/1636517/5425610.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "243eae1c12a71283272",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:lup.lub.lu.se:7e6cc4c0-90fe-42bb-bb4d-5c2946820ab1",
+      "repository_institution": "Lund University - Lund University Publications",
+      "updated": "2020-06-08T12:22:00.072643",
+      "url": "https://portal.research.lu.se/ws/files/1636517/5425610.pdf",
+      "url_for_landing_page": "https://portal.research.lu.se/ws/files/1636517/5425610.pdf",
+      "url_for_pdf": "https://portal.research.lu.se/ws/files/1636517/5425610.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "a2159379ba58b1a63fd",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.atira.dk:publications/25b254f3-664d-4d49-a20c-a2357da7f4db",
+      "repository_institution": "The University of Manchester - Research Explorer",
+      "updated": "2020-05-24T13:45:58.688216",
+      "url": "http://lup.lub.lu.se/search/ws/files/1636517/5425610.pdf",
+      "url_for_landing_page": "http://lup.lub.lu.se/search/ws/files/1636517/5425610.pdf",
+      "url_for_pdf": "http://lup.lub.lu.se/search/ws/files/1636517/5425610.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "a2159379ba58b1a63fd",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.atira.dk:publications/5998a43b-11c6-4fee-8bcd-68233dbb851b",
+      "repository_institution": "The University of Manchester - Research Explorer",
+      "updated": "2020-06-09T18:24:46.832239",
+      "url": "http://lup.lub.lu.se/search/ws/files/5681743/5425737.pdf",
+      "url_for_landing_page": "http://lup.lub.lu.se/search/ws/files/5681743/5425737.pdf",
+      "url_for_pdf": "http://lup.lub.lu.se/search/ws/files/5681743/5425737.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "79eb578bc3d8954cc55",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.atira.dk:publications/a9ade5af-87dd-43ac-be6b-d993140222ab",
+      "repository_institution": "University of Copenhagen - Research at the University of Copenhagen",
+      "updated": "2020-05-22T14:27:27.528598",
+      "url": "https://curis.ku.dk/ws/files/41824100/Prowse_and_Snielsveit_2010_IE_and_CC_3ie_WP_7.pdf",
+      "url_for_landing_page": "https://curis.ku.dk/ws/files/41824100/Prowse_and_Snielsveit_2010_IE_and_CC_3ie_WP_7.pdf",
+      "url_for_pdf": "https://curis.ku.dk/ws/files/41824100/Prowse_and_Snielsveit_2010_IE_and_CC_3ie_WP_7.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "243eae1c12a71283272",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:lup.lub.lu.se:1a250683-4602-4093-8ecb-a4819f321998",
+      "repository_institution": "Lund University - Lund University Publications",
+      "updated": "2020-06-13T18:12:16.715938",
+      "url": "https://lup.lub.lu.se/search/ws/files/5681743/5425737.pdf",
+      "url_for_landing_page": "https://lup.lub.lu.se/record/5152428",
+      "url_for_pdf": "https://lup.lub.lu.se/search/ws/files/5681743/5425737.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "243eae1c12a71283272",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:lup.lub.lu.se:1a250683-4602-4093-8ecb-a4819f321998",
+      "repository_institution": "Lund University - Lund University Publications",
+      "updated": "2020-06-13T18:11:55.895054",
+      "url": "https://portal.research.lu.se/ws/files/5681743/5425737.pdf",
+      "url_for_landing_page": "https://portal.research.lu.se/ws/files/5681743/5425737.pdf",
+      "url_for_pdf": "https://portal.research.lu.se/ws/files/5681743/5425737.pdf",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2010-06-22",
+  "publisher": "Informa UK Limited",
+  "title": "Impact evaluation and interventions to address climate change: a scoping study",
+  "updated": "2020-06-20T01:53:44.335585",
+  "year": 2010,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "a Institute of Development Policy and Management (IOB), University of Antwerp , Belgium"
+        }
+      ],
+      "family": "Prowse",
+      "given": "Martin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "b International Initiative for Impact Evaluation , New Delhi, India"
+        }
+      ],
+      "family": "Snilstveit",
+      "given": "Birte",
+      "sequence": "additional"
+    }
+  ]
+}

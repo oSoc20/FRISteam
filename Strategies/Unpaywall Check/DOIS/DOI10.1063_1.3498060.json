@@ -1,0 +1,77 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "mmv3envg3kaaztya9tmo",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "c:irua:89652",
+    "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+    "updated": "2020-06-08T12:21:59.085833",
+    "url": "https://repository.uantwerpen.be/docman/irua/aaab98/89652.pdf",
+    "url_for_landing_page": "https://hdl.handle.net/10067/896520151162165141",
+    "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/aaab98/89652.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1063/1.3498060",
+  "doi_url": "https://doi.org/10.1063/1.3498060",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": null,
+  "oa_locations": [
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "c:irua:89652",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-08T12:21:59.085833",
+      "url": "https://repository.uantwerpen.be/docman/irua/aaab98/89652.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/896520151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/aaab98/89652.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2010-01-01",
+  "publisher": "AIP",
+  "title": "Polynomial Invariants for General Higher Spin Dirac Operators: A Toy Model",
+  "updated": "2020-06-14T20:56:40.726959",
+  "year": 2010,
+  "z_authors": [
+    {
+      "family": "Eelbode",
+      "given": "David",
+      "sequence": "first"
+    },
+    {
+      "family": "S\u030cmi\u0301d",
+      "given": "Dalibor",
+      "sequence": "additional"
+    },
+    {
+      "family": "Simos",
+      "given": "Theodore E.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Psihoyios",
+      "given": "George",
+      "sequence": "additional"
+    },
+    {
+      "family": "Tsitouras",
+      "given": "Ch.",
+      "sequence": "additional"
+    }
+  ]
+}

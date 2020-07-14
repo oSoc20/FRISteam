@@ -1,0 +1,179 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "9f8999c69276e768a12",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:HAL:hal-00719070v1",
+    "repository_institution": null,
+    "updated": "2020-05-23T03:31:03.545898",
+    "url": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+    "url_for_landing_page": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+    "url_for_pdf": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1080/19440049.2011.584069",
+  "doi_url": "https://doi.org/10.1080/19440049.2011.584069",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1944-0057",
+  "journal_issns": "1944-0049,1944-0057",
+  "journal_name": "Food Additives & Contaminants: Part A",
+  "oa_locations": [
+    {
+      "endpoint_id": "9f8999c69276e768a12",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:HAL:hal-00719070v1",
+      "repository_institution": null,
+      "updated": "2020-05-23T03:31:03.545898",
+      "url": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+      "url_for_landing_page": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+      "url_for_pdf": "https://hal.archives-ouvertes.fr/hal-00719070/file/PEER_stage2_10.1080%252F19440049.2011.584069.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "HAL",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:HAL:hal-00719070v1",
+      "repository_institution": "HAL",
+      "updated": "2017-10-21T11:11:03.660905",
+      "url": "https://hal.archives-ouvertes.fr/hal-00719070/document",
+      "url_for_landing_page": null,
+      "url_for_pdf": "https://hal.archives-ouvertes.fr/hal-00719070/document",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2011-07-18",
+  "publisher": "Informa UK Limited",
+  "title": "Potential of anin\u00a0vitrotoolbox combined with exposure data as a first step for the risk assessment of dietary chemical contaminants",
+  "updated": "2020-05-25T13:58:02.353145",
+  "year": 2011,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "a Institut des Sciences de la Vie, Universit\u00e9 catholique de Louvain , Croix du Sud 2/8 and 5/3, B-1348 Louvain-la-Neuve, Belgium"
+        },
+        {
+          "name": "e Veterinary and Agrochemical Research Centre (CODA-CERVA-VAR) , Leuvensesteenweg , 17, B-3080 Tervuren , Belgium"
+        }
+      ],
+      "family": "Ribonnet",
+      "given": "L.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "b Laboratory of Food Analysis, Department of Food Sciences, Faculty of Veterinary Medicine, Centre for Analytical Research and Technology (CART) , University of Li\u00e8ge , Boulevard de Colonster 20 , B-4000 Li\u00e8ge , Belgium"
+        }
+      ],
+      "family": "van der Heiden",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "c Laboratory of Ecophysiology, Biochemistry and Toxicology , University of Antwerp , Groenenborgerlaan 171 , B-2020 Antwerp , Belgium"
+        }
+      ],
+      "family": "Nobels",
+      "given": "I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "a Institut des Sciences de la Vie, Universit\u00e9 catholique de Louvain , Croix du Sud 2/8 and 5/3, B-1348 Louvain-la-Neuve, Belgium"
+        }
+      ],
+      "family": "Chaumont",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "b Laboratory of Food Analysis, Department of Food Sciences, Faculty of Veterinary Medicine, Centre for Analytical Research and Technology (CART) , University of Li\u00e8ge , Boulevard de Colonster 20 , B-4000 Li\u00e8ge , Belgium"
+        }
+      ],
+      "family": "Remacle",
+      "given": "A.-S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "d Laboratory of Food Analysis, Faculty of Pharmaceutical Sciences , Ghent University , Harelbekestraat 72 , B-9000 Ghent , Belgium"
+        }
+      ],
+      "family": "De Saeger",
+      "given": "S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "a Institut des Sciences de la Vie, Universit\u00e9 catholique de Louvain , Croix du Sud 2/8 and 5/3, B-1348 Louvain-la-Neuve, Belgium"
+        }
+      ],
+      "family": "Schneider",
+      "given": "Y.-J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "b Laboratory of Food Analysis, Department of Food Sciences, Faculty of Veterinary Medicine, Centre for Analytical Research and Technology (CART) , University of Li\u00e8ge , Boulevard de Colonster 20 , B-4000 Li\u00e8ge , Belgium"
+        }
+      ],
+      "family": "Scippo",
+      "given": "M.-L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "c Laboratory of Ecophysiology, Biochemistry and Toxicology , University of Antwerp , Groenenborgerlaan 171 , B-2020 Antwerp , Belgium"
+        }
+      ],
+      "family": "Blust",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "e Veterinary and Agrochemical Research Centre (CODA-CERVA-VAR) , Leuvensesteenweg , 17, B-3080 Tervuren , Belgium"
+        }
+      ],
+      "family": "Pussemier",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "a Institut des Sciences de la Vie, Universit\u00e9 catholique de Louvain , Croix du Sud 2/8 and 5/3, B-1348 Louvain-la-Neuve, Belgium"
+        }
+      ],
+      "family": "Larondelle",
+      "given": "Y.",
+      "sequence": "additional"
+    }
+  ]
+}

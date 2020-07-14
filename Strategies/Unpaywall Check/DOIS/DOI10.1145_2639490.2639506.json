@@ -1,0 +1,54 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1145/2639490.2639506",
+  "doi_url": "https://doi.org/10.1145/2639490.2639506",
+  "genre": "proceedings-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 10th International Conference on Predictive Models in Software Engineering - PROMISE '14",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2014-01-01",
+  "publisher": "ACM Press",
+  "title": "On the influence of maintenance activity types on the issue resolution time",
+  "updated": "2020-07-12T13:41:16.905780",
+  "year": 2014,
+  "z_authors": [
+    {
+      "family": "Murgia",
+      "given": "Alessandro",
+      "sequence": "first"
+    },
+    {
+      "family": "Concas",
+      "given": "Giulio",
+      "sequence": "additional"
+    },
+    {
+      "family": "Tonelli",
+      "given": "Roberto",
+      "sequence": "additional"
+    },
+    {
+      "family": "Ortu",
+      "given": "Marco",
+      "sequence": "additional"
+    },
+    {
+      "family": "Demeyer",
+      "given": "Serge",
+      "sequence": "additional"
+    },
+    {
+      "family": "Marchesi",
+      "given": "Michele",
+      "sequence": "additional"
+    }
+  ]
+}
