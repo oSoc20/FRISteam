@@ -1,0 +1,130 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "02515f20c30fa079b26",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:archive.ugent.be:7235200",
+    "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+    "updated": "2020-05-19T13:38:49.493269",
+    "url": "https://biblio.ugent.be/publication/7235200/file/7235208.pdf",
+    "url_for_landing_page": "https://biblio.ugent.be/publication/7235200",
+    "url_for_pdf": "https://biblio.ugent.be/publication/7235200/file/7235208.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1145/2818361",
+  "doi_url": "https://doi.org/10.1145/2818361",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1551-6857",
+  "journal_issns": "1551-6857,1551-6865",
+  "journal_name": "ACM Transactions on Multimedia Computing, Communications, and Applications",
+  "oa_locations": [
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:7235200",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-05-19T13:38:49.493269",
+      "url": "https://biblio.ugent.be/publication/7235200/file/7235208.pdf",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/7235200",
+      "url_for_pdf": "https://biblio.ugent.be/publication/7235200/file/7235208.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:7235200",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-05-21T20:01:48.937797",
+      "url": "https://biblio.ugent.be/publication/7235200/file/7235208",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/7235200/file/7235208",
+      "url_for_pdf": "https://biblio.ugent.be/publication/7235200/file/7235208",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "c:irua:128646",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-17T22:51:18.680004",
+      "url": "https://repository.uantwerpen.be/docman/irua/fcf3c7/128646.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/1286460151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/fcf3c7/128646.pdf",
+      "version": "acceptedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2016-03-03",
+  "publisher": "Association for Computing Machinery (ACM)",
+  "title": "QoE-Driven Rate Adaptation Heuristic for Fair Adaptive Video Streaming",
+  "updated": "2020-06-19T15:47:40.256235",
+  "year": 2016,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Information Technology (INTEC), Ghent University--iMinds, Gent, Belgium"
+        }
+      ],
+      "family": "Petrangeli",
+      "given": "Stefano",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Computer Science, University of Antwerp--iMinds, Antwerp, Belgium"
+        }
+      ],
+      "family": "Famaey",
+      "given": "Jeroen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Information Technology (INTEC), Ghent University--iMinds, Gent, Belgium"
+        }
+      ],
+      "family": "Claeys",
+      "given": "Maxim",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Computer Science, University of Antwerp--iMinds, Antwerp, Belgium"
+        }
+      ],
+      "family": "Latr\u00e9",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Information Technology (INTEC), Ghent University--iMinds, Gent, Belgium"
+        }
+      ],
+      "family": "De Turck",
+      "given": "Filip",
+      "sequence": "additional"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1145/2623330.2623333",
+  "doi_url": "https://doi.org/10.1145/2623330.2623333",
+  "genre": "proceedings-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '14",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2014-01-01",
+  "publisher": "ACM Press",
+  "title": "Corporate residence fraud detection",
+  "updated": "2020-02-29T00:50:09.696959",
+  "year": 2014,
+  "z_authors": [
+    {
+      "family": "Junqu\u00e9 de Fortuny",
+      "given": "Enric",
+      "sequence": "first"
+    },
+    {
+      "family": "Stankova",
+      "given": "Marija",
+      "sequence": "additional"
+    },
+    {
+      "family": "Moeyersoms",
+      "given": "Julie",
+      "sequence": "additional"
+    },
+    {
+      "family": "Minnaert",
+      "given": "Bart",
+      "sequence": "additional"
+    },
+    {
+      "family": "Provost",
+      "given": "Foster",
+      "sequence": "additional"
+    },
+    {
+      "family": "Martens",
+      "given": "David",
+      "sequence": "additional"
+    }
+  ]
+}

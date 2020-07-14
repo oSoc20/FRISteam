@@ -1,0 +1,86 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "2460c9cd9694d552451",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:pure.ed.ac.uk:publications/7eafa325-6ba8-4ad7-9093-5046abb65f43",
+    "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+    "updated": "2020-06-17T15:33:06.062276",
+    "url": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+    "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+    "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1109/icde.2008.4497460",
+  "doi_url": "https://doi.org/10.1109/icde.2008.4497460",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "2008 IEEE 24th International Conference on Data Engineering",
+  "oa_locations": [
+    {
+      "endpoint_id": "2460c9cd9694d552451",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/7eafa325-6ba8-4ad7-9093-5046abb65f43",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-06-17T15:33:06.062276",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "2460c9cd9694d552451",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/7eafa325-6ba8-4ad7-9093-5046abb65f43",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-06-27T06:36:46.750739",
+      "url": "https://www.research.ed.ac.uk/portal/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+      "url_for_landing_page": "https://www.research.ed.ac.uk/portal/en/publications/increasing-the-expressivity-of-conditional-functional-dependencies-without-extra-complexity(7eafa325-6ba8-4ad7-9093-5046abb65f43).html",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17663885/Bravo_Fan_ET_AL_2008_Increasing_the_Expressivity_of_Conditional_Functional_Dependecies_without_Extra_Complexity.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2008-04-01",
+  "publisher": "IEEE",
+  "title": "Increasing the Expressivity of Conditional Functional Dependencies without Extra Complexity",
+  "updated": "2020-06-27T09:25:54.987460",
+  "year": 2008,
+  "z_authors": [
+    {
+      "family": "Bravo",
+      "given": "Loreto",
+      "sequence": "first"
+    },
+    {
+      "family": "Fan",
+      "given": "Wenfei",
+      "sequence": "additional"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    },
+    {
+      "family": "Ma",
+      "given": "Shuai",
+      "sequence": "additional"
+    }
+  ]
+}

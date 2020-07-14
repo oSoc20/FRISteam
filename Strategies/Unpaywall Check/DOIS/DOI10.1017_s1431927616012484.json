@@ -1,0 +1,140 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "02515f20c30fa079b26",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:archive.ugent.be:8515855",
+    "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+    "updated": "2020-07-07T19:11:48.099840",
+    "url": "http://hdl.handle.net/1854/LU-8515855",
+    "url_for_landing_page": "http://hdl.handle.net/1854/LU-8515855",
+    "url_for_pdf": null,
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1017/s1431927616012484",
+  "doi_url": "https://doi.org/10.1017/s1431927616012484",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1431-9276",
+  "journal_issns": "1431-9276,1435-8115",
+  "journal_name": "Microscopy and Microanalysis",
+  "oa_locations": [
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:8515855",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-07-07T19:11:48.099840",
+      "url": "http://hdl.handle.net/1854/LU-8515855",
+      "url_for_landing_page": "http://hdl.handle.net/1854/LU-8515855",
+      "url_for_pdf": null,
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:8515855",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-07-06T22:55:14.265564",
+      "url": "https://biblio.ugent.be/publication/8515855",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/8515855",
+      "url_for_pdf": null,
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:8515855",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-07-08T01:44:22.392190",
+      "url": "https://biblio.ugent.be/publication/8515855/file/8515856",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/8515855/file/8515856",
+      "url_for_pdf": null,
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2016-12-01",
+  "publisher": "Cambridge University Press (CUP)",
+  "title": "Melamine\u2013Formaldehyde Microcapsules: Micro- and Nanostructural Characterization with Electron Microscopy",
+  "updated": "2020-03-14T06:57:13.594364",
+  "year": 2016,
+  "z_authors": [
+    {
+      "family": "Heidari",
+      "given": "Hamed",
+      "sequence": "first"
+    },
+    {
+      "family": "Rivero",
+      "given": "Guadalupe",
+      "sequence": "additional"
+    },
+    {
+      "family": "Idrissi",
+      "given": "Hosni",
+      "sequence": "additional"
+    },
+    {
+      "family": "Ramachandran",
+      "given": "Dhanya",
+      "sequence": "additional"
+    },
+    {
+      "family": "Cakir",
+      "given": "Seda",
+      "sequence": "additional"
+    },
+    {
+      "family": "Egoavil",
+      "given": "Ricardo",
+      "sequence": "additional"
+    },
+    {
+      "family": "Kurttepeli",
+      "given": "Mert",
+      "sequence": "additional"
+    },
+    {
+      "family": "Crabb\u00e9",
+      "given": "Amandine C.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Hauffman",
+      "given": "Tom",
+      "sequence": "additional"
+    },
+    {
+      "family": "Terryn",
+      "given": "Herman",
+      "sequence": "additional"
+    },
+    {
+      "family": "Du Prez",
+      "given": "Filip",
+      "sequence": "additional"
+    },
+    {
+      "family": "Schryvers",
+      "given": "Dominique",
+      "sequence": "additional"
+    }
+  ]
+}

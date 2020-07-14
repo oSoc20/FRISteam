@@ -1,0 +1,95 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1080/17461391003770509",
+  "doi_url": "https://doi.org/10.1080/17461391003770509",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "1536-7290",
+  "journal_issns": "1746-1391,1536-7290",
+  "journal_name": "European Journal of Sport Science",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2010-11-01",
+  "publisher": "Informa UK Limited",
+  "title": "Three-dimensional glenohumeral arthrokinematics related to internal impingement in throwing athletes: Communication on six clinical cases",
+  "updated": "2020-03-19T17:20:23.915204",
+  "year": 2010,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "a   Biometry and Biomechanics , Vrije Universiteit Brussel , Brussels,  Belgium"
+        },
+        {
+          "name": "b   Department of Orthopaedics , University Hospital Antwerp , Antwerp,  Belgium"
+        },
+        {
+          "name": "c  University College Physiotherapy Thim van de Laan , Landquart,  Switzerland"
+        },
+        {
+          "name": "d  Physical Therapy, Artesis Hogeschool Antwerpen , Antwerp,  Belgium"
+        }
+      ],
+      "family": "Baeyens",
+      "given": "Jean-Pierre",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "b   Department of Orthopaedics , University Hospital Antwerp , Antwerp,  Belgium"
+        },
+        {
+          "name": "c  University College Physiotherapy Thim van de Laan , Landquart,  Switzerland"
+        }
+      ],
+      "family": "Van Glabbeek",
+      "given": "Francis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "a   Biometry and Biomechanics , Vrije Universiteit Brussel , Brussels,  Belgium"
+        },
+        {
+          "name": "c  University College Physiotherapy Thim van de Laan , Landquart,  Switzerland"
+        }
+      ],
+      "family": "Clijsen",
+      "given": "Ron",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "c  University College Physiotherapy Thim van de Laan , Landquart,  Switzerland"
+        },
+        {
+          "name": "d  Physical Therapy, Artesis Hogeschool Antwerpen , Antwerp,  Belgium"
+        }
+      ],
+      "family": "Vissers",
+      "given": "Dirk",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "c  University College Physiotherapy Thim van de Laan , Landquart,  Switzerland"
+        },
+        {
+          "name": "e   Physical Performance , Norwegian School of Sports Sciences , Oslo,  Norway"
+        }
+      ],
+      "family": "Cabri",
+      "given": "Jan",
+      "sequence": "additional"
+    }
+  ]
+}

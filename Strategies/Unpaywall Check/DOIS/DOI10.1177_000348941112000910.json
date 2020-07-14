@@ -1,0 +1,54 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1177/000348941112000910",
+  "doi_url": "https://doi.org/10.1177/000348941112000910",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0003-4894",
+  "journal_issns": "0003-4894,1943-572X",
+  "journal_name": "Annals of Otology, Rhinology & Laryngology",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2011-09-01",
+  "publisher": "SAGE Publications",
+  "title": "Commentary on \u201cOtosclerosis: Thirty-Year Follow-Up After Surgery\u201d",
+  "updated": "2020-03-12T20:58:04.440523",
+  "year": 2011,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "Molecular Otolaryngology Research Laboratories University of Iowa Iowa City, Iowa"
+        }
+      ],
+      "family": "Ealy",
+      "given": "Megan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medical Genetics University of Antwerp Antwerp, Belgium"
+        }
+      ],
+      "family": "Schrauwen",
+      "given": "Isabelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medical Genetics University of Antwerp Antwerp, Belgium"
+        }
+      ],
+      "family": "Camp",
+      "given": "Guy Van",
+      "sequence": "additional"
+    }
+  ]
+}

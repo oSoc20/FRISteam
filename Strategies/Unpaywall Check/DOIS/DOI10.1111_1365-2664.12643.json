@@ -1,0 +1,257 @@
+{
+  "best_oa_location": {
+    "endpoint_id": null,
+    "evidence": "open (via page says license)",
+    "host_type": "publisher",
+    "is_best": true,
+    "license": "cc-by",
+    "pmh_id": null,
+    "repository_institution": null,
+    "updated": "2020-01-20T17:46:15.013198",
+    "url": "https://besjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.12643",
+    "url_for_landing_page": "https://doi.org/10.1111/1365-2664.12643",
+    "url_for_pdf": "https://besjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.12643",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1111/1365-2664.12643",
+  "doi_url": "https://doi.org/10.1111/1365-2664.12643",
+  "genre": "journal-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0021-8901",
+  "journal_issns": "0021-8901",
+  "journal_name": "Journal of Applied Ecology",
+  "oa_locations": [
+    {
+      "endpoint_id": null,
+      "evidence": "open (via page says license)",
+      "host_type": "publisher",
+      "is_best": true,
+      "license": "cc-by",
+      "pmh_id": null,
+      "repository_institution": null,
+      "updated": "2020-01-20T17:46:15.013198",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.12643",
+      "url_for_landing_page": "https://doi.org/10.1111/1365-2664.12643",
+      "url_for_pdf": "https://besjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.12643",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "pubmedcentral.nih.gov",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by",
+      "pmh_id": "oai:pubmedcentral.nih.gov:5042109",
+      "repository_institution": "pubmedcentral.nih.gov",
+      "updated": "2017-10-21T11:50:47.552589",
+      "url": "http://europepmc.org/articles/pmc5042109?pdf=render",
+      "url_for_landing_page": "http://europepmc.org/articles/pmc5042109",
+      "url_for_pdf": "http://europepmc.org/articles/pmc5042109?pdf=render",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "72e72a2cab18f66bcba",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by",
+      "pmh_id": "oai:aura.abdn.ac.uk:2164/6232",
+      "repository_institution": "Aberdeen University - Aberdeen University Research Archive",
+      "updated": "2020-06-18T05:36:52.144237",
+      "url": "https://aura.abdn.ac.uk/bitstream/2164/6232/1/Aben_et_al_2016_Journal_of_Applied_Ecology.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/2164/6232",
+      "url_for_pdf": "https://aura.abdn.ac.uk/bitstream/2164/6232/1/Aben_et_al_2016_Journal_of_Applied_Ecology.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by",
+      "pmh_id": "oai:archive.ugent.be:8517923",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-07-12T20:50:28.735521",
+      "url": "https://biblio.ugent.be/publication/8517923/file/8517959.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/1854/LU-8517923",
+      "url_for_pdf": "https://biblio.ugent.be/publication/8517923/file/8517959.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "6920a6236b522aa5226",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by-nc",
+      "pmh_id": "oai:helda.helsinki.fi:10138/166336",
+      "repository_institution": "University of Helsinki - Helda",
+      "updated": "2020-05-19T16:40:09.244314",
+      "url": "https://helda.helsinki.fi/bitstream/10138/166336/1/jpe12643.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/10138/166336",
+      "url_for_pdf": "https://helda.helsinki.fi/bitstream/10138/166336/1/jpe12643.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by-nc",
+      "pmh_id": "c:irua:133427",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-13T02:20:51.525329",
+      "url": "https://repository.uantwerpen.be/docman/irua/c8fe0d/133427.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/1334270151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/c8fe0d/133427.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "bfa41bc4dfeca7f7fae",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by-nc",
+      "pmh_id": "ru:oai:repository.ubn.ru.nl:2066/160089",
+      "repository_institution": "DANS - Data Archiving and Networked Services - NARCIS - National Academic Research and Collaborations Information System",
+      "updated": "2020-02-28T11:05:04.448661",
+      "url": "https://repository.ubn.ru.nl/bitstream/2066/160089/1/160089.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/2066/160089",
+      "url_for_pdf": "https://repository.ubn.ru.nl/bitstream/2066/160089/1/160089.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": "cc-by",
+      "pmh_id": "oai:archive.ugent.be:8517923",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-07-10T10:36:45.845061",
+      "url": "https://biblio.ugent.be/publication/8517923/file/8517959",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/8517923/file/8517959",
+      "url_for_pdf": "https://biblio.ugent.be/publication/8517923/file/8517959",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": null,
+      "evidence": "oa repository (via pmcid lookup)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": null,
+      "repository_institution": null,
+      "updated": "2020-07-14T12:42:14.462742",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5042109",
+      "url_for_landing_page": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5042109",
+      "url_for_pdf": null,
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "hybrid",
+  "published_date": "2016-03-31",
+  "publisher": "Wiley",
+  "title": "The importance of realistic dispersal models in conservation planning: application of a novel modelling platform to evaluate management scenarios in an Afrotropical biodiversity hotspot",
+  "updated": "2020-06-19T08:51:39.748527",
+  "year": 2016,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Biological and Environmental Sciences; University of Aberdeen; Zoology Building; Tillydrone Avenue; Aberdeen AB24 2TZ UK"
+        },
+        {
+          "name": "Evolutionary Ecology Group; Department of Biology; University of Antwerp; Groenenborgerlaan 171 2020 Antwerp Belgium"
+        }
+      ],
+      "family": "Aben",
+      "given": "Job",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Biological and Environmental Sciences; University of Aberdeen; Zoology Building; Tillydrone Avenue; Aberdeen AB24 2TZ UK"
+        }
+      ],
+      "family": "Bocedi",
+      "given": "Greta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Biological and Environmental Sciences; University of Aberdeen; Zoology Building; Tillydrone Avenue; Aberdeen AB24 2TZ UK"
+        }
+      ],
+      "family": "Palmer",
+      "given": "Stephen C. F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Geosciences and Geography; University of Helsinki; P.O. Box 64 00014 Helsinki Finland"
+        }
+      ],
+      "family": "Pellikka",
+      "given": "Petri",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Evolutionary Ecology Group; Department of Biology; University of Antwerp; Groenenborgerlaan 171 2020 Antwerp Belgium"
+        }
+      ],
+      "family": "Strubbe",
+      "given": "Diederik",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Water and Wetland Research; Department of Experimental Plant Ecology; Radboud University; P. O. Box 9010 6500 GL Nijmegen The Netherlands"
+        }
+      ],
+      "family": "Hallmann",
+      "given": "Caspar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Biological and Environmental Sciences; University of Aberdeen; Zoology Building; Tillydrone Avenue; Aberdeen AB24 2TZ UK"
+        }
+      ],
+      "family": "Travis",
+      "given": "Justin M. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Terrestrial Ecology Unit; Department of Biology; Ghent University; K.L. Ledeganckstraat 35 9000 Ghent Belgium"
+        }
+      ],
+      "family": "Lens",
+      "given": "Luc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Evolutionary Ecology Group; Department of Biology; University of Antwerp; Groenenborgerlaan 171 2020 Antwerp Belgium"
+        }
+      ],
+      "family": "Matthysen",
+      "given": "Erik",
+      "sequence": "additional"
+    }
+  ]
+}

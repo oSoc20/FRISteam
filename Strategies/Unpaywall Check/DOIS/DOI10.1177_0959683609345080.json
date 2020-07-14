@@ -1,0 +1,54 @@
+{
+  "best_oa_location": null,
+  "data_standard": 2,
+  "doi": "10.1177/0959683609345080",
+  "doi_url": "https://doi.org/10.1177/0959683609345080",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": false,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0959-6836",
+  "journal_issns": "0959-6836,1477-0911",
+  "journal_name": "The Holocene",
+  "oa_locations": [],
+  "oa_status": "closed",
+  "published_date": "2009-10-23",
+  "publisher": "SAGE Publications",
+  "title": "Holocene comment and reply",
+  "updated": "2020-03-23T03:10:14.754917",
+  "year": 2009,
+  "z_authors": [
+    {
+      "affiliation": [
+        {
+          "name": "School of Geography, University of Leeds, Leeds, UK,"
+        }
+      ],
+      "family": "Robroek",
+      "given": "Bjorn J.M.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Polar Ecology, Limnology and Geomorphology, Department of Biology, Antwerp University, Belgium"
+        }
+      ],
+      "family": "Waucomont",
+      "given": "Jean G.M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Nature Conservation and Plant Ecology group, Wageningen University, Wageningen, The Netherlands"
+        }
+      ],
+      "family": "Schouten",
+      "given": "Matthijs G.C.",
+      "sequence": "additional"
+    }
+  ]
+}

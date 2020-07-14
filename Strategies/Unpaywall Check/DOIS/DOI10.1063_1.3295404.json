@@ -1,0 +1,102 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "mmv3envg3kaaztya9tmo",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "c:irua:86923",
+    "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+    "updated": "2020-06-14T13:48:09.150823",
+    "url": "https://repository.uantwerpen.be/docman/irua/3fbd4d/86923.pdf",
+    "url_for_landing_page": "https://hdl.handle.net/10067/869230151162165141",
+    "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/3fbd4d/86923.pdf",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1063/1.3295404",
+  "doi_url": "https://doi.org/10.1063/1.3295404",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": null,
+  "oa_locations": [
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "c:irua:86923",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-14T13:48:09.150823",
+      "url": "https://repository.uantwerpen.be/docman/irua/3fbd4d/86923.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/869230151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/3fbd4d/86923.pdf",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2010-01-01",
+  "publisher": "AIP",
+  "title": "Branch Current Behavior at Two Level Anti-crossings in Vertical Quantum Dot Single-particle Spectra",
+  "updated": "2020-06-16T12:09:09.619566",
+  "year": 2010,
+  "z_authors": [
+    {
+      "family": "Payette",
+      "given": "C.",
+      "sequence": "first"
+    },
+    {
+      "family": "Austing",
+      "given": "D. G.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Yu",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Gupta",
+      "given": "J. A.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Nair",
+      "given": "S. V.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Partoens",
+      "given": "B.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Amaha",
+      "given": "S.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Tarucha",
+      "given": "S.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Caldas",
+      "given": "Mari\u0301lia",
+      "sequence": "additional"
+    },
+    {
+      "family": "Studart",
+      "given": "Nelson",
+      "sequence": "additional"
+    }
+  ]
+}
