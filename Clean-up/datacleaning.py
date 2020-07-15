@@ -60,27 +60,34 @@ def get_projects_and_clean(amount):
 
     Args:
         amount (integer): Amount of projects to get from the API
+
+    Returns:
+        [list/json]: The cleaned projects in json
     """
     response = requests.get(baseURL + "/api/projects/size/" + str(amount))
     projects = json.loads(response.text)
     for project in projects:
         project['abstract']['dutchAbstract'] = clean_data(project['abstract']['dutchAbstract'])
         project['abstract']['englishAbstract'] = clean_data(project['abstract']['englishAbstract'])
-        print(project)
+    return projects
+    
 
-def get_project_by_uuid(uuid): 
-    """ function get_project_by_uuid : Gets 1 project from the API
+def get_project_by_uuid_and_clean(uuid): 
+    """ function get_project_by_uuid_and_clean : Gets 1 project from the API and cleans this data
 
     Args:
-        uuid (string): The Uuid to get the project for
+       uuid (string): The ID of the project to get
+
+    Returns:
+        [json]: The cleaned json project 
     """
     response = requests.get(baseURL + "/api/projects/" + uuid)
     # project = response.json()
     project = json.loads(response.text)
     project['abstract']['dutchAbstract'] = clean_data(project['abstract']['dutchAbstract'])
     project['abstract']['englishAbstract'] = clean_data(project['abstract']['englishAbstract'])
-    print(project)
+    return project
 
 
-get_projects_and_clean(2)
-# get_project_by_uuid("6fa0f7de-4502-4995-92ae-5467e49df1b3")
+# print(get_projects_and_clean(2))
+get_project_by_uuid_and_clean("6fa0f7de-4502-4995-92ae-5467e49df1b3")
