@@ -53,7 +53,7 @@ def clean_data(text):
     text = ftfy.fix_text(text)
     text = clean_html(text)
     text = remove_nbsp(text)
-    return text
+    return text.encode('utf8')
 
 def get_projects_and_clean(amount):
     """ funtion get_projects_and_clean : gets projects from API and cleans data
@@ -89,5 +89,5 @@ def get_project_by_uuid_and_clean(uuid):
     return project
 
 
-# print(get_projects_and_clean(2))
-get_project_by_uuid_and_clean("6fa0f7de-4502-4995-92ae-5467e49df1b3")
+print(get_projects_and_clean(2))
+# get_project_by_uuid_and_clean("6fa0f7de-4502-4995-92ae-5467e49df1b3")
