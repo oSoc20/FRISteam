@@ -83,7 +83,8 @@ def get_api_information(directory_path_to_store, dois_list):
 
 def add_pdf_information(dois_csv, directory_path):
     """
-    Fill the basic csv with 
+    Fill the basic csv with different information like if the data is received from unpaywall, if there is a paywall or not,
+    if there is a url for pdf.
 
     Args:
         dois_csv (Csv file): csv file containing the differents dois
@@ -92,11 +93,16 @@ def add_pdf_information(dois_csv, directory_path):
     Returns:
         List: List of the dois from the dois urls
     """
-    dois_unpaywall_csv = dois_csv
+    dois_unpaywall_csv = dois_csv.copy()
 
-    dois_unpaywall_csv['data received from unpaywall'] = ""
-    dois_unpaywall_csv['No paywall'] = ""
-    dois_unpaywall_csv['pdf urls'] = ""
+    dois_unpaywall_csv["doi2"]= ""
+    dois_unpaywall_csv["data received from unpaywall"]= ""
+    dois_unpaywall_csv["No paywall"]= ""
+    dois_unpaywall_csv["pdf urls"]= ""
+
+    dois_unpaywall_csv.drop('publication_title', axis=1, inplace=True)
+    dois_unpaywall_csv.drop('doi', axis=1, inplace=True)
+    dois_unpaywall_csv = dois_unpaywall_csv.rename(columns={"doi2": "doi"})
 
     i = 0
     for filepath in glob.glob(os.path.join(directory_path,'*.json')):
@@ -108,6 +114,7 @@ def add_pdf_information(dois_csv, directory_path):
             except:
                 dois_unpaywall_csv["data received from unpaywall"][i] = "no"
         
+            dois_unpaywall_csv['doi'][i] = jsonfile["doi_url"]
             dois_unpaywall_csv['No paywall'][i] = jsonfile["is_oa"]
             
             if jsonfile["best_oa_location"] is not None:
@@ -120,6 +127,15 @@ def add_pdf_information(dois_csv, directory_path):
     return dois_unpaywall_csv
 
 
+def merge_dataframe_on_doi(first_df, second_df):
+    result = pd.merge(first_df, second_df, how='outer', on='doi')
+    return result
+
+def remove_link_without_json(df):
+    for index, row in df.iterrows():
+        if row['data received from unpaywall'] == "no":
+            result = df.drop([index])
+    return result
 
 def export_csv(dataframe, csv_path):
     """
@@ -134,18 +150,23 @@ def export_csv(dataframe, csv_path):
 
 def main():
 
-    csv_path = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/Unpaywall Check/dois.csv"
+    csv_path = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/dois.csv"
     dois_csv = import_doi_data(csv_path)
 
     dois_list = extract_doi(dois_csv["doi"])
+    
 
-    dois_directory = "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/Unpaywall Check/DOIS"
+    dois_directory = "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS"
 
     #get_api_information(dois_directory, dois_list)
 
-    dois_unpaywall_csv = add_pdf_information(dois_csv,"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/Unpaywall Check/DOIS")
+    dois_unpaywall_csv = add_pdf_information(dois_csv,"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS")
 
-    export_csv(dois_unpaywall_csv , "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/Unpaywall Check/final_dois.csv")
+    merge_df = merge_dataframe_on_doi(dois_csv, dois_unpaywall_csv)
+
+    result_doi = remove_link_without_json(merge_df)
+
+    export_csv(result_doi, "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/final_dois.csv")
 
 if __name__ == "__main__":
     main()

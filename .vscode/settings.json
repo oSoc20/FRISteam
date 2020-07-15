@@ -2,12 +2,12 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./Strategies",
+        ".",
         "-p",
         "test_*.py"
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.unittestEnabled": true,
-    "python.pythonPath": "D:\\Programs\\Anaconda\\python.exe"
+    "python.pythonPath": "/miniconda3/bin/python"
 }
