@@ -20,7 +20,7 @@ It will return a list of Publications with size “n” as JSON data.
 It will return a Publication with id “UUID” as JSON data;
 
 
-#### This endpoints will return data for Projects and Publications as XML format.
+#### This endpoints will return data for Projects and Publications as XML format:
 
 * ```/api/projects/xml/size/:n  ```  
 n must be Integer.  
