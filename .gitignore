@@ -8,3 +8,6 @@ Strategies/Rake/__pycache__/
 Strategies/__pycache__/
 .vscode/settings.json
 .vscode/settings.json
+
+# Server-side: ignoring non-logic files & folders
+Server-Side/.idea
