@@ -1,0 +1,92 @@
+{
+  "best_oa_location": {
+    "endpoint_id": null,
+    "evidence": "open (via free pdf)",
+    "host_type": "publisher",
+    "is_best": true,
+    "license": null,
+    "pmh_id": null,
+    "repository_institution": null,
+    "updated": "2020-01-30T17:02:51.286857",
+    "url": "https://erj.ersjournals.com/content/erj/38/2/239.full.pdf",
+    "url_for_landing_page": "https://doi.org/10.1183/09031936.00026711",
+    "url_for_pdf": "https://erj.ersjournals.com/content/erj/38/2/239.full.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1183/09031936.00026711",
+  "doi_url": "https://doi.org/10.1183/09031936.00026711",
+  "genre": "journal-article",
+  "has_repository_copy": false,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": "0903-1936",
+  "journal_issns": "0903-1936,1399-3003",
+  "journal_name": "European Respiratory Journal",
+  "oa_locations": [
+    {
+      "endpoint_id": null,
+      "evidence": "open (via free pdf)",
+      "host_type": "publisher",
+      "is_best": true,
+      "license": null,
+      "pmh_id": null,
+      "repository_institution": null,
+      "updated": "2020-01-30T17:02:51.286857",
+      "url": "https://erj.ersjournals.com/content/erj/38/2/239.full.pdf",
+      "url_for_landing_page": "https://doi.org/10.1183/09031936.00026711",
+      "url_for_pdf": "https://erj.ersjournals.com/content/erj/38/2/239.full.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "bronze",
+  "published_date": "2011-07-31",
+  "publisher": "European Respiratory Society (ERS)",
+  "title": "Paradigm shifts in lung cancer as defined in the new IASLC/ATS/ERS lung adenocarcinoma classification",
+  "updated": "2020-06-11T17:40:38.690228",
+  "year": 2011,
+  "z_authors": [
+    {
+      "family": "Travis",
+      "given": "W. D.",
+      "sequence": "first"
+    },
+    {
+      "family": "Brambilla",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Van Schil",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Scagliotti",
+      "given": "G. V.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Huber",
+      "given": "R. M.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Sculier",
+      "given": "J.-P.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Vansteenkiste",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Nicholson",
+      "given": "A. G.",
+      "sequence": "additional"
+    }
+  ]
+}

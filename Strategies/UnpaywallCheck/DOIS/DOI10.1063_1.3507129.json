@@ -1,0 +1,72 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "mmv3envg3kaaztya9tmo",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "c:irua:88899",
+    "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+    "updated": "2020-06-08T20:13:49.905718",
+    "url": "https://repository.uantwerpen.be/docman/irua/4f9cff/88899.pdf",
+    "url_for_landing_page": "https://hdl.handle.net/10067/888990151162165141",
+    "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/4f9cff/88899.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1063/1.3507129",
+  "doi_url": "https://doi.org/10.1063/1.3507129",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": null,
+  "oa_locations": [
+    {
+      "endpoint_id": "mmv3envg3kaaztya9tmo",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "c:irua:88899",
+      "repository_institution": "University of Antwerp - Institutional Repository University of Antwerp",
+      "updated": "2020-06-08T20:13:49.905718",
+      "url": "https://repository.uantwerpen.be/docman/irua/4f9cff/88899.pdf",
+      "url_for_landing_page": "https://hdl.handle.net/10067/888990151162165141",
+      "url_for_pdf": "https://repository.uantwerpen.be/docman/irua/4f9cff/88899.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2010-01-01",
+  "publisher": "AIP",
+  "title": "Space charge limited electron emission from a Cu surface under ultrashort pulsed laser irradiation",
+  "updated": "2020-06-15T03:34:08.113061",
+  "year": 2010,
+  "z_authors": [
+    {
+      "family": "Wendelen",
+      "given": "W.",
+      "sequence": "first"
+    },
+    {
+      "family": "Autrique",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Bogaerts",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "family": "Phipps",
+      "given": "Claude",
+      "sequence": "additional"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:pure.ed.ac.uk:publications/acc7c2df-868a-4fe7-81e4-a21b458978c2",
+    "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+    "updated": "2020-06-15T08:35:48.093718",
+    "url": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+    "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+    "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+    "version": "submittedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1145/1989284.1989295",
+  "doi_url": "https://doi.org/10.1145/1989284.1989295",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 30th symposium on Principles of database systems of data - PODS '11",
+  "oa_locations": [
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/acc7c2df-868a-4fe7-81e4-a21b458978c2",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-06-15T08:35:48.093718",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/acc7c2df-868a-4fe7-81e4-a21b458978c2",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-07-01T07:33:20.131667",
+      "url": "https://www.research.ed.ac.uk/portal/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/20.500.11820/acc7c2df-868a-4fe7-81e4-a21b458978c2",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17895695/Fan_Geerts_ET_AL_2011_Determining_the_currency_of_data.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "2460c9cd9694d552451",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1d0682ed-065b-4cc9-99e8-0cb070366a70",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-06-29T12:26:11.169031",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/2389241.2389244",
+      "url_for_landing_page": "http://dl.acm.org/citation.cfm?doid=2389241.2389244",
+      "url_for_pdf": "https://dl.acm.org/doi/pdf/10.1145/2389241.2389244",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1d0682ed-065b-4cc9-99e8-0cb070366a70",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-29T16:31:46.591833",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17894133/Fan_Geerts_ET_AL_2012_Determining_the_currency_of_data.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17894133/Fan_Geerts_ET_AL_2012_Determining_the_currency_of_data.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17894133/Fan_Geerts_ET_AL_2012_Determining_the_currency_of_data.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1d0682ed-065b-4cc9-99e8-0cb070366a70",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-07-01T07:22:25.489294",
+      "url": "https://www.research.ed.ac.uk/portal/files/17894133/Fan_Geerts_ET_AL_2012_Determining_the_currency_of_data.pdf",
+      "url_for_landing_page": "https://www.research.ed.ac.uk/portal/en/publications/determining-the-currency-of-data(1d0682ed-065b-4cc9-99e8-0cb070366a70).html",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17894133/Fan_Geerts_ET_AL_2012_Determining_the_currency_of_data.pdf",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2011-01-01",
+  "publisher": "ACM Press",
+  "title": "Determining the currency of data",
+  "updated": "2020-07-12T20:14:05.313061",
+  "year": 2011,
+  "z_authors": [
+    {
+      "family": "Fan",
+      "given": "Wenfei",
+      "sequence": "first"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    },
+    {
+      "family": "Wijsen",
+      "given": "Jef",
+      "sequence": "additional"
+    }
+  ]
+}

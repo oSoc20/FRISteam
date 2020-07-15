@@ -1,0 +1,72 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "86a47d3a21d8e09b81d",
+    "evidence": "oa repository (via OAI-PMH title and first author match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:uhdspace.uhasselt.be:1942/11703",
+    "repository_institution": "University of Hasselt - Document Server@UHasselt",
+    "updated": "2020-07-13T09:44:10.659349",
+    "url": "https://documentserver.uhasselt.be//bitstream/1942/11703/1/p30-antonopoulos.pdf",
+    "url_for_landing_page": "http://hdl.handle.net/1942/11703",
+    "url_for_pdf": "https://documentserver.uhasselt.be//bitstream/1942/11703/1/p30-antonopoulos.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1145/1938551.1938559",
+  "doi_url": "https://doi.org/10.1145/1938551.1938559",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 14th International Conference on Database Theory - ICDT '11",
+  "oa_locations": [
+    {
+      "endpoint_id": "86a47d3a21d8e09b81d",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:uhdspace.uhasselt.be:1942/11703",
+      "repository_institution": "University of Hasselt - Document Server@UHasselt",
+      "updated": "2020-07-13T09:44:10.659349",
+      "url": "https://documentserver.uhasselt.be//bitstream/1942/11703/1/p30-antonopoulos.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/1942/11703",
+      "url_for_pdf": "https://documentserver.uhasselt.be//bitstream/1942/11703/1/p30-antonopoulos.pdf",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2011-01-01",
+  "publisher": "ACM Press",
+  "title": "Generating, sampling and counting subclasses of regular tree languages",
+  "updated": "2020-03-22T05:36:51.727027",
+  "year": 2011,
+  "z_authors": [
+    {
+      "family": "Antonopoulos",
+      "given": "Timos",
+      "sequence": "first"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    },
+    {
+      "family": "Martens",
+      "given": "Wim",
+      "sequence": "additional"
+    },
+    {
+      "family": "Neven",
+      "given": "Frank",
+      "sequence": "additional"
+    }
+  ]
+}

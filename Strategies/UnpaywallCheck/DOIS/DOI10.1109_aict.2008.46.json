@@ -1,0 +1,91 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "02515f20c30fa079b26",
+    "evidence": "oa repository (via OAI-PMH title and first author match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:archive.ugent.be:419133",
+    "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+    "updated": "2020-05-29T02:27:08.691759",
+    "url": "https://biblio.ugent.be/publication/419133/file/448402.pdf",
+    "url_for_landing_page": "https://biblio.ugent.be/publication/419133",
+    "url_for_pdf": "https://biblio.ugent.be/publication/419133/file/448402.pdf",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1109/aict.2008.46",
+  "doi_url": "https://doi.org/10.1109/aict.2008.46",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "2008 Fourth Advanced International Conference on Telecommunications",
+  "oa_locations": [
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:419133",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-05-29T02:27:08.691759",
+      "url": "https://biblio.ugent.be/publication/419133/file/448402.pdf",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/419133",
+      "url_for_pdf": "https://biblio.ugent.be/publication/419133/file/448402.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "02515f20c30fa079b26",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:archive.ugent.be:419133",
+      "repository_institution": "Ghent University - Ghent University Academic Bibliography",
+      "updated": "2020-05-29T03:02:23.684677",
+      "url": "https://biblio.ugent.be/publication/419133/file/448402",
+      "url_for_landing_page": "https://biblio.ugent.be/publication/419133/file/448402",
+      "url_for_pdf": "https://biblio.ugent.be/publication/419133/file/448402",
+      "version": "publishedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2008-06-01",
+  "publisher": "IEEE",
+  "title": "Towards Efficient Service Placement and Server Selection for Large-Scale Deployments",
+  "updated": "2020-03-24T04:17:02.604974",
+  "year": 2008,
+  "z_authors": [
+    {
+      "family": "Famaey",
+      "given": "Jeroen",
+      "sequence": "first"
+    },
+    {
+      "family": "Wauters",
+      "given": "Tim",
+      "sequence": "additional"
+    },
+    {
+      "family": "Turck",
+      "given": "Filip De",
+      "sequence": "additional"
+    },
+    {
+      "family": "Dhoedt",
+      "given": "Bart",
+      "sequence": "additional"
+    },
+    {
+      "family": "Demeester",
+      "given": "Piet",
+      "sequence": "additional"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "best_oa_location": {
+    "endpoint_id": "2460c9cd9694d552451",
+    "evidence": "oa repository (via OAI-PMH doi match)",
+    "host_type": "repository",
+    "is_best": true,
+    "license": null,
+    "pmh_id": "oai:pure.ed.ac.uk:publications/1f3f3578-4f4a-4689-9b24-1d74fb7e9fde",
+    "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+    "updated": "2020-05-28T20:08:50.446859",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/2213556.2213592",
+    "url_for_landing_page": "http://doi.acm.org/10.1145/2213556.2213592",
+    "url_for_pdf": "https://dl.acm.org/doi/pdf/10.1145/2213556.2213592",
+    "version": "publishedVersion"
+  },
+  "data_standard": 2,
+  "doi": "10.1145/2213556.2213592",
+  "doi_url": "https://doi.org/10.1145/2213556.2213592",
+  "genre": "proceedings-article",
+  "has_repository_copy": true,
+  "is_oa": true,
+  "is_paratext": false,
+  "journal_is_in_doaj": false,
+  "journal_is_oa": false,
+  "journal_issn_l": null,
+  "journal_issns": null,
+  "journal_name": "Proceedings of the 31st symposium on Principles of Database Systems - PODS '12",
+  "oa_locations": [
+    {
+      "endpoint_id": "2460c9cd9694d552451",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": true,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1f3f3578-4f4a-4689-9b24-1d74fb7e9fde",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-28T20:08:50.446859",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/2213556.2213592",
+      "url_for_landing_page": "http://doi.acm.org/10.1145/2213556.2213592",
+      "url_for_pdf": "https://dl.acm.org/doi/pdf/10.1145/2213556.2213592",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1f3f3578-4f4a-4689-9b24-1d74fb7e9fde",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-28T05:33:27.045485",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17627854/Deng_Fan_ET_AL_2012_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17627854/Deng_Fan_ET_AL_2012_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17627854/Deng_Fan_ET_AL_2012_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH doi match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/1f3f3578-4f4a-4689-9b24-1d74fb7e9fde",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-07-07T10:52:27.763068",
+      "url": "https://www.research.ed.ac.uk/portal/files/17627854/Deng_Fan_ET_AL_2012_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_landing_page": "http://hdl.handle.net/20.500.11820/1f3f3578-4f4a-4689-9b24-1d74fb7e9fde",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17627854/Deng_Fan_ET_AL_2012_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "version": "publishedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/7b6ebc22-2d26-47a4-a8e6-0c3e0525b653",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-05-26T23:20:16.114190",
+      "url": "https://www.pure.ed.ac.uk/ws/files/17894242/Deng_Fan_ET_AL_2013_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_landing_page": "https://www.pure.ed.ac.uk/ws/files/17894242/Deng_Fan_ET_AL_2013_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_pdf": "https://www.pure.ed.ac.uk/ws/files/17894242/Deng_Fan_ET_AL_2013_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "version": "submittedVersion"
+    },
+    {
+      "endpoint_id": "hynnrdayzx3rdx4xtkb4",
+      "evidence": "oa repository (via OAI-PMH title and first author match)",
+      "host_type": "repository",
+      "is_best": false,
+      "license": null,
+      "pmh_id": "oai:pure.ed.ac.uk:publications/7b6ebc22-2d26-47a4-a8e6-0c3e0525b653",
+      "repository_institution": "University of Edinburgh - Edinburgh Research Explorer",
+      "updated": "2020-06-14T05:45:24.753730",
+      "url": "https://www.research.ed.ac.uk/portal/files/17894242/Deng_Fan_ET_AL_2013_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "url_for_landing_page": "https://www.research.ed.ac.uk/portal/en/publications/on-the-complexity-of-package-recommendation-problems(7b6ebc22-2d26-47a4-a8e6-0c3e0525b653).html",
+      "url_for_pdf": "https://www.research.ed.ac.uk/portal/files/17894242/Deng_Fan_ET_AL_2013_On_the_Complexity_of_Package_Recommendation_Problems.pdf",
+      "version": "submittedVersion"
+    }
+  ],
+  "oa_status": "green",
+  "published_date": "2012-01-01",
+  "publisher": "ACM Press",
+  "title": "On the complexity of package recommendation problems",
+  "updated": "2020-07-08T20:25:28.321264",
+  "year": 2012,
+  "z_authors": [
+    {
+      "family": "Deng",
+      "given": "Ting",
+      "sequence": "first"
+    },
+    {
+      "family": "Fan",
+      "given": "Wenfei",
+      "sequence": "additional"
+    },
+    {
+      "family": "Geerts",
+      "given": "Floris",
+      "sequence": "additional"
+    }
+  ]
+}
