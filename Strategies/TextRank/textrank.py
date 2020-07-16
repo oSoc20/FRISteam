@@ -12,20 +12,6 @@ import pandas as pd
 ensp = en_core_web_sm.load()
 nlsp = nl_core_news_sm.load()
 
-# Used code (modified): https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0
-
-from collections import OrderedDict
-import numpy as np
-import spacy
-from spacy.lang.en.stop_words import STOP_WORDS as en_STOP_WORDS
-from spacy.lang.nl.stop_words import STOP_WORDS as nl_STOP_WORDS
-import en_core_web_sm
-import nl_core_news_sm
-import pandas as pd
-
-ensp = en_core_web_sm.load()
-nlsp = nl_core_news_sm.load()
-
 class TextRank4Keyword():
     """Extract keywords from text"""
     
