@@ -4,6 +4,13 @@
 '''
 
 
+class Keyword:
+    def __init__(self, keyword, locale, uuid):
+        self.keyword = keyword
+        self.locale = locale
+        self.uuid = uuid
+
+
 class Project:
     def __init__(self, uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl):
         self.uuid = uuid

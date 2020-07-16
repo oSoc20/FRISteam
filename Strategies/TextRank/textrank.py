@@ -39,7 +39,7 @@ class TextRank4Keyword():
         for sent in doc.sents:
             selected_words = []
             for token in sent:
-                # Store words only with cadidate POS tag
+                # Store words only with candidate POS tag
                 if token.pos_ in candidate_pos and token.is_stop is False:
                     if lower is True:
                         selected_words.append(token.text.lower())
@@ -102,10 +102,11 @@ class TextRank4Keyword():
             return keyword_list
         for i, (key, value) in enumerate(node_weight.items()):
             keyword_list[key] = str(value)
-            if i > number:
+            if i == len(node_weight.items())-1:
+                return keyword_list
+            elif i > number:
                 return keyword_list
             
-
         
         
     def analyze(self, text, langTag,
