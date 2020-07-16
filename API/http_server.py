@@ -8,6 +8,7 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Utils.fris_entities import Project, Publication
+import ServiceManager.service_manager as service_manager
 # import service_manager
 
 '''
@@ -47,9 +48,9 @@ def enrich_pub_data():
     publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
 
     # TODO:
-    #enrich_res = services_manager.enrich(publication)
+    enrich_res = service_manager.process_publication(publication)
 
-    response = Response(MyEncoder().encode(publication))
+    response = Response(MyEncoder().encode(enrich_res))
     response.headers['Access-Controll-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -71,9 +72,8 @@ def enrich_proj_data():
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
 
     # TODO:
-    #enrich_res = services_manager.enrich(project)
-
-    response = Response(MyEncoder().encode(project))
+    enrich_res = service_manager.process_project(project)
+    response = Response(MyEncoder().encode(enrich_res))
     response.headers['Access-Controll-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 

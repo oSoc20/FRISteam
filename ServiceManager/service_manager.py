@@ -8,10 +8,15 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 import Enricher.enricher as enricher
 
 def process_project(project_obj):
+    #enriched_proj = enricher.enrich_project(project_obj)
+    print("Service Manager: successful process_project")
     enriched_proj = enricher.enrich_project(project_obj)
     return enriched_proj
 
 
 def process_publication(publication_obj):
+    #enriched_pub = enricher.enrich_publication(publication_obj)
+    print("Service Manager: successful process_publication")
     enriched_pub = enricher.enrich_publication(publication_obj)
     return enriched_pub
+
