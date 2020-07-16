@@ -4,7 +4,7 @@ Test module for the doi paywall module
 import unittest
 import pandas as pd
 import sys
-from Strategies.UnpaywallCheck.doiPaywall import import_doi_data, extract_doi, get_api_information, test_get_api_information
+from Strategies.UnpaywallCheck.doiPaywall import import_doi_data, extract_doi, get_api_information
 
 csv_file = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/dois.csv"
 directory_to_store_json = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS"
@@ -29,9 +29,6 @@ class TestDoiPaywall(unittest.TestCase):
         li = []
         self.assertEqual(type(directory_to_store_json),str)
         self.assertEqual(type(dois_list),type(li))
-
-    def test_get_api_information(self):
-        
 
 
 if __name__ == '__main__':
