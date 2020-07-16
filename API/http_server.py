@@ -52,7 +52,7 @@ def enrich_pub_data():
     enrich_res = service_manager.process_publication(publication)
 
     response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Controll-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
     return response
@@ -76,7 +76,7 @@ def enrich_proj_data():
     # TODO:
     enrich_res = service_manager.process_project(project)
     response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Controll-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
     return response
