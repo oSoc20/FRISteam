@@ -3,11 +3,16 @@ Test module for the doi paywall module
 """
 import unittest
 import pandas as pd
+import os 
 import sys
+
+PACKAGE_PARENT = '../..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Strategies.UnpaywallCheck.doiPaywall import import_doi_data, extract_doi, get_api_information
 
-csv_file = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/dois.csv"
-directory_to_store_json = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS"
+csv_file = "../Strategies/UnpaywallCheck/dois.csv"
+directory_to_store_json = "../Strategies/UnpaywallCheck/DOIS"
 
 dois_csv = import_doi_data(csv_file)
 serie = dois_csv["doi"]
