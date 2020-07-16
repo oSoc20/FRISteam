@@ -1,7 +1,13 @@
 import json
 from flask import Flask, Response
 from flask_restful import request
-from fris_entities import Project, Publication
+import sys
+import os
+#3 lines of code tot get the import form other files working
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+from Utils.fris_entities import Project, Publication
 # import service_manager
 
 '''
@@ -28,8 +34,8 @@ def hello():
  POST route to enrich publication data.
  It will build a Publication object from Form-Data sent via the POST request, enrich it and return enriched data as JSON
 '''
-@app.route("/api/publication/enrich", methods=["POST"])
-def enrich_data():
+@app.route("/api/publications/enrich", methods=["POST"])
+def enrich_pub_data():
     uuid = request.form['uuid']
     title_en = request.form['titleEn']
     title_nl = request.form['titleNl']
@@ -41,9 +47,9 @@ def enrich_data():
     publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
 
     # TODO:
-    enrich_res = services_manager.enrich(publication)
+    #enrich_res = services_manager.enrich(publication)
 
-    response = Response(MyEncoder().encode(enrich_res))
+    response = Response(MyEncoder().encode(publication))
     response.headers['Access-Controll-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -54,7 +60,7 @@ def enrich_data():
  It will build a Project object from Form-Data sent via the POST request, enrich it and return enriched data as JSON
 '''
 @app.route("/api/projects/enrich", methods=["POST"])
-def enrich_data():
+def enrich_proj_data():
     uuid = request.form['uuid']
     title_en = request.form['titleEn']
     title_nl = request.form['titleNl']
@@ -65,9 +71,9 @@ def enrich_data():
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
 
     # TODO:
-    enrich_res = services_manager.enrich(project)
+    #enrich_res = services_manager.enrich(project)
 
-    response = Response(MyEncoder().encode(enrich_res))
+    response = Response(MyEncoder().encode(project))
     response.headers['Access-Controll-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
