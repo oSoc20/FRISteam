@@ -3,7 +3,8 @@
 *.pyc
 __pycache__/
 
+
 # Server-side: ignoring non-logic files & folders
 Server-Side/.idea
-
+.idea
 
