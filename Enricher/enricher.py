@@ -10,10 +10,12 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 
 
-
 def enrich_publication(publication_object):
+    return publication_object
+
 
 def enrich_project(project_object):
+    return project_object
 
 
 
