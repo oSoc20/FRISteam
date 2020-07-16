@@ -85,10 +85,22 @@ class MyEncoder(json.JSONEncoder):
 projects = get_projects(1)
 for p in projects:
     project = Project(p["id"],p["title"]["englishTitle"],p["title"]["dutchTitle"],p["englishKeywords"],p["dutchKeywords"],p["abstract"]["englishAbstract"],p["abstract"]["dutchAbstract"])
-    # response = requests.post("http://localhost:5000/api/projects/enrich", MyEncoder().encode(project))
-    process_project(project)
+    jsonProject ={
+        "uuid": p["id"],
+        "keywordsEn": p["englishKeywords"],
+        "keywordsNl": p["dutchKeywords"],
+        "abstractEn": p["abstract"]["englishAbstract"],
+        "abstractNl": p["abstract"]["dutchAbstract"],
+        "titleEn": p["title"]["englishTitle"],
+        "titleNl": p["title"]["dutchTitle"],
+        # "doi": "https://the.doi/"
+    }
+
+    response = requests.post("http://127.0.0.1:5000/api/projects/enrich", jsonProject)
+    # process_project(project)
 
 # publications = get_publications(500)
 # for publication in publications:
 #     if publication['doi'] :
 #         print(publication)
+
