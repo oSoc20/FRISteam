@@ -7,12 +7,13 @@ import requests # python -m pip install requests
 import sys
 import os
 
-#3 lines of code tot get the import form other files working
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 from Cleanup.datacleaning import clean_data
+from Utils.fris_entities import Project, Publication
+from ServiceManager.service_manager import process_project
 
 baseURL = "https://c1ad24caa1f6.ngrok.io"
 
@@ -77,9 +78,15 @@ def get_publication_by_uuid(uuid):
 # print(get_publication_by_uuid("8e60ac99-8687-4425-8e68-d42a11d4362f"))
 # print(get_publication_by_uuid("85dbe745-772d-472e-b5fa-3e6d36f966d4"))
 
+class MyEncoder(json.JSONEncoder):
+    def default(self, o):
+        return o.__dict__
+        
 projects = get_projects(1)
-for project in projects:
-    clean_data(project)
+for p in projects:
+    project = Project(p["id"],p["title"]["englishTitle"],p["title"]["dutchTitle"],p["englishKeywords"],p["dutchKeywords"],p["abstract"]["englishAbstract"],p["abstract"]["dutchAbstract"])
+    # response = requests.post("http://localhost:5000/api/projects/enrich", MyEncoder().encode(project))
+    process_project(project)
 
 # publications = get_publications(500)
 # for publication in publications:

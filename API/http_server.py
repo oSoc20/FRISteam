@@ -37,21 +37,22 @@ def hello():
 '''
 @app.route("/api/publications/enrich", methods=["POST"])
 def enrich_pub_data():
-    uuid = request.form['uuid']
-    title_en = request.form['titleEn']
-    title_nl = request.form['titleNl']
-    keywords_en = request.form['keywordsEn']
-    keywords_nl = request.form['keywordsNl']
-    abstract_en = request.form['abstractEn']
-    abstract_nl = request.form['abstractNl']
-    doi = request.form['doi']
+    req = request.get_json(force=True)
+    uuid = req['uuid']
+    title_en = req['titleEn']
+    title_nl = req['titleNl']
+    keywords_en = req['keywordsEn']
+    keywords_nl = req['keywordsNl']
+    abstract_en = req['abstractEn']
+    abstract_nl = req['abstractNl']
+    doi = req['doi']
     publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
 
     # TODO:
     enrich_res = service_manager.process_publication(publication)
 
     response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Controll-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
     return response
@@ -62,19 +63,20 @@ def enrich_pub_data():
 '''
 @app.route("/api/projects/enrich", methods=["POST"])
 def enrich_proj_data():
-    uuid = request.form['uuid']
-    title_en = request.form['titleEn']
-    title_nl = request.form['titleNl']
-    keywords_en = request.form['keywordsEn']
-    keywords_nl = request.form['keywordsNl']
-    abstract_en = request.form['abstractEn']
-    abstract_nl = request.form['abstractNl']
+    req = request.get_json(force=True)
+    uuid = req['uuid']
+    title_en = req['titleEn']
+    title_nl = req['titleNl']
+    keywords_en = req['keywordsEn']
+    keywords_nl = req['keywordsNl']
+    abstract_en = req['abstractEn']
+    abstract_nl = req['abstractNl']
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
 
     # TODO:
     enrich_res = service_manager.process_project(project)
     response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Controll-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
     return response
