@@ -1,13 +1,10 @@
 
-Clean-up/soapdata.json
-Strategies/Synonyms/__pycache__/
-Strategies/Unpaywall Check/__pycache__/
-Strategies/TextRank/__pycache__/
-Strategies/Network Relation/__pycache__/
-Strategies/Rake/__pycache__/
-Strategies/__pycache__/
-.vscode/settings.json
-.vscode/settings.json
+.vscode/*
+*.pyc
+__pycache__/
+
 
 # Server-side: ignoring non-logic files & folders
 Server-Side/.idea
+.idea
+

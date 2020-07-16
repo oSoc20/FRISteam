@@ -128,10 +128,29 @@ def add_pdf_information(dois_csv, directory_path):
 
 
 def merge_dataframe_on_doi(first_df, second_df):
+    """[summary]
+    Merge 2 dataframe to create 1 dataframe
+
+    Args:
+        first_df (DataFrame): dataframe containing publication title and doi
+        second_df (DataFrame): dataframe containing doi, url for pdf ,...
+
+    Returns:
+        DataFrame: Result dataFrame
+    """
     result = pd.merge(first_df, second_df, how='outer', on='doi')
     return result
 
 def remove_link_without_json(df):
+    """
+    This fonction is to avoid double item in the csv. If the data aren't fetch from the Unpaywall api, we remove the doublon.
+
+    Args:
+        df (DataFrame): Dataframe to cleaned
+
+    Returns:
+        [DataFrame]: DataFrame cleaned
+    """
     for index, row in df.iterrows():
         if row['data received from unpaywall'] == "no":
             result = df.drop([index])

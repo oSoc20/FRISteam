@@ -1,4 +1,4 @@
-# Used code: https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0
+# Used code (modified): https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0
 
 from collections import OrderedDict
 import numpy as np
@@ -51,7 +51,6 @@ class TextRank4Keyword():
     def get_vocab(self, sentences):
         """Get all tokens"""
         vocab = OrderedDict()
-        print(vocab)
         i = 0
         for sentence in sentences:
             for word in sentence:
@@ -99,12 +98,14 @@ class TextRank4Keyword():
         """Print top number keywords"""
         keyword_list = {}
         node_weight = OrderedDict(sorted(self.node_weight.items(), key=lambda t: t[1], reverse=True))
+        if node_weight == OrderedDict():
+            return keyword_list
         for i, (key, value) in enumerate(node_weight.items()):
             keyword_list[key] = str(value)
             if i > number:
                 return keyword_list
-            elif i == len(node_weight)-1:
-                return keyword_list
+            
+
         
         
     def analyze(self, text, langTag,
@@ -161,7 +162,7 @@ def textrank_keywords(abstract, langTag):
        langTag (string): the language of the words in wordList and the synonyms (e.g. 'eng' for English and 'nld' for Dutch)
 
    Returns:
-       dictionary {string:float}: {dictionary of extracted keywords with their score}
+       list: {dictionary of terms with their frequency relative to the total amount of words}
    """
     tr4w = TextRank4Keyword()
     tr4w.analyze(abstract, langTag, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
