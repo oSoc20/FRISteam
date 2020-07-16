@@ -12,6 +12,20 @@ import pandas as pd
 ensp = en_core_web_sm.load()
 nlsp = nl_core_news_sm.load()
 
+# Used code (modified): https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0
+
+from collections import OrderedDict
+import numpy as np
+import spacy
+from spacy.lang.en.stop_words import STOP_WORDS as en_STOP_WORDS
+from spacy.lang.nl.stop_words import STOP_WORDS as nl_STOP_WORDS
+import en_core_web_sm
+import nl_core_news_sm
+import pandas as pd
+
+ensp = en_core_web_sm.load()
+nlsp = nl_core_news_sm.load()
+
 class TextRank4Keyword():
     """Extract keywords from text"""
     
@@ -39,7 +53,7 @@ class TextRank4Keyword():
         for sent in doc.sents:
             selected_words = []
             for token in sent:
-                # Store words only with cadidate POS tag
+                # Store words only with candidate POS tag
                 if token.pos_ in candidate_pos and token.is_stop is False:
                     if lower is True:
                         selected_words.append(token.text.lower())
@@ -102,10 +116,11 @@ class TextRank4Keyword():
             return keyword_list
         for i, (key, value) in enumerate(node_weight.items()):
             keyword_list[key] = str(value)
-            if i > number:
+            if i == len(node_weight.items())-1:
+                return keyword_list
+            elif i > number:
                 return keyword_list
             
-
         
         
     def analyze(self, text, langTag,
