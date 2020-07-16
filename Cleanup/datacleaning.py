@@ -7,9 +7,15 @@ The data is being placed into the right encoding.
 
 import json
 import re
+import sys
+import os
 
 import ftfy # python -m pip install ftfy
 
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+from Utils.fris_entities import Project, Publication
 
 def clean_html(raw_html):
     """function clean_html: get the HTML-tags out of the data.
@@ -49,7 +55,7 @@ def actual_cleaning(text):
     text = remove_nbsp(text)
     return text.encode('utf8')
 
-def clean_data(project):
+def clean_data(obj):
     """ function clean_data: gets the project 
 
     Args:
@@ -58,20 +64,10 @@ def clean_data(project):
     Returns:
         string: the fully cleaned project data
     """
-    
-    # for attribute, value in project.items():
-    #     print(attribute, "-----", value) 
-    #     # if (attribute == "abstract"):
-    #     #         print(att, " &&&&& ", val)
-    #     print()
-
-    # strings = [project["title"]["englishTitle"], project["title"]["dutchTitle"], project["abstract"]["englishAbstract"], project["abstract"]["dutchAbstract"]]
-    # for string in strings:
-    #    string = actual_cleaning(string)
-    project["title"]["englishTitle"]= actual_cleaning(project["title"]["englishTitle"])
-    project["title"]["dutchTitle"] = actual_cleaning(project["title"]["dutchTitle"])
-    project["abstract"]["englishAbstract"] = actual_cleaning(project["abstract"]["englishAbstract"])
-    project["abstract"]["dutchAbstract"] = actual_cleaning(project["abstract"]["dutchAbstract"])
-    print(project)
-    return project
+    if type(obj) == Project:
+        obj.abstract_en = actual_cleaning(obj.abstract_en)
+        obj.abstract_nl = actual_cleaning(obj.abstract_nl)
+        obj.title_en = actual_cleaning(obj.title_en)
+        obj.title_nl = actual_cleaning(obj.title_nl)
+    return obj
     
