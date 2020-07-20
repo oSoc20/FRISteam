@@ -5,6 +5,6 @@ Module contents
 ---------------
 
 .. automodule:: FRISteam.Strategies.Rake
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

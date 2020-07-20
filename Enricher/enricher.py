@@ -34,10 +34,10 @@ def enrich_publication(publication_object):
 
 def enrich_project(project_object):
     if isinstance(project_object, Project):
-        textrank_en = strategy_textrank.textrank_keywords(project_object.abstract_en, 'en')
-        textrank_nl = strategy_textrank.textrank_keywords(project_object.abstract_nl, 'nl')
-        synonyms_en = strategy_synonyms.get_synonym_by_word_list(project_object.keywords_en, 'eng', 10)
-        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(project_object.keywords_nl, 'nld', 10)
+        textrank_en = strategy_textrank.textrank_keywords(str(project_object.abstract_en), 'en')
+        textrank_nl = strategy_textrank.textrank_keywords(str(project_object.abstract_nl), 'nl')
+        synonyms_en = strategy_synonyms.get_synonym_by_word_list(str(project_object.keywords_en), 'eng', 10)
+        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(str(project_object.keywords_nl), 'nld', 10)
         print(textrank_en)
         print(textrank_nl)
         print(synonyms_en)
