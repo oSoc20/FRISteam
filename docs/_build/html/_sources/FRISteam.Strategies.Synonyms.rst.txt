@@ -1,8 +1,6 @@
 FRISteam.Strategies.Synonyms package
 ====================================
 
-Submodules
-----------
 
 FRISteam.Strategies.Synonyms.synonyms module
 --------------------------------------------
@@ -12,11 +10,3 @@ FRISteam.Strategies.Synonyms.synonyms module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Strategies.Synonyms
-   :members:
-   :undoc-members:
-   :show-inheritance:

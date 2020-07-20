@@ -1,8 +1,6 @@
 FRISteam.API package
 ====================
 
-Submodules
-----------
 
 FRISteam.API.http\_server module
 --------------------------------
@@ -12,11 +10,3 @@ FRISteam.API.http\_server module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.API
-   :members:
-   :undoc-members:
-   :show-inheritance:

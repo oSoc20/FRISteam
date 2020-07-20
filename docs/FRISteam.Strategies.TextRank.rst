@@ -1,8 +1,6 @@
 FRISteam.Strategies.TextRank package
 ====================================
 
-Submodules
-----------
 
 FRISteam.Strategies.TextRank.textrank module
 --------------------------------------------
@@ -12,11 +10,3 @@ FRISteam.Strategies.TextRank.textrank module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Strategies.TextRank
-   :members:
-   :undoc-members:
-   :show-inheritance:
