@@ -170,8 +170,11 @@ def textrank_keywords(abstract, langTag):
     tr4w.analyze(abstract, langTag, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
     score_dict = tr4w.get_keywords(10)
     scores = [float(score_dict[key]) for key in score_dict.keys()]
-    mean = statistics.mean(scores)
-    stdev = statistics.stdev(scores)
-    normalized_scores = [(float(score)-mean)/stdev for score in scores]
-    normalized_scores = [score/5+.5 for score in normalized_scores] 
-    return score_dict
+    if scores == []:
+        return score_dict
+    else:
+        mean = statistics.mean(scores)
+        stdev = statistics.stdev(scores)
+        normalized_scores = {key:(float(value)-mean)/stdev for (key,value) in score_dict.items()}
+        normalized_scores = {key:value/5+.5 for (key,value) in normalized_scores.items()}
+        return normalized_scores
