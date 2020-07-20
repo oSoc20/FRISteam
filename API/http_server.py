@@ -82,8 +82,5 @@ def enrich_proj_data():
     return response
 
 
-'''
- It will run the server in localhost:5000
-'''
-if __name__ == '__main__':
+def run():
     app.run(debug=True)
