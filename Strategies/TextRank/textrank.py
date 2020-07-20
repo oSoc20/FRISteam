@@ -157,7 +157,7 @@ class TextRank4Keyword():
         self.node_weight = node_weight
 
 def textrank_keywords(abstract, langTag):
-    """function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank
+    """function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank and normalizes them between 0 and 1
 
    Args:
        abstract (string): an abstract (or paper) as a string
