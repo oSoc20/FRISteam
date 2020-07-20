@@ -42,6 +42,18 @@ def remove_nbsp(text):
     cleantext = text.replace('\xa0', ' ')
     return cleantext
 
+def clean_doi(doi):
+    """function clean_doi:  remove "acm" at the end of a doi url
+
+    Args:
+        doi ([string]): doi url of the publication
+        
+    Returns:
+        string: cleaned doi without "acm"
+    """
+    clean = doi.replace('acm', '')
+    return clean
+
 def actual_cleaning(text):
     """ function actual_cleaning: Do the actual cleaning of the data.
 
@@ -64,10 +76,13 @@ def clean_data(obj):
     Returns:
         string: the fully cleaned project data
     """
+    obj.title_en = actual_cleaning(obj.title_en)
+    obj.title_nl = actual_cleaning(obj.title_nl)
+
     if type(obj) == Project:
         obj.abstract_en = actual_cleaning(obj.abstract_en)
         obj.abstract_nl = actual_cleaning(obj.abstract_nl)
-        obj.title_en = actual_cleaning(obj.title_en)
-        obj.title_nl = actual_cleaning(obj.title_nl)
+    if type(obj) == Publication:
+        obj.doi = clean_doi(obj.doi)
     return obj
     
