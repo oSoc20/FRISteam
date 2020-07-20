@@ -15,7 +15,7 @@ from Cleanup.datacleaning import clean_data
 from Utils.fris_entities import Project, Publication
 from ServiceManager.service_manager import process_project
 
-baseURL = "https://c1ad24caa1f6.ngrok.io"
+baseURL = "https://41382f96d4aa.ngrok.io"
 
 def get_projects(amount):
     """ funtion get_projects : gets projects from API
@@ -78,29 +78,39 @@ def get_publication_by_uuid(uuid):
 # print(get_publication_by_uuid("8e60ac99-8687-4425-8e68-d42a11d4362f"))
 # print(get_publication_by_uuid("85dbe745-772d-472e-b5fa-3e6d36f966d4"))
 
-class MyEncoder(json.JSONEncoder):
-    def default(self, o):
-        return o.__dict__
-        
-projects = get_projects(1)
-for p in projects:
-    project = Project(p["id"],p["title"]["englishTitle"],p["title"]["dutchTitle"],p["englishKeywords"],p["dutchKeywords"],p["abstract"]["englishAbstract"],p["abstract"]["dutchAbstract"])
-    jsonProject ={
-        "uuid": p["id"],
-        "keywordsEn": p["englishKeywords"],
-        "keywordsNl": p["dutchKeywords"],
-        "abstractEn": p["abstract"]["englishAbstract"],
-        "abstractNl": p["abstract"]["dutchAbstract"],
-        "titleEn": p["title"]["englishTitle"],
-        "titleNl": p["title"]["dutchTitle"],
-        # "doi": "https://the.doi/"
-    }
+#get projects and send them to the http_server one by one  
+# projects = get_projects(2)
+# for p in projects:
+#     jsonProject ={
+#         "uuid": p["id"],
+#         "keywordsEn": p["englishKeywords"],
+#         "keywordsNl": p["dutchKeywords"],
+#         "abstractEn": p["abstract"]["englishAbstract"],
+#         "abstractNl": p["abstract"]["dutchAbstract"],
+#         "titleEn": p["title"]["englishTitle"],
+#         "titleNl": p["title"]["dutchTitle"]
+#     }
+    
+#     headers = {'Content-Type': 'application/json'}
+#     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = jsonProject, headers=headers)
 
-    response = requests.post("http://127.0.0.1:5000/api/projects/enrich", jsonProject)
-    # process_project(project)
+#get publications and send them to the http_server one by one
+publications = get_publications(10000)
+for p in publications:
+    print(p["projectAbstract"])
+    # json_publication = {
+    #     "uuid": p["id"],
+    #     "keywordsEn": p["englishKeywords"],
+    #     "keywordsNl": p["dutchKeywords"],
+    #     "abstractEn": p["projectAbstract"],
+    #     "abstractNl": p["projectAbstract"],
+    #     "titleEn": p["title"]["englishTitle"],
+    #     "titleNl": p["title"]["dutchTitle"],
+    #     "doi": p["doi"]
+    # }
+    # headers = {'Content-Type': 'application/json'}
+    # response = requests.post("http://127.0.0.1:5000/api/publications/enrich", json = json_publication, headers=headers)
 
-# publications = get_publications(500)
-# for publication in publications:
-#     if publication['doi'] :
-#         print(publication)
+    # if publication['doi'] :
+    #     print(publication)
 
