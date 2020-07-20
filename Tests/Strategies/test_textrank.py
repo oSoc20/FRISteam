@@ -10,54 +10,55 @@ class TestTextRank(unittest.TestCase):
 
     def test_extract_english_keywords(self):
         self.assertEqual(textrank_keywords("In corpus linguistics a key word is a word which occurs in a text more often than we would expect to occur by chance alone. Key words are calculated by carrying out a statistical test (e.g., loglinear or chi-squared) which compares the word frequencies in a text against their expected frequencies derived in a much larger corpus, which acts as a reference for general language use. Keyness is then the quality a word or phrase has of being key in its context.", "en"), 
-        {'word': '2.3383907106070563',
- 'text': '1.5506211237124696',
- 'corpus': '1.5189385170118341',
- 'frequencies': '1.138652640806487',
- 'reference': '0.9609977742165241',
- 'quality': '0.9019527654503615',
- 'phrase': '0.9019527654503615',
- 'test': '0.7891491685842646',
- 'language': '0.7779064725783476',
- 'Keyness': '0.7504102975016437',
- 'context': '0.7504102975016437',
- 'chance': '0.665982412886259'})
+        {'word': 1.0041177897330824,
+ 'corpus': 0.7177726760478924,
+ 'text': 0.6407500605156563,
+ 'frequencies': 0.5410010023268136,
+ 'reference': 0.45590115909699,
+ 'quality': 0.42779885773982623,
+ 'phrase': 0.42779885773982623,
+ 'test': 0.3809348095177171,
+ 'language': 0.370344367877619,
+ 'Keyness': 0.35791269463258,
+ 'context': 0.35791269463258,
+ 'words': 0.3177550301394162})
     
     def test_extract_dutch_keywords(self):
         self.assertEqual(textrank_keywords("Het Nederlands is een West-Germaanse taal en de moedertaal van de meeste inwoners van Nederland, België en Suriname. In de Europese Unie spreken ongeveer 25 miljoen mensen Nederlands als eerste taal, en een bijkomende acht miljoen als tweede taal. Verder is het Nederlands ook een officiële taal van de Caraïbische (ei)landen Aruba, Curaçao en Sint-Maarten, terwijl de Franse Westhoek en de regio rondom de Duitse stad Kleef van oudsher Nederlandstalige gebieden zijn, waar Nederlandse dialecten mogelijk nog gesproken worden door de oudste generaties. Ook in de voormalige kolonie Indonesië kunnen in sommige gebieden de oudste generaties nog Nederlands spreken. Het aantal sprekers van het Nederlands in de Verenigde Staten, Canada en Australië wordt geschat op ruim een half miljoen. De Kaap-Hollandse dialecten van Zuid-Afrika en Namibië werden gestandaardiseerd tot Afrikaans, een dochtertaal van het Nederlands.", "nl"), 
-        {'taal': '2.141210468319559',
- 'dialecten': '1.4958114087301588',
- 'gebieden': '1.313985615079365',
- 'inwoners': '1.222834837006428',
- 'Afrika': '1.2163233134920635',
- 'Verenigde': '1.1900458333333335',
- 'Staten': '1.1900458333333335',
- 'Nederland': '1.0849695592286501',
- 'Kleef': '1.0793333333333333',
- 'Namibië': '1.0694267857142856',
- 'Curaçao': '1.067563877410468',
- 'moedertaal': '1.0466551652892564'}
+        {'taal': 1.0759753547121376,
+ 'dialecten': 0.6542022237511517,
+ 'gebieden': 0.5353777024908467,
+ 'inwoners': 0.4758099846794649,
+ 'Afrika': 0.4715546551756896,
+ 'Verenigde': 0.45438212460620947,
+ 'Staten': 0.45438212460620947,
+ 'Nederland': 0.38571399058840944,
+ 'Kleef': 0.3820306746502307,
+ 'Namibië': 0.37555667140492377,
+ 'Curaçao': 0.37433924684205844,
+ 'moedertaal': 0.3606752464926687}
  )
 
     def test_extract_short_english_abstract(self):
         self.assertEqual(textrank_keywords("In corpus linguistics a key word is a word which occurs often.", "en"), 
-        {'word': '1.2443749999999998', 
-        'corpus': '0.7556249999999999'}
+        {'word': 0.6414213562373094, 'corpus': 0.35857864376269055}
 )
 
     def test_extract_short_dutch_abstract(self):
-        self.assertEqual(textrank_keywords("Het Nederlands is een West-Germaanse taal en de moedertaal van de meeste    inwoners van Nederland.", "nl"), 
-        {'taal': '1.0814583333333332',
- 'moedertaal': '1.0814583333333332',
- 'inwoners': '1.0814583333333332',
- 'West': '0.8778125',
- 'Nederland': '0.8778125'})
+        self.assertEqual(textrank_keywords("Het Nederlands is een West-Germaanse taal en de moedertaal van de meeste inwoners van Nederland.", "nl"), 
+        {'taal': 0.6460593486680444,
+ 'moedertaal': 0.6460593486680444,
+ 'inwoners': 0.6460593486680444,
+ 'West': 0.2809109769979336,
+ 'Nederland': 0.2809109769979336})
 
     def test_extract_empty_english_abstract(self):
-        self.assertEqual(textrank_keywords("", "en"), [{}])
+        self.assertEqual(textrank_keywords("", "en"), 
+        {})
 
     def test_extract_empty_dutch_abstract(self):
-        self.assertEqual(textrank_keywords("", "nl"), [{}])
+        self.assertEqual(textrank_keywords("", "nl"), 
+        {})
 
 if __name__ == '__main__':
     unittest.main()
