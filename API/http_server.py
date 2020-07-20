@@ -84,7 +84,7 @@ def enrich_proj_data():
 
 
 def run():
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
 
 
 if __name__ == '__main__':
