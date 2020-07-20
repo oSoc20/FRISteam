@@ -75,7 +75,7 @@ def enrich_proj_data():
 
     # TODO:
     enrich_res = service_manager.process_project(project)
-    response = Response(MyEncoder().encode(enrich_res))
+    response = Response(enrich_res)
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
