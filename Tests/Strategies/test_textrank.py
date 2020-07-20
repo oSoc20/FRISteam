@@ -3,7 +3,11 @@ Test module for the textrank module
 """
 import unittest
 import sys
+import os
 # this still needs to be adapted so we land in the right folder to import the module
+PACKAGE_PARENT = '../..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Strategies.TextRank.textrank import TextRank4Keyword, textrank_keywords
 
 class TestTextRank(unittest.TestCase):
