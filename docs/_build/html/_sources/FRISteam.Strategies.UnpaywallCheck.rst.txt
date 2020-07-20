@@ -1,8 +1,6 @@
 FRISteam.Strategies.UnpaywallCheck package
 ==========================================
 
-Submodules
-----------
 
 FRISteam.Strategies.UnpaywallCheck.doiPaywall module
 ----------------------------------------------------
@@ -20,11 +18,3 @@ FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Strategies.UnpaywallCheck
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -1,8 +1,6 @@
-FRISteam package
+Modules 
 ================
 
-Subpackages
------------
 
 .. toctree::
    :maxdepth: 4
@@ -15,10 +13,3 @@ Subpackages
    FRISteam.Strategies
    FRISteam.Utils
 
-Module contents
----------------
-
-.. automodule:: FRISteam
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -1,8 +1,6 @@
 FRISteam.ServiceManager package
 ===============================
 
-Submodules
-----------
 
 FRISteam.ServiceManager.service\_manager module
 -----------------------------------------------
@@ -12,11 +10,3 @@ FRISteam.ServiceManager.service\_manager module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.ServiceManager
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -1,8 +1,6 @@
 FRISteam.Cleanup package
 ========================
 
-Submodules
-----------
 
 FRISteam.Cleanup.datacleaning module
 ------------------------------------
@@ -13,10 +11,3 @@ FRISteam.Cleanup.datacleaning module
    :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: FRISteam.Cleanup
-   :members:
-   :undoc-members:
-   :show-inheritance:

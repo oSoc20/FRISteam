@@ -1,8 +1,6 @@
 FRISteam.Runner package
 =======================
 
-Submodules
-----------
 
 FRISteam.Runner.fetching module
 -------------------------------
@@ -12,11 +10,3 @@ FRISteam.Runner.fetching module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Runner
-   :members:
-   :undoc-members:
-   :show-inheritance:

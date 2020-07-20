@@ -1,8 +1,6 @@
-FRISteam.Utils package
+FRISteam.Utils package 
 ======================
 
-Submodules
-----------
 
 FRISteam.Utils.csv\_reader module
 ---------------------------------
@@ -20,11 +18,3 @@ FRISteam.Utils.fris\_entities module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Utils
-   :members:
-   :undoc-members:
-   :show-inheritance:

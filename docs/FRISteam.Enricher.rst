@@ -1,8 +1,6 @@
 FRISteam.Enricher package
 =========================
 
-Submodules
-----------
 
 FRISteam.Enricher.enricher module
 ---------------------------------
@@ -12,11 +10,3 @@ FRISteam.Enricher.enricher module
    :undoc-members:
    :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: FRISteam.Enricher
-   :members:
-   :undoc-members:
-   :show-inheritance:
