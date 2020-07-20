@@ -43,11 +43,11 @@ class TestTextRank(unittest.TestCase):
         'generaties': 0.4022837328462512, 
         'regio': 0.3976367559489353}
         )
- )
 
     def test_extract_short_english_abstract(self):
         self.assertEqual(textrank_keywords("In corpus linguistics a key word is a word which occurs often.", "en"), 
-        {'word': 0.6414213562373094, 'corpus': 0.35857864376269055}
+        {'word': 0.6414213562373094, 
+        'corpus': 0.35857864376269055}
         )
 
     def test_extract_short_dutch_abstract(self):
