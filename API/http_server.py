@@ -57,6 +57,7 @@ def enrich_pub_data():
 
     return response
 
+
 '''
  POST route to enrich project data.
  It will build a Project object from Form-Data sent via the POST request, enrich it and return enriched data as JSON
@@ -83,4 +84,9 @@ def enrich_proj_data():
 
 
 def run():
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
+
+
+if __name__ == '__main__':
+    '''Launch the http server'''
+    run()
