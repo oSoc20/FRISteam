@@ -85,6 +85,7 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">FRISteam package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="FRISteam.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
@@ -99,6 +100,8 @@
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.html#module-FRISteam">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Requirements.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Credits.html">Credits</a></li>
 </ul>
 </li>
 </ul>
@@ -178,7 +181,7 @@
 <div class="section" id="module-FRISteam.Cleanup.datacleaning">
 <span id="fristeam-cleanup-datacleaning-module"></span><h2>FRISteam.Cleanup.datacleaning module<a class="headerlink" href="#module-FRISteam.Cleanup.datacleaning" title="Permalink to this headline">¶</a></h2>
 <p>Python module to clean data.</p>
-<p>The characters that are not supposed to be therelike ‘&lt;p&gt;’, are removed.
+<p>The characters that are not supposed to be there like ‘&lt;p&gt;’, are removed.
 The data is being placed into the right encoding.</p>
 <dl class="py function">
 <dt id="FRISteam.Cleanup.datacleaning.actual_cleaning">
@@ -200,6 +203,18 @@ The data is being placed into the right encoding.</p>
 <dt>Args:</dt><dd><p>project (string): the original project data</p>
 </dd>
 <dt>Returns:</dt><dd><p>string: the fully cleaned project data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.clean_doi">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_doi" title="Permalink to this definition">¶</a></dt>
+<dd><p>function clean_doi:  remove “acm” at the end of a doi url</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>doi ([string]): doi url of the publication</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: cleaned doi without “acm”</p>
 </dd>
 </dl>
 </dd></dl>

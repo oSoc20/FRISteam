@@ -1,7 +1,6 @@
 """ Python module to clean data.
 
-The characters that are not supposed to be there
-    like '<p>', are removed.
+The characters that are not supposed to be there like '<p>', are removed.
 The data is being placed into the right encoding.
 """
 
