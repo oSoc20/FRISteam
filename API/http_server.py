@@ -51,11 +51,12 @@ def enrich_pub_data():
     # TODO:
     enrich_res = service_manager.process_publication(publication)
 
-    response = Response(MyEncoder().encode(enrich_res))
+    response = Response(enrich_res)
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
     return response
+
 
 '''
  POST route to enrich project data.
@@ -75,7 +76,7 @@ def enrich_proj_data():
 
     # TODO:
     enrich_res = service_manager.process_project(project)
-    response = Response(MyEncoder().encode(enrich_res))
+    response = Response(enrich_res)
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -83,4 +84,9 @@ def enrich_proj_data():
 
 
 def run():
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
+
+
+if __name__ == '__main__':
+    '''Launch the http server'''
+    run()
