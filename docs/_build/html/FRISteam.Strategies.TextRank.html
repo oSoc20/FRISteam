@@ -1,38 +1,39 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FRISteam.Strategies.TextRank package &mdash; Fristeam  documentation</title>
+  <title>FRISteam.Strategies.TextRank package &mdash; FRISTeam  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="FRISteam.Strategies.UnpaywallCheck package" href="FRISteam.Strategies.UnpaywallCheck.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Fristeam
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> FRISTeam
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -104,6 +106,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -113,7 +116,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Fristeam</a>
+          <a href="index.html">FRISTeam</a>
         
       </nav>
 
@@ -142,7 +145,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">FRISteam</a> &raquo;</li>
         
@@ -171,6 +174,79 @@
             
   <div class="section" id="fristeam-strategies-textrank-package">
 <h1>FRISteam.Strategies.TextRank package<a class="headerlink" href="#fristeam-strategies-textrank-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-FRISteam.Strategies.TextRank.textrank">
+<span id="fristeam-strategies-textrank-textrank-module"></span><h2>FRISteam.Strategies.TextRank.textrank module<a class="headerlink" href="#module-FRISteam.Strategies.TextRank.textrank" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Strategies.TextRank.textrank.</code><code class="sig-name descname">TextRank4Keyword</code><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Extract keywords from text</p>
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze">
+<code class="sig-name descname">analyze</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">langTag</span></em>, <em class="sig-param"><span class="n">candidate_pos</span><span class="o">=</span><span class="default_value">['NOUN', 'PROPN']</span></em>, <em class="sig-param"><span class="n">window_size</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">lower</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">stopwords</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function to analyze text</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords">
+<code class="sig-name descname">get_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print top number keywords</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix">
+<code class="sig-name descname">get_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab</span></em>, <em class="sig-param"><span class="n">token_pairs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get normalized matrix</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_token_pairs">
+<code class="sig-name descname">get_token_pairs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window_size</span></em>, <em class="sig-param"><span class="n">sentences</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_token_pairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build token_pairs from windows in sentences</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab">
+<code class="sig-name descname">get_vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentences</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all tokens</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.sentence_segment">
+<code class="sig-name descname">sentence_segment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doc</span></em>, <em class="sig-param"><span class="n">candidate_pos</span></em>, <em class="sig-param"><span class="n">lower</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.sentence_segment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store those words only in cadidate_pos</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords">
+<code class="sig-name descname">set_stopwords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stopwords</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set stop words</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize">
+<code class="sig-name descname">symmetrize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.TextRank.textrank.textrank_keywords">
+<code class="sig-prename descclassname">FRISteam.Strategies.TextRank.textrank.</code><code class="sig-name descname">textrank_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.textrank_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract (string): an abstract (or paper) as a string
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>list: {dictionary of terms with their frequency relative to the total amount of words}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
 <div class="section" id="module-FRISteam.Strategies.TextRank">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-FRISteam.Strategies.TextRank" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -196,11 +272,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Jolan,Emmy,Gianluca,Lisa,Baudouin
+        
+        &copy; Copyright 2020, baudouin
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -211,7 +295,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

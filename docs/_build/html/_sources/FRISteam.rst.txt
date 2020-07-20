@@ -5,19 +5,20 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-    FRISteam.API
-    FRISteam.Cleanup
-    FRISteam.Enricher
-    FRISteam.Runner
-    FRISteam.ServiceManager
-    FRISteam.Strategies
-    FRISteam.Utils
+   FRISteam.API
+   FRISteam.Cleanup
+   FRISteam.Enricher
+   FRISteam.Runner
+   FRISteam.ServiceManager
+   FRISteam.Strategies
+   FRISteam.Utils
 
 Module contents
 ---------------
 
 .. automodule:: FRISteam
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

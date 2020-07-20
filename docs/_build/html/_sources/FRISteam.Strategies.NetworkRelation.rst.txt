@@ -5,6 +5,6 @@ Module contents
 ---------------
 
 .. automodule:: FRISteam.Strategies.NetworkRelation
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

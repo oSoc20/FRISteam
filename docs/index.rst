@@ -1,9 +1,9 @@
-.. Fristeam documentation master file, created by
-   sphinx-quickstart on Thu Jul 16 14:44:30 2020.
+.. FRISTeam documentation master file, created by
+   sphinx-quickstart on Mon Jul 20 11:18:37 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Fristeam's documentation!
+Welcome to FRISTeam's documentation!
 ====================================
 
 .. toctree::

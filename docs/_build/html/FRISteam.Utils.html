@@ -1,38 +1,39 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FRISteam.Utils package &mdash; Fristeam  documentation</title>
+  <title>FRISteam.Utils package &mdash; FRISTeam  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="FRISteam.Strategies.UnpaywallCheck package" href="FRISteam.Strategies.UnpaywallCheck.html" /> 
@@ -49,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Fristeam
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> FRISTeam
           
 
           
@@ -72,6 +73,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -103,6 +105,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -112,7 +115,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Fristeam</a>
+          <a href="index.html">FRISTeam</a>
         
       </nav>
 
@@ -141,7 +144,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">FRISteam</a> &raquo;</li>
         
@@ -171,18 +174,34 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="module-FRISteam.Utils.csv_reader">
+<span id="fristeam-utils-csv-reader-module"></span><h2>FRISteam.Utils.csv_reader module<a class="headerlink" href="#module-FRISteam.Utils.csv_reader" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="FRISteam.Utils.csv_reader.read">
+<code class="sig-prename descclassname">FRISteam.Utils.csv_reader.</code><code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.csv_reader.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
 <div class="section" id="module-FRISteam.Utils.fris_entities">
 <span id="fristeam-utils-fris-entities-module"></span><h2>FRISteam.Utils.fris_entities module<a class="headerlink" href="#module-FRISteam.Utils.fris_entities" title="Permalink to this headline">¶</a></h2>
 <p>Entity objects</p>
-<dl class="class">
-<dt id="FRISteam.Utils.fris_entities.Project">
-<em class="property">class </em><code class="descclassname">FRISteam.Utils.fris_entities.</code><code class="descname">Project</code><span class="sig-paren">(</span><em>uuid</em>, <em>title_en</em>, <em>title_nl</em>, <em>keywords_en</em>, <em>keywords_nl</em>, <em>abstract_en</em>, <em>abstract_nl</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Project" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="py class">
+<dt id="FRISteam.Utils.fris_entities.Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Keyword</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keyword</span></em>, <em class="sig-param"><span class="n">locale</span></em>, <em class="sig-param"><span class="n">uuid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
 
-<dl class="class">
+<dl class="py class">
+<dt id="FRISteam.Utils.fris_entities.Project">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
 <dt id="FRISteam.Utils.fris_entities.Publication">
-<em class="property">class </em><code class="descclassname">FRISteam.Utils.fris_entities.</code><code class="descname">Publication</code><span class="sig-paren">(</span><em>uuid</em>, <em>title_en</em>, <em>title_nl</em>, <em>keywords_en</em>, <em>keywords_nl</em>, <em>abstract_en</em>, <em>abstract_nl</em>, <em>doi</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Publication" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Publication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
 
 </div>
 <div class="section" id="module-FRISteam.Utils">
@@ -208,11 +227,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Jolan,Emmy,Gianluca,Lisa,Baudouin
+        
+        &copy; Copyright 2020, baudouin
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -223,7 +250,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

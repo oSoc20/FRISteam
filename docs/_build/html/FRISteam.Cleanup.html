@@ -1,38 +1,39 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FRISteam.Cleanup package &mdash; Fristeam  documentation</title>
+  <title>FRISteam.Cleanup package &mdash; FRISTeam  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="FRISteam.Enricher package" href="FRISteam.Enricher.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Fristeam
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> FRISTeam
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -104,6 +106,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -113,7 +116,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Fristeam</a>
+          <a href="index.html">FRISTeam</a>
         
       </nav>
 
@@ -142,7 +145,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="modules.html">FRISteam</a> &raquo;</li>
         
@@ -175,62 +178,56 @@
 <div class="section" id="module-FRISteam.Cleanup.datacleaning">
 <span id="fristeam-cleanup-datacleaning-module"></span><h2>FRISteam.Cleanup.datacleaning module<a class="headerlink" href="#module-FRISteam.Cleanup.datacleaning" title="Permalink to this headline">¶</a></h2>
 <p>Python module to clean data.</p>
-<dl class="docutils">
-<dt>The characters that are not supposed to be there</dt>
-<dd>like ‘&lt;p&gt;’, are removed.</dd>
-</dl>
-<p>The data is being placed into the right encoding.</p>
-<dl class="function">
+<p>The characters that are not supposed to be therelike ‘&lt;p&gt;’, are removed.
+The data is being placed into the right encoding.</p>
+<dl class="py function">
 <dt id="FRISteam.Cleanup.datacleaning.actual_cleaning">
-<code class="descclassname">FRISteam.Cleanup.datacleaning.</code><code class="descname">actual_cleaning</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.actual_cleaning" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">actual_cleaning</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.actual_cleaning" title="Permalink to this definition">¶</a></dt>
 <dd><p>function actual_cleaning: Do the actual cleaning of the data.</p>
-<dl class="docutils">
-<dt>Args:</dt>
-<dd>text (string): the original text</dd>
-<dt>Returns:</dt>
-<dd>string: the cleaned text</dd>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): the original text</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: the cleaned text</p>
+</dd>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="FRISteam.Cleanup.datacleaning.clean_data">
-<code class="descclassname">FRISteam.Cleanup.datacleaning.</code><code class="descname">clean_data</code><span class="sig-paren">(</span><em>project</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_data" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>function clean_data: gets the project</p>
-<dl class="docutils">
-<dt>Args:</dt>
-<dd>project (string): the original project data</dd>
-<dt>Returns:</dt>
-<dd>string: the fully cleaned project data</dd>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project (string): the original project data</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: the fully cleaned project data</p>
+</dd>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="FRISteam.Cleanup.datacleaning.clean_html">
-<code class="descclassname">FRISteam.Cleanup.datacleaning.</code><code class="descname">clean_html</code><span class="sig-paren">(</span><em>raw_html</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_html" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_html</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_html</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_html" title="Permalink to this definition">¶</a></dt>
 <dd><p>function clean_html: get the HTML-tags out of the data.</p>
-<dl class="docutils">
-<dt>Args:</dt>
-<dd>raw_html (string): original string with HTML-tags in it.</dd>
-<dt>Returns:</dt>
-<dd>string: clean string without HTML-tags</dd>
+<dl class="simple">
+<dt>Args:</dt><dd><p>raw_html (string): original string with HTML-tags in it.</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: clean string without HTML-tags</p>
+</dd>
 </dl>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="FRISteam.Cleanup.datacleaning.remove_nbsp">
-<code class="descclassname">FRISteam.Cleanup.datacleaning.</code><code class="descname">remove_nbsp</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.remove_nbsp" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">remove_nbsp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.remove_nbsp" title="Permalink to this definition">¶</a></dt>
 <dd><p>function remove_nbsp: Remove non breaking spaces from data.</p>
-<dl class="docutils">
-<dt>Args:</dt>
-<dd>text (string): original text</dd>
-<dt>Returns:</dt>
-<dd>string: cleaned text without the nbsp</dd>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): original text</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: cleaned text without the nbsp</p>
+</dd>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="fristeam-cleanup-test-datacleaning-module">
-<h2>FRISteam.Cleanup.test_datacleaning module<a class="headerlink" href="#fristeam-cleanup-test-datacleaning-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-FRISteam.Cleanup">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-FRISteam.Cleanup" title="Permalink to this headline">¶</a></h2>
@@ -257,11 +254,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Jolan,Emmy,Gianluca,Lisa,Baudouin
+        
+        &copy; Copyright 2020, baudouin
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -272,7 +277,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
