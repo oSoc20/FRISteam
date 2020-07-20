@@ -1,6 +1,7 @@
 # Used code (modified): https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0
 
 from collections import OrderedDict
+import statistics
 import numpy as np
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS as en_STOP_WORDS
@@ -167,4 +168,10 @@ def textrank_keywords(abstract, langTag):
    """
     tr4w = TextRank4Keyword()
     tr4w.analyze(abstract, langTag, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
-    return tr4w.get_keywords(10)
+    score_dict = tr4w.get_keywords(10)
+    scores = [float(score_dict[key]) for key in score_dict.keys()]
+    mean = statistics.mean(scores)
+    stdev = statistics.stdev(scores)
+    normalized_scores = [(float(score)-mean)/stdev for score in scores]
+    normalized_scores = [score/5+.5 for score in normalized_scores] 
+    return score_dict

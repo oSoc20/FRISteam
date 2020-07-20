@@ -3,11 +3,12 @@
 import sys
 import os
 
-#3 lines of code tot get the import form other files working
+#3 lines of code to get the import form other files working
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
-
+import Strategies.TextRank.textrank
+import Strategies.Synonyms.synonyms
 
 
 def enrich_publication(publication_object):
@@ -18,7 +19,3 @@ def enrich_publication(publication_object):
 def enrich_project(project_object):
     print("Enricher: project enriched")
     return project_object
-
-
-
-
