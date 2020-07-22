@@ -132,9 +132,11 @@ public class SoapRepository {
                 "<soapenv:Header/>" +
                 "<soapenv:Body>" +
                 "<fris:getResearchOutput>" +
+                "<criteria>" +
                 "<crit:uuids>" +
                 "<crit:identifier>"+uuid+"</crit:identifier>" +
                 "</crit:uuids>" +
+                "</criteria>" +
                 "</fris:getResearchOutput>" +
                 "</soapenv:Body>" +
                 "</soapenv:Envelope>";
