@@ -83,8 +83,15 @@ def enrich_proj_data():
     return response
 
 
+@app.errorhandler(500)
+def internal_error(error):
+
+    return f"500 error: {error}"
+
+
 def run():
     app.run(debug=True, threaded=True)
+
 
 
 if __name__ == '__main__':
