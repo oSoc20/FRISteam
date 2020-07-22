@@ -108,6 +108,6 @@ for p in publications:
         json_publication["titleNl"] = p["title"]["dutchTitle"]
     json_publication["doi"]=p["doi"]
 
-    # headers = {'Content-Type': 'application/json'}
-    # response = requests.post("http://127.0.0.1:5000/api/publications/enrich", json = json_publication, headers=headers)
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post("http://127.0.0.1:5000/api/publications/enrich", json = json_publication, headers=headers)
 
