@@ -80,11 +80,11 @@ def clean_data(obj):
     if obj.title_nl:
         obj.title_nl = actual_cleaning(obj.title_nl)
 
-    if type(obj) == Project:
-        if obj.abstract_en: 
-            obj.abstract_en = actual_cleaning(obj.abstract_en)
-        if obj.abstract_nl:
-            obj.abstract_nl = actual_cleaning(obj.abstract_nl)
+    if obj.abstract_en: 
+        obj.abstract_en = actual_cleaning(obj.abstract_en)
+    if obj.abstract_nl:
+        obj.abstract_nl = actual_cleaning(obj.abstract_nl)
+
     if type(obj) == Publication:
         if obj.doi:
             obj.doi = clean_doi(obj.doi)
