@@ -35,6 +35,11 @@ def enrich_publication(publication_object):
         #print(synonyms_nl)
         print(network_en)
         print(network_nl)
+
+        # this only works if all textrank_, synonyms_ and network_ outputs are Counter dictionaries (initialize by Counter(dict)), 
+        # it returns the 10 highest scoring keywords as a list of tuples [(keyword, score), ...]
+        # best_keywords_en = (textrank_en + synonyms_en + network_en).most_common(10)
+        # best_keywords_nl = (textrank_nl + synonyms_nl + network_nl).most_common(10)
         print("Enricher: publication enriched")
     else:
         print("Enricher: invalid publication object")
