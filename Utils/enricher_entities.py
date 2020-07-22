@@ -50,12 +50,15 @@ class PublicationResult:
             keywords = []
         self.uuid = uuid
         self.keywords = keywords
-        self.doi = doi
+        self.doi = doi 
 
 
 class Doi:
-    def __init__(self, field1, field2, field3):
-        self.field1 = field1
-        self.field2 = field2
-        self.field3 = field3
+    def __init__(self, data_received, no_paywall, pdf_url):
+        self.data_received = data_received
+        self.no_paywall = no_paywall
+        self.pdf_url = pdf_url
+
+
+
 

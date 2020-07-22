@@ -94,7 +94,7 @@ def get_publication_by_uuid(uuid):
 #     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = jsonProject, headers=headers)
 
 #get publications and send them to the http_server one by one
-publications = get_publications(3)
+publications = get_publications(1)
 for p in publications:
     print(p)
     json_publication = {
@@ -102,6 +102,8 @@ for p in publications:
         "keywordsEn": p["englishKeywords"],
         "keywordsNl": p["dutchKeywords"],
         "abstractEn": p["projectAbstract"],
+
+
         "abstractNl": p["projectAbstract"],
         "titleEn": p["title"]["englishTitle"],
         "titleNl": p["title"]["dutchTitle"],
