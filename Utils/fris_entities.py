@@ -37,7 +37,7 @@ class Publication:
 '''Object that will be used to show the enricher's results.
 They follow the general schema:
 {
-    "Enriching Algoritm": {
+    "Enriching Algorithm": {
         "uuid": "9168910c-f8af-4842-b6d7-04cbb1f79abf",
                 "KeywordsList": {
                         "Keyword": {
