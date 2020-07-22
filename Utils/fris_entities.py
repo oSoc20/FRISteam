@@ -34,6 +34,20 @@ class Publication:
         self.doi = doi
 
 
+'''Object that will be used to show the enricher's results.
+They follow the general schema:
+{
+    "Enriching Algoritm": {
+        "uuid": "9168910c-f8af-4842-b6d7-04cbb1f79abf",
+                "KeywordsList": {
+                        "Keyword": {
+                                "Score": "1.0005",
+                                "Value": "A.I.",
+                                "Language": "nl"
+        }
+    }
+}
+'''
 class KeywordResult:
     def __init__(self, score, value, language):
         self.score = score
