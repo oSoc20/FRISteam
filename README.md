@@ -10,7 +10,7 @@ are added in any part the app.
 
 ## API
 Online http server: ``https://fris-enricher.herokuapp.com``  
-The file that initialize the server is in ./API/http_server.py.
+The file that initializes the server is in ./API/http_server.py.
 ### Routes
 #### /api/projects/enrich
 It will return the enriched data for a project as response as JSON.
