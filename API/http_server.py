@@ -28,7 +28,7 @@ app = Flask(__name__)
 '''
 @app.route("/")
 def hello():
-    return {'hello': 'world'}
+    return {'hello': 'world'}, 200
 
 
 '''
@@ -55,7 +55,7 @@ def enrich_pub_data():
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
-    return response
+    return response, 200
 
 
 '''
@@ -80,13 +80,23 @@ def enrich_proj_data():
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
-    return response
+    return response, 200
 
 
-def run():
-    app.run(debug=True, threaded=True)
+@app.errorhandler(500)
+def internal_error(error):
+    return f"500 error: {repr(error)}", 500
+
+
+@app.errorhandler(404)
+def not_found(error):
+    return f"404 error: {repr(error)}", 404
+
+
+def run(debug=False, threaded=True):
+    app.run(debug=debug, threaded=threaded)
 
 
 if __name__ == '__main__':
     '''Launch the http server'''
-    run()
+    run(True)

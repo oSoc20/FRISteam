@@ -52,7 +52,7 @@ public class PublicationsDataExtractor {
      * @return a DOI link
      */
     private static String getDoi(String text){
-        return XMLDataExtractor.getDoi(text, "<fris:source id=\"295054011\" authorityScheme=\"Identifier Authority Type\" authority=\"DOI\">", "</fris:source>");
+        return XMLDataExtractor.getDoi(text, "authorityScheme=\"Identifier Authority Type\" authority=\"DOI\">", "</fris:source>");
     }
 
     /**

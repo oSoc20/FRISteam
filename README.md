@@ -1,10 +1,10 @@
 # FRISteam
 
 ### Procfile
-File required to run the http server on Heroku
+File required to run the http server on Heroku.
 
-### Requirements.txt
-Required by Heroku to run correctly the app on the server.
+### requirements.txt
+Required by Heroku to run correctly the app on the Heroku server.
 It is required to update the file with new libraries every time new ones
 are added in any part the app.
 

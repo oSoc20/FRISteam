@@ -78,37 +78,37 @@ def get_publication_by_uuid(uuid):
 # print(get_publication_by_uuid("85dbe745-772d-472e-b5fa-3e6d36f966d4"))
 
 #get projects and send them to the http_server one by one  
-projects = get_projects(1)
-for p in projects:
-    jsonProject ={
-        "uuid": p["id"],
-        "keywordsEn": p["englishKeywords"],
-        "keywordsNl": p["dutchKeywords"],
-        "abstractEn": p["abstract"]["englishAbstract"],
-        "abstractNl": p["abstract"]["dutchAbstract"],
-        "titleEn": p["title"]["englishTitle"],
-        "titleNl": p["title"]["dutchTitle"]
-    }
-    
-    headers = {'Content-Type': 'application/json'}
-    response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = jsonProject, headers=headers)
-
-#get publications and send them to the http_server one by one
-# publications = get_publications(3)
-# for p in publications:
-#     print(p["projectAbstract"])
-#     json_publication = {
+# projects = get_projects(1)
+# for p in projects:
+#     jsonProject ={
 #         "uuid": p["id"],
 #         "keywordsEn": p["englishKeywords"],
 #         "keywordsNl": p["dutchKeywords"],
-#         "abstractEn": p["projectAbstract"],
-#         "abstractNl": p["projectAbstract"],
+#         "abstractEn": p["abstract"]["englishAbstract"],
+#         "abstractNl": p["abstract"]["dutchAbstract"],
 #         "titleEn": p["title"]["englishTitle"],
-#         "titleNl": p["title"]["dutchTitle"],
-#         "doi": p["doi"]
+#         "titleNl": p["title"]["dutchTitle"]
 #     }
+    
 #     headers = {'Content-Type': 'application/json'}
-#     response = requests.post("http://127.0.0.1:5000/api/publications/enrich", json = json_publication, headers=headers)
+#     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = jsonProject, headers=headers)
+
+#get publications and send them to the http_server one by one
+publications = get_publications(3)
+for p in publications:
+    print(p)
+    json_publication = {
+        "uuid": p["id"],
+        "keywordsEn": p["englishKeywords"],
+        "keywordsNl": p["dutchKeywords"],
+        "abstractEn": p["projectAbstract"],
+        "abstractNl": p["projectAbstract"],
+        "titleEn": p["title"]["englishTitle"],
+        "titleNl": p["title"]["dutchTitle"],
+        "doi": p["doi"]
+    }
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post("http://127.0.0.1:5000/api/publications/enrich", json = json_publication, headers=headers)
 
 #     # if p['doi'] :
 #     #     print(p)
