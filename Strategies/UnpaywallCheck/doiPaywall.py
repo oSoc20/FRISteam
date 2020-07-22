@@ -14,21 +14,22 @@ import requests
 from Utils.enricher_entities import Doi
 
 
-def add_doi_information(publication_doi):
+def add_doi_object(publication_doi):
+    """
+    Return a doi object containing for the doi different information like : 
+        doi, data_received_from_Unpaywall_api, no_paywall, pdf_url
 
-    
+    Args:
+        publication_doi (str): doi of a publication 
 
+    Returns:
+        Doi object: Doi object with the fields : doi, data_received_from_Unpaywall_api, no_paywall, pdf_url
+    """
     doi = extract_doi_from_url(publication_doi)
-
-    
-
     path_to_store_json = './Strategies/UnpaywallCheck/DOIS'
-
     get_api_information_of_doi(path_to_store_json, doi)
-
     data_received_from_Unpaywall_api, no_paywall, pdf_url = add_pdf_information_of_doi(path_to_store_json, doi)
-
-    doi_obj = Doi(data_received_from_Unpaywall_api, no_paywall, pdf_url)
+    doi_obj = Doi(publication_doi, data_received_from_Unpaywall_api, no_paywall, pdf_url)
 
     return doi_obj
 

@@ -12,7 +12,7 @@ import ServiceManager.service_manager as service_manager
 # import service_manager
 
 '''
- Encoding function to encode an object to JSON
+ Encoding class to encode an object to JSON
 '''
 class MyEncoder(json.JSONEncoder):
     def default(self, o):
@@ -68,8 +68,14 @@ def enrich_proj_data():
     uuid = req['uuid']
     title_en = req['titleEn']
     title_nl = req['titleNl']
-    keywords_en = req['keywordsEn']
-    keywords_nl = req['keywordsNl']
+
+    keywords_en = []
+    for keyword in req['keywordsEn']:
+        keywords_en.append(keyword)
+    keywords_nl = []
+    for keyword in req['keywordsNl']:
+        keywords_nl.append(keyword)
+
     abstract_en = req['abstractEn']
     abstract_nl = req['abstractNl']
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)

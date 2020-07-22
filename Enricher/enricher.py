@@ -40,8 +40,8 @@ def enrich_publication(publication_object):
         print("Enricher: invalid publication object")
     """
     if isinstance(publication_object, Publication):
-        doi_object = strategy_doi_paywall.add_doi_information(publication_object.doi)
-        print(doi_object)
+        doi_object = strategy_doi_paywall.add_doi_object(publication_object.doi)
+        print(doi_object.doi)
         print(doi_object.data_received)
         print(doi_object.no_paywall)
         print(doi_object.pdf_url)
