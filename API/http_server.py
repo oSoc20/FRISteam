@@ -12,7 +12,7 @@ import ServiceManager.service_manager as service_manager
 # import service_manager
 
 '''
- Encoding function to encode an object to JSON
+ Encoding class to encode an object to JSON
 '''
 class MyEncoder(json.JSONEncoder):
     def default(self, o):

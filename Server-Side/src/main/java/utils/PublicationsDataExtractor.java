@@ -104,6 +104,6 @@ public class PublicationsDataExtractor {
      * @return an Abstract object containing the abstracts of a project in english and dutch
      */
     private static Abstract getAbstract(String text){
-        return XMLDataExtractor.getAbstract(text, "<fris:projectAbstract ", "</fris:projectAbstract>");
+        return XMLDataExtractor.getAbstract(text, "<fris:researchAbstract ", "</fris:researchAbstract>");
     }
 }
