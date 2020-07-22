@@ -101,10 +101,10 @@ for p in publications:
         "uuid": p["id"],
         "keywordsEn": p["englishKeywords"],
         "keywordsNl": p["dutchKeywords"],
-        "abstractEn": p["projectAbstract"],
+        "abstractEn": p["abstract"],
 
 
-        "abstractNl": p["projectAbstract"],
+        "abstractNl": p["abstract"],
         "titleEn": p["title"]["englishTitle"],
         "titleNl": p["title"]["dutchTitle"],
         "doi": p["doi"]
