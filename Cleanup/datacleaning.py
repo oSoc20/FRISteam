@@ -75,13 +75,18 @@ def clean_data(obj):
     Returns:
         string: the fully cleaned project data
     """
-    obj.title_en = actual_cleaning(obj.title_en)
-    obj.title_nl = actual_cleaning(obj.title_nl)
+    if obj.title_en:
+        obj.title_en = actual_cleaning(obj.title_en)
+    if obj.title_nl:
+        obj.title_nl = actual_cleaning(obj.title_nl)
 
     if type(obj) == Project:
-        obj.abstract_en = actual_cleaning(obj.abstract_en)
-        obj.abstract_nl = actual_cleaning(obj.abstract_nl)
+        if obj.abstract_en: 
+            obj.abstract_en = actual_cleaning(obj.abstract_en)
+        if obj.abstract_nl:
+            obj.abstract_nl = actual_cleaning(obj.abstract_nl)
     if type(obj) == Publication:
-        obj.doi = clean_doi(obj.doi)
+        if obj.doi:
+            obj.doi = clean_doi(obj.doi)
     return obj
     
