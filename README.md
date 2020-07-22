@@ -9,7 +9,8 @@ It is required to update the file with new libraries every time new ones
 are added in any part the app.
 
 ## API
-Online http server: ``https://fris-enricher.herokuapp.com``
+Online http server: ``https://fris-enricher.herokuapp.com``  
+The file that initialize the server is in ./API/http_server.py.
 ### Routes
 #### /api/projects/enrich
 It will return the enriched data for a project as response as JSON.
