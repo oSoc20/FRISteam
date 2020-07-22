@@ -1,4 +1,9 @@
 class Keyword:
+    """Entity object used for the keywords.csv file.
+    The csv file contains 3 columns with keyword value, language and research output's uuid.
+    :param keyword the keyword's value.
+    :param locale the keyword's language.
+    :param uuid the research output's uuid."""
     def __init__(self, keyword, locale, uuid):
         self.keyword = keyword
         self.locale = locale
@@ -8,8 +13,6 @@ class Keyword:
 '''
  Entity objects build after the parameters of the body of a http request.
 '''
-
-
 class Project:
     """Object containing all the project's data.
     :param uuid the project's uuid.
@@ -50,16 +53,22 @@ class Publication:
         self.doi = doi
 
 
-'''Object that will be used to show the enricher's results.
-They follow the general schema:
+'''Object that will be used to show the enricher's results for projects and publications.
+The schema below follows the FRIS' suggested schema:
 {
-    "Enriching Algorithm": {
+    "ProjectResult": {
         "uuid": "9168910c-f8af-4842-b6d7-04cbb1f79abf",
-                "KeywordsList": {
-                        "Keyword": {
+                "keywords": {
+                        "KeywordResult": {
                                 "Score": "1.0005",
                                 "Value": "A.I.",
                                 "Language": "nl"
+                        },
+                        "KeywordResult": {
+                                "Score": "2.0505",
+                                "Value": "Machine Learning",
+                                "Language": "nl"
+                        }
         }
     }
 }
