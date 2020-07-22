@@ -28,7 +28,7 @@ def add_doi_information(publication_doi):
 
     data_received_from_Unpaywall_api, no_paywall, pdf_url = add_pdf_information_of_doi(path_to_store_json, doi)
 
-    doi_obj = Doi(data_received_from_Unpaywall_api, no_paywall, pdf_url)
+    doi_obj = Doi(publication_doi, data_received_from_Unpaywall_api, no_paywall, pdf_url)
 
     return doi_obj
 

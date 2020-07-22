@@ -54,7 +54,14 @@ class PublicationResult:
 
 
 class Doi:
-    def __init__(self, data_received, no_paywall, pdf_url):
+    """Doi object that will be used in a PublicationResult Object.
+        :param doi is the reference to the doi for the publication.
+        :param data_received refers if the Unpaywall API can reach the doi or not.
+        :param no_paywall declare if there is a paywall or not in the doi link.
+        :param pdf_url refers to a pdf url if there isn't a paywall.
+    """
+    def __init__(self, doi, data_received, no_paywall, pdf_url):
+        self.doi = doi
         self.data_received = data_received
         self.no_paywall = no_paywall
         self.pdf_url = pdf_url
