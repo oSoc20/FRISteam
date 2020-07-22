@@ -45,11 +45,17 @@ class PublicationResult:
         :param uuid refers to the project that has been enriched.
         :param keywords must be a list of KeywordResult.
         :param doi is the reference to the doi for the publication."""
-    def __init__(self, uuid, keywords=None, doi=None):
+    def __init__(self, uuid, doi, keywords=None):
         if keywords is None:
             keywords = []
-        if doi is None:
-            doi = "not available"
         self.uuid = uuid
         self.keywords = keywords
         self.doi = doi
+
+
+class Doi:
+    def __init__(self, field1, field2, field3):
+        self.field1 = field1
+        self.field2 = field2
+        self.field3 = field3
+
