@@ -14,6 +14,7 @@ from Utils.fris_entities import Publication, Project
 #Strategies
 import Strategies.TextRank.textrank as strategy_textrank
 import Strategies.Synonyms.synonyms as strategy_synonyms
+#import Strategies.NetworkRelation.keywordsacrosspapers as strategy_network
 
 
 def enrich_publication(publication_object):
@@ -22,6 +23,8 @@ def enrich_publication(publication_object):
         textrank_nl = strategy_textrank.textrank_keywords(publication_object.abstract_nl, 'nl')
         synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng', 10)
         synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld', 10)
+        #network_en = strategy_network.
+        #network_nl = strategy_network.
         print(textrank_en)
         print(textrank_nl)
         print(synonyms_en)
