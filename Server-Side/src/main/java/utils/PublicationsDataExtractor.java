@@ -52,7 +52,7 @@ public class PublicationsDataExtractor {
      * @return a DOI link
      */
     private static String getDoi(String text){
-        return XMLDataExtractor.getDoi(text, "<fris:source id=\"295054011\" authorityScheme=\"Identifier Authority Type\" authority=\"DOI\">", "</fris:source>");
+        return XMLDataExtractor.getDoi(text, "authorityScheme=\"Identifier Authority Type\" authority=\"DOI\">", "</fris:source>");
     }
 
     /**
@@ -104,6 +104,6 @@ public class PublicationsDataExtractor {
      * @return an Abstract object containing the abstracts of a project in english and dutch
      */
     private static Abstract getAbstract(String text){
-        return XMLDataExtractor.getAbstract(text, "<fris:projectAbstract ", "</fris:projectAbstract>");
+        return XMLDataExtractor.getAbstract(text, "<fris:researchAbstract ", "</fris:researchAbstract>");
     }
 }
