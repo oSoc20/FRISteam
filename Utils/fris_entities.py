@@ -32,3 +32,23 @@ class Publication:
         self.abstract_en = abstract_en
         self.abstract_nl = abstract_nl
         self.doi = doi
+
+
+class KeywordResult:
+    def __init__(self, score, value, language):
+        self.score = score
+        self.value = value
+        self.language = language
+
+
+class ProjectResult:
+    def __init__(self, uuid, keywords):
+        self.uuid = uuid
+        self.keywords = keywords
+
+
+class PublicationResult:
+    def __init__(self, uuid, keywords, doi):
+        self.uuid = uuid
+        self.keywords = keywords
+        self.doi = doi
