@@ -1,5 +1,7 @@
 package entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -10,18 +12,18 @@ public class Publication {
     private UUID id;
     private List<String> englishKeywords;
     private List<String> dutchKeywords;
-    private Abstract projectAbstract;
+    private Abstract publicationAbstract;
     private DataProvider dataProvider;
     private Title title;
     private String doi;
 
     public Publication(){}
 
-    public Publication(UUID id, List<String> englishKeywords, List<String> dutchKeywords, Abstract projectAbstract, DataProvider dataProvider, Title title, String doi) {
+    public Publication(UUID id, List<String> englishKeywords, List<String> dutchKeywords, Abstract publicationAbstract, DataProvider dataProvider, Title title, String doi) {
         this.id = id;
         this.englishKeywords = englishKeywords;
         this.dutchKeywords = dutchKeywords;
-        this.projectAbstract = projectAbstract;
+        this.publicationAbstract = publicationAbstract;
         this.dataProvider = dataProvider;
         this.title = title;
         this.doi = doi;
@@ -39,8 +41,8 @@ public class Publication {
         return dutchKeywords;
     }
 
-    public Abstract getProjectAbstract() {
-        return projectAbstract;
+    public Abstract getAbstract() {
+        return publicationAbstract;
     }
 
     public DataProvider getDataProvider() {
@@ -61,7 +63,7 @@ public class Publication {
                 "uuid=" + id +
                 ", englishKeywords=" + englishKeywords +
                 ", dutchKeywords=" + dutchKeywords +
-                ", publicationAbstract=" + projectAbstract +
+                ", publicationAbstract=" + publicationAbstract +
                 ", dataProvider=" + dataProvider +
                 ", title=" + title +
                 ", doi='" + doi + '\'' +
@@ -73,7 +75,7 @@ public class Publication {
                 "," + title.toStringCSV() +
                 "," + separateValuesWithSemicolon(englishKeywords) +
                 "," + separateValuesWithSemicolon(dutchKeywords) +
-                "," + projectAbstract.toStringCSV() +
+                "," + publicationAbstract.toStringCSV() +
                 "," + dataProvider.toStringCSV() +
                 "," + doi;
     }
@@ -86,6 +88,7 @@ public class Publication {
         return result;
     }
 
+    @JsonIgnore
     public boolean isEmpty() {
         return id == null;
     }
