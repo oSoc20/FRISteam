@@ -13,8 +13,8 @@ Online http server: ``https://fris-enricher.herokuapp.com``
 The file that initializes the server is in ./API/http_server.py.
 ### Routes
 #### /api/projects/enrich
-It will return the enriched data for a project as response as JSON.
-It is a ``POST`` request with the following JSON body data structure:  
+It will return the enriched data for a project as response as JSON.  
+``POST`` request with the following JSON body data structure:  
 ````
 {      
   "uuid": "85dbe745-772d-472e-b5fa-3e6d36f966d4",  
@@ -28,8 +28,8 @@ It is a ``POST`` request with the following JSON body data structure:
 ````
 
 #### /api/publications/enrich
-It will return the enriched data for a publication as response as JSON.
-It is a ``POST`` request with the following JSON body data structure:  
+It will return the enriched data for a publication as response as JSON.  
+``POST`` request with the following JSON body data structure:  
 ````
 {      
   "uuid": "85dbe745-772d-472e-b5fa-3e6d36f966d4",  
