@@ -11,6 +11,26 @@ import json
 import glob
 import requests
 
+from Utils.enricher_entities import Doi
+
+
+def add_doi_information(publication_doi):
+
+    
+
+    doi = extract_doi_from_url(publication_doi)
+
+    
+
+    path_to_store_json = './Strategies/UnpaywallCheck/DOIS'
+
+    get_api_information_of_doi(path_to_store_json, doi)
+
+    data_received_from_Unpaywall_api, no_paywall, pdf_url = add_pdf_information_of_doi(path_to_store_json, doi)
+
+    doi_obj = Doi(data_received_from_Unpaywall_api, no_paywall, pdf_url)
+
+    return doi_obj
 
 def import_doi_data(csv_path):
     """
@@ -27,6 +47,19 @@ def import_doi_data(csv_path):
     
     return dois_csv
 
+def extract_doi_from_url(doi):
+    """
+    Extract dois from the dois urls and store them in a list
+
+    Args:
+        dois_urls_series (Series): Series od the dois url
+
+    Returns:
+        List: List of the dois from the dois urls
+    """
+    slashparts = doi.split('https://doi.org/')
+
+    return slashparts[1]
 
 def extract_doi(dois_urls_series):
     """
@@ -61,6 +94,21 @@ def get_publication(doi, file_to_save_to):
             for chunk in r.iter_content(chunk_size=1024*1024):
                 file_to_save_to.write(chunk)
 
+def get_api_information_of_doi(directory_path_to_store, doi):
+    """
+    For each doi of the doi list, we create a json file. We store all the different json files in a directory.
+
+    Args:
+        directory_path_to_store (string): path of the directory where to store the json files 
+        dois (str): doi
+    """
+    doiID = doi.replace('/','_')
+    if not os.path.exists('{}/{}.json'.format(directory_path_to_store,doiID)):
+        directory_path_to_store = directory_path_to_store.replace('\\','/')
+        with open('{}/DOI{}.json'.format(directory_path_to_store,doiID), 'wb') as file :
+            get_publication(doi, file)
+    print("Doi generate !!!!")
+
 
 def get_api_information(directory_path_to_store, dois_list):
     """
@@ -79,6 +127,41 @@ def get_api_information(directory_path_to_store, dois_list):
                 get_publication(doi, file)
             count += 1
             print("Done: {} of {} articles".format(count,len(dois_list)))
+
+def add_pdf_information_of_doi(directory_path, doi):
+    """
+    Fill the basic csv with different information like if the data is received from unpaywall, if there is a paywall or not,
+    if there is a url for pdf.
+
+    Args:
+        dois_csv (Csv file): csv file containing the differents dois
+        directory_path (string): path of directory where are store the json files
+    
+    Returns:
+        List: List of the dois from the dois urls
+    """
+    data_received_from_Unpaywall_api = True
+    no_paywall = False
+    pdf_url = ""
+
+    doi = doi.replace('/','_')
+    filepath = os.path.join(directory_path,'DOI{}.json'.format(doi))
+    filepath = filepath.replace('\\','/')
+    with open(filepath, 'r') as file :
+        try:
+            jsonfile = json.loads(file.read())
+        except:
+            data_received_from_Unpaywall_api = False
+    
+        no_paywall = jsonfile["is_oa"]
+        
+        if jsonfile["best_oa_location"] is not None:
+            pdf_url = jsonfile["best_oa_location"]["url_for_pdf"]
+        else:
+            pdf_url = "No pdf"
+        
+    
+    return data_received_from_Unpaywall_api, no_paywall, pdf_url
 
 
 def add_pdf_information(dois_csv, directory_path):
