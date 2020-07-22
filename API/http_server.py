@@ -93,10 +93,10 @@ def not_found(error):
     return f"404 error: {error}"
 
 
-def run(debug=True, threaded=True):
+def run(debug=False, threaded=True):
     app.run(debug=debug, threaded=threaded)
 
 
 if __name__ == '__main__':
     '''Launch the http server'''
-    run()
+    run(True)
