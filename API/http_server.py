@@ -1,5 +1,6 @@
 import json
 from flask import Flask, Response
+from Utils.enricher_entities import ProjectResult, PublicationResult, Doi, Keyword
 from flask_restful import request
 import sys
 import os
@@ -52,12 +53,15 @@ def enrich_pub_data():
     abstract_en = req['abstractEn']
     abstract_nl = req['abstractNl']
     doi = req['doi']
-    publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
 
     # TODO:
-    enrich_res = service_manager.process_publication(publication)
+    publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
+    #enrich_res = service_manager.process_publication(publication)
 
-    response = Response(enrich_res)
+    test_res = PublicationResult("1234-5678-9000", Doi("thedoi.com", True, True, "thepdf.com"),
+                             [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
+
+    response = Response(MyEncoder().encode(test_res))
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -84,11 +88,14 @@ def enrich_proj_data():
 
     abstract_en = req['abstractEn']
     abstract_nl = req['abstractNl']
-    project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
 
     # TODO:
-    enrich_res = service_manager.process_project(project)
-    response = Response(enrich_res)
+    project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
+    #enrich_res = service_manager.process_project(project)
+
+    test_res = ProjectResult("1234-5678-9000", [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
+
+    response = Response(MyEncoder().encode(test_res))
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -111,4 +118,4 @@ def run(debug=False, threaded=True):
 
 if __name__ == '__main__':
     '''Launch the http server'''
-    run(True)
+    run(True, False)
