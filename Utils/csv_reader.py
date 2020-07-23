@@ -22,7 +22,7 @@ def read(file_name):
     return keywords
 
 
-def read(file_name, language):
+def read_with_lang(file_name, language):
     keywords = []
     with open(file_name, encoding='utf-8') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')

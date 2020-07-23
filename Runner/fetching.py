@@ -77,27 +77,27 @@ def get_publication_by_uuid(uuid):
 # print(get_publication_by_uuid("8e60ac99-8687-4425-8e68-d42a11d4362f"))
 
 #get projects and send them to the http_server one by one  
-projects = get_projects(1)
-for p in projects:
-    json_project = {}
-    json_project["uuid"] = p["id"]
-    json_project["keywordsEn"] = p["englishKeywords"]
-    json_project["keywordsNl"] = p["dutchKeywords"]
-    if p["abstract"]:
-        json_project["abstractEn"] = p["abstract"]["englishAbstract"]
-        json_project["abstractNl"] = p["abstract"]["dutchAbstract"]
-    else:
-        json_project["abstractEn"] = None
-        json_project["abstractNl"] = None
+# projects = get_projects(1)
+# for p in projects:
+#     json_project = {}
+#     json_project["uuid"] = p["id"]
+#     json_project["keywordsEn"] = p["englishKeywords"]
+#     json_project["keywordsNl"] = p["dutchKeywords"]
+#     if p["abstract"]:
+#         json_project["abstractEn"] = p["abstract"]["englishAbstract"]
+#         json_project["abstractNl"] = p["abstract"]["dutchAbstract"]
+#     else:
+#         json_project["abstractEn"] = None
+#         json_project["abstractNl"] = None
    
-    json_project["titleEn"] = p["title"]["englishTitle"]
-    json_project["titleNl"] = p["title"]["dutchTitle"]
+#     json_project["titleEn"] = p["title"]["englishTitle"]
+#     json_project["titleNl"] = p["title"]["dutchTitle"]
     
-    headers = {'Content-Type': 'application/json'}
-    response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = json_project, headers=headers)
+#     headers = {'Content-Type': 'application/json'}
+#     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = json_project, headers=headers)
 
 # #get publications and send them to the http_server one by one
-publications = get_publications(1)
+publications = get_publications(2)
 for p in publications:
     json_publication = {}
     json_publication["uuid"] = p["id"]

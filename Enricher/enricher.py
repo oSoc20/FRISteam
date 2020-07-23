@@ -19,20 +19,31 @@ import Strategies.Synonyms.synonyms as strategy_synonyms
 import Strategies.NetworkRelation.networkrelation as strategy_network
 import Strategies.UnpaywallCheck.doiPaywall as strategy_doi_paywall
 
+#Collections
+from collections import Counter
 
 def enrich_publication(publication_object):
     
     if isinstance(publication_object, Publication):
+        textrank_en = Counter()
+        print("Abstract EN: ", publication_object.abstract_en)
         if publication_object.abstract_en:
-            textrank_en = strategy_textrank.textrank_keywords(publication_object.abstract_en, 'en')
+            textrank_en = strategy_textrank.textrank_keywords(str(publication_object.abstract_en), 'en')
+        textrank_nl = Counter()
+        print("Abstract NL: ", publication_object.abstract_nl)
         if publication_object.abstract_nl:
             textrank_nl = strategy_textrank.textrank_keywords(publication_object.abstract_nl, 'nl')
+        
+        print("KEYWORDS EN: ", publication_object.keywords_en)
         synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng')
+        print("KEYWORDS NL: ", publication_object.keywords_nl)
         synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld')
+        network_en = Counter()
         if publication_object.abstract_en:
-            network_en = strategy_network.calculate_relations(publication_object.abstract_en, read("researchoutput_uuid_keywords.csv"), 'en')
+            network_en = strategy_network.calculate_relations(publication_object.abstract_en, 'en')
+        network_nl = Counter()
         if publication_object.abstract_nl:
-            network_nl = strategy_network.calculate_relations(publication_object.abstract_nl, read("researchoutput_uuid_keywords.csv"), 'nl')
+            network_nl = strategy_network.calculate_relations(publication_object.abstract_nl, 'nl')
         #print(textrank_en)
         #print(textrank_nl)
         #print(synonyms_en)
@@ -44,6 +55,8 @@ def enrich_publication(publication_object):
         # it returns the 10 highest scoring keywords as a list of tuples [(keyword, score), ...]
         best_keywords_en = (textrank_en + synonyms_en + network_en).most_common(10)
         best_keywords_nl = (textrank_nl + synonyms_nl + network_nl).most_common(10)
+        print("BEST KEYWORDS EN: ", best_keywords_en)
+        print("BEST KEYWORDS NL: ", best_keywords_nl)
         print("Enricher: publication enriched")
     else:
         print("Enricher: invalid publication object")
