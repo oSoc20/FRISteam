@@ -11,7 +11,6 @@ import Enricher.enricher as enricher
 def process_project(project_obj):
     #enriched_proj = enricher.enrich_project(project_obj)
     cleaned_project = clean_data(project_obj)
-    print(cleaned_project.abstract_nl[:20])
     print("Service Manager: successful process_project")
     enriched_proj = enricher.enrich_project(cleaned_project)
     return enriched_proj

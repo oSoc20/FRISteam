@@ -14,7 +14,7 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Cleanup.datacleaning import clean_data
 from Utils.fris_entities import Project, Publication
 
-baseURL = "https://ea5f345ea331.ngrok.io/"
+baseURL = "https://ea5f345ea331.ngrok.io"
 
 def get_projects(amount):
     """ funtion get_projects : gets projects from API
@@ -86,9 +86,12 @@ for p in projects:
     if p["abstract"]:
         json_project["abstractEn"] = p["abstract"]["englishAbstract"]
         json_project["abstractNl"] = p["abstract"]["dutchAbstract"]
-    if p["title"]:
-        json_project["titleEn"] = p["title"]["englishTitle"]
-        json_project["titleNl"] = p["title"]["dutchTitle"]
+    else:
+        json_project["abstractEn"] = None
+        json_project["abstractNl"] = None
+   
+    json_project["titleEn"] = p["title"]["englishTitle"]
+    json_project["titleNl"] = p["title"]["dutchTitle"]
     
     headers = {'Content-Type': 'application/json'}
     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = json_project, headers=headers)
@@ -103,9 +106,12 @@ for p in publications:
     if p["abstract"]:
         json_publication["abstractEn"] = p["abstract"]["englishAbstract"]
         json_publication["abstractNl"] = p["abstract"]["dutchAbstract"]
-    if p["title"]:
-        json_publication["titleEn"] = p["title"]["englishTitle"]
-        json_publication["titleNl"] = p["title"]["dutchTitle"]
+    else:
+        json_publication["abstractEn"] = None
+        json_publication["abstractNl"] = None
+
+    json_publication["titleEn"] = p["title"]["englishTitle"]
+    json_publication["titleNl"] = p["title"]["dutchTitle"]
     json_publication["doi"]=p["doi"]
 
     headers = {'Content-Type': 'application/json'}

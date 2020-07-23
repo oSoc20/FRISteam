@@ -23,12 +23,16 @@ import Strategies.UnpaywallCheck.doiPaywall as strategy_doi_paywall
 def enrich_publication(publication_object):
     
     if isinstance(publication_object, Publication):
-        textrank_en = strategy_textrank.textrank_keywords(publication_object.abstract_en, 'en')
-        textrank_nl = strategy_textrank.textrank_keywords(publication_object.abstract_nl, 'nl')
-        synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng', 10)
-        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld', 10)
-        network_en = strategy_network.calculate_relations(publication_object.abstract_en, read("researchoutput_uuid_keywords.csv"), 'en')
-        network_nl = strategy_network.calculate_relations(publication_object.abstract_nl, read("researchoutput_uuid_keywords.csv"), 'nl')
+        if publication_object.abstract_en:
+            textrank_en = strategy_textrank.textrank_keywords(publication_object.abstract_en, 'en')
+        if publication_object.abstract_nl:
+            textrank_nl = strategy_textrank.textrank_keywords(publication_object.abstract_nl, 'nl')
+        synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng')
+        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld')
+        if publication_object.abstract_en:
+            network_en = strategy_network.calculate_relations(publication_object.abstract_en, read("researchoutput_uuid_keywords.csv"), 'en')
+        if publication_object.abstract_nl:
+            network_nl = strategy_network.calculate_relations(publication_object.abstract_nl, read("researchoutput_uuid_keywords.csv"), 'nl')
         #print(textrank_en)
         #print(textrank_nl)
         #print(synonyms_en)
