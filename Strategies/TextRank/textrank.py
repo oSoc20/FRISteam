@@ -22,7 +22,6 @@ class TextRank4Keyword():
         self.steps = 10 # iteration steps
         self.node_weight = None # save keywords and its weight
 
-    # LANGUAGE SPECIFIC
     def set_stopwords(self, stopwords, langTag):  
         """Set stop words"""
         if langTag == "en":

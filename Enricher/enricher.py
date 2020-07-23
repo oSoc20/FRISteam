@@ -25,8 +25,8 @@ def enrich_publication(publication_object):
     if isinstance(publication_object, Publication):
         textrank_en = strategy_textrank.textrank_keywords(publication_object.abstract_en, 'en')
         textrank_nl = strategy_textrank.textrank_keywords(publication_object.abstract_nl, 'nl')
-        synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng', 10)
-        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld', 10)
+        synonyms_en = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_en, 'eng')
+        synonyms_nl = strategy_synonyms.get_synonym_by_word_list(publication_object.keywords_nl, 'nld')
         network_en = strategy_network.calculate_relations(publication_object.abstract_en, read("researchoutput_uuid_keywords.csv"), 'en')
         network_nl = strategy_network.calculate_relations(publication_object.abstract_nl, read("researchoutput_uuid_keywords.csv"), 'nl')
         #print(textrank_en)
@@ -38,8 +38,8 @@ def enrich_publication(publication_object):
 
         # this only works if all textrank_, synonyms_ and network_ outputs are Counter dictionaries (initialize by Counter(dict)), 
         # it returns the 10 highest scoring keywords as a list of tuples [(keyword, score), ...]
-        best_keywords_en = (textrank_en + synonyms_en + network_en).most_common(10)
-        best_keywords_nl = (textrank_nl + synonyms_nl + network_nl).most_common(10)
+        # best_keywords_en = (textrank_en + synonyms_en + network_en).most_common(10)
+        # best_keywords_nl = (textrank_nl + synonyms_nl + network_nl).most_common(10)
         print("Enricher: publication enriched")
     else:
         print("Enricher: invalid publication object")

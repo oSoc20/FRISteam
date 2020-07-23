@@ -66,13 +66,15 @@ def process_keyword_list(keywords, langTag):
     idf_dict = collections.Counter()
     if langTag == "en":
         for keyword in keywords:
-            keyword = " ".join([token.lemma_.lower() for token in ensp_singlewords(keyword)])
-            idf_dict[keyword] += 1
+            if keyword.locale == "en":
+                keyword = " ".join([token.lemma_.lower() for token in ensp_singlewords(keyword)])
+                idf_dict[keyword] += 1
         return idf_dict
     elif langTag == "nl":
         for keyword in keywords:
-            keyword = " ".join([token.lemma_.lower() for token in nlsp_singlewords(keyword)])
-            idf_dict[keyword] += 1
+            if keyword.locale == "nl":
+                keyword = " ".join([token.lemma_.lower() for token in nlsp_singlewords(keyword)])
+                idf_dict[keyword] += 1
         return idf_dict    
 
 def calculate_relations(abstract, keywords, langTag):
