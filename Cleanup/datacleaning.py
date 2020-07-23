@@ -77,16 +77,22 @@ def clean_data(obj):
     """
     if obj.title_en:
         obj.title_en = actual_cleaning(obj.title_en)
+        obj.title_en = str(obj.title_en)
     if obj.title_nl:
         obj.title_nl = actual_cleaning(obj.title_nl)
+        obj.title_nl = str(obj.title_nl)
 
     if obj.abstract_en: 
         obj.abstract_en = actual_cleaning(obj.abstract_en)
+        obj.abstract_en = str(obj.abstract_en)
     if obj.abstract_nl:
         obj.abstract_nl = actual_cleaning(obj.abstract_nl)
+        obj.abstract_nl = str(obj.abstract_nl)
 
     if type(obj) == Publication:
         if obj.doi:
             obj.doi = clean_doi(obj.doi)
+            obj.doi = str(obj.doi)
+    
     return obj
     
