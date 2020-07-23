@@ -14,7 +14,7 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Cleanup.datacleaning import clean_data
 from Utils.fris_entities import Project, Publication
 
-baseURL = "https://5299bd3fa360.ngrok.io/"
+baseURL = "https://5299bd3fa360.ngrok.io"
 
 def get_projects(amount):
     """ funtion get_projects : gets projects from API
