@@ -17,21 +17,16 @@ def get_synonym_by_word(word, langTag):
    Returns:
        dictionary: Counter dictionary of [synonym_string, frequency_score]
    """
-   syn = dict()
-   normalize_denom = 0
+   syncounterdict = Counter()
    for synset in wordnet.synsets(word, lang=langTag):
       for lemma in synset.lemmas(lang=langTag):
-         normalize_denom = normalize_denom + 1
          key = lemma.name()
          #add the synonyms + frequency
-         if key in syn:
-            syn[key] = syn[key] + 1
-         else:
-            syn[key] = 1   
-   syn.pop(word.lower(), None) #remove the original word from the synonym list
-   syn = {k: v for k, v in sorted(syn.items(), key=lambda item: item[1], reverse=True)} #sort the dictionary by most frequent synonym
-   syn_norm = {k: v/normalize_denom for k, v in syn.items()}
-   return Counter(syn_norm)
+         syncounterdict[key] += 1
+
+   syncounterdict.pop(word.lower(), None) #remove the original word from the synonym list
+   
+   return syncounterdict
 
 
 def get_synonym_by_word_list(wordList, langTag): 
@@ -42,17 +37,17 @@ def get_synonym_by_word_list(wordList, langTag):
        langTag (string):  the language of the words in wordList and the synonyms (e.g. 'eng' for English and 'nld' for Dutch)
 
    Returns:
-       list: [list of original words, list of counter dictionaries : [synonym_string, frequency_score] in order of original words]
+       counter dictionary : [synonym_string, frequency_score] in order of highest score
    """
-   synList = list()
+   totalsyncounterdict = Counter()
    for word in wordList:
-      syn = get_synonym_by_word(word, langTag)
-      # print("\n Synonym DEBUG: ")
-      # print(syn)
-      synList.append(syn)
-   return [wordList, synList]
+      totalsyncounterdict += get_synonym_by_word(word, langTag)
 
-#print(get_synonym_by_word("Bad", 'eng', 2))
+   normalize_denom = sum(totalsyncounterdict.values())   
+   totalsyncounterdict_norm = {k: v/normalize_denom for k, v in totalsyncounterdict.items()}
+   return Counter(totalsyncounterdict_norm)
+
+#print(get_synonym_by_word("Bad", 'eng'))
 #print(get_synonym_by_word("Wetenschap", 'nld', 2))
-#print(get_synonym_by_word_list(["Bad", "Science", "Life"], 'eng', 2))
-#print(get_synonym_by_word_list(["Slecht", "Leven", "Onderzoek"], 'nld', 2))
+#print(get_synonym_by_word_list(["Bad", "Science", "Life"], 'eng'))
+#print(get_synonym_by_word_list(["Slecht", "Leven", "Onderzoek"], 'nld'))
