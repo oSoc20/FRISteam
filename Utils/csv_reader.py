@@ -33,7 +33,7 @@ def read(file_name, language):
             else:
                 if row[1] == language:
                     keywords.append(Keyword(row[0], row[1], row[2]))
-                line_count += 1
+                    line_count += 1
         print(f'Processed {line_count} lines.')
     return keywords
 
