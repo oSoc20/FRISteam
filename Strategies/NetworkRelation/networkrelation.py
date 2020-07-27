@@ -1,4 +1,12 @@
 # import necessary packages
+import sys
+import os
+
+#3 lines of code to get the import form other files working
+PACKAGE_PARENT = '../..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
 import pandas as pd
 import numpy as np
 import re
@@ -9,6 +17,9 @@ from spacy.lang.nl.stop_words import STOP_WORDS as nl_STOP_WORDS
 import en_core_web_sm
 import nl_core_news_sm
 import collections
+from Utils.fris_entities import Keyword
+from Utils.csv_reader import read_with_lang
+from Strategies.NetworkRelation.keyword_dictionary import get_keyword_dict_en, get_keyword_dict_nl
 
 ensp = en_core_web_sm.load()
 nlsp = nl_core_news_sm.load()
@@ -53,36 +64,21 @@ def calculate_term_frequency(tokens):
         tf_dict[word] = counter.get(word)/len(tokens)
     return tf_dict
 
-def process_keyword_list(keywords, langTag):
-    """function process_keyword_list : preprocesses the list of keywords from the server
 
-   Args:
-       keywords ([list of strings]): a list of strings (single keywords, possible duplicates)
-       langTag (string): the language of the words in text (e.g. 'en' for English and 'nl' for Dutch)
-
-   Returns:
-       idf_dict: {dictionary of keywords with their amount of occurrence}
-   """
-    idf_dict = collections.Counter()
-    if langTag == "en":
-        for keyword in keywords:
-            if keyword.locale == "en":
-                keyword = " ".join([token.lemma_.lower() for token in ensp_singlewords(keyword)])
-                idf_dict[keyword] += 1
-        return idf_dict
-    elif langTag == "nl":
-        for keyword in keywords:
-            if keyword.locale == "nl":
-                keyword = " ".join([token.lemma_.lower() for token in nlsp_singlewords(keyword)])
-                idf_dict[keyword] += 1
-        return idf_dict    
-
-def calculate_relations(abstract, keywords, langTag):
+def calculate_relations(abstract, langTag):
+    print("CALCULATE_RELATIONS STARTED")
     tf_dict = calculate_term_frequency(preprocess_abstract(abstract, langTag))
-    idf_dict = process_keyword_list(keywords, langTag)
+    idf_dict = dict()
+    if langTag == 'nl':
+        idf_dict = get_keyword_dict_nl()
+    elif langTag == 'en':
+        idf_dict = get_keyword_dict_en()
+
     if tf_dict == {}:
         return {}
+    print("TFIDF PART")
     for keyword in tf_dict:
         if keyword in idf_dict:
             tf_dict[keyword] = tf_dict[keyword]+(idf_dict[keyword]/len(idf_dict))
+    print("CALCULATE_RELATIONS ENDED")
     return tf_dict
