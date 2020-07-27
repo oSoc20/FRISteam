@@ -55,10 +55,12 @@ def compose_keyword_dictionary():
     f_nl.write(json_nl)
     f_nl.close
 
-def read_dictionaries_from_file():
+def read_en_dictionary_from_file():
     global keyword_dict_en
     with open("Strategies/NetworkRelation/keyword_dict_en.json", 'r') as f_en:
         keyword_dict_en = json.load(f_en)
+
+def read_nl_dictionary_from_file():
     global keyword_dict_nl
     with open("Strategies/NetworkRelation/keyword_dict_nl.json", 'r') as f_nl:
         keyword_dict_nl = json.load(f_nl)
@@ -66,12 +68,12 @@ def read_dictionaries_from_file():
 def get_keyword_dict_nl():
     if not keyword_dict_nl:
         print("Load dutch keyword dictionary in memory")
-        read_dictionaries_from_file()
+        read_nl_dictionary_from_file()
     return keyword_dict_nl
 
 def get_keyword_dict_en():
     if not keyword_dict_en:
         print("Load english keyword dictionary in memory")
-        read_dictionaries_from_file()
+        read_en_dictionary_from_file()
     return keyword_dict_en
 

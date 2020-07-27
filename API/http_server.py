@@ -1,6 +1,6 @@
 import json
 from flask import Flask, Response
-from Utils.enricher_entities import ProjectResult, PublicationResult, Doi, Keyword
+
 from flask_restful import request
 import sys
 import os
@@ -9,6 +9,7 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Utils.fris_entities import Project, Publication
+from Utils.enricher_entities import ProjectResult, PublicationResult, Doi, Keyword
 import ServiceManager.service_manager as service_manager
 # import service_manager
 
@@ -56,12 +57,12 @@ def enrich_pub_data():
 
     # TODO:
     publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
-    #enrich_res = service_manager.process_publication(publication)
+    enrich_res = service_manager.process_publication(publication)
 
-    test_res = PublicationResult("1234-5678-9000", Doi("thedoi.com", True, True, "thepdf.com"),
-                             [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
+    #test_res = PublicationResult("1234-5678-9000", Doi("thedoi.com", True, True, "thepdf.com"),
+                             #[Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
 
-    response = Response(MyEncoder().encode(test_res))
+    response = Response(MyEncoder().encode(enrich_res))
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 
@@ -91,11 +92,11 @@ def enrich_proj_data():
 
     # TODO:
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
-    #enrich_res = service_manager.process_project(project)
+    enrich_res = service_manager.process_project(project)
 
-    test_res = ProjectResult("1234-5678-9000", [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
+    #test_res = ProjectResult("1234-5678-9000", [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
 
-    response = Response(MyEncoder().encode(test_res))
+    response = Response(MyEncoder().encode(enrich_res))
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Content-Type'] = 'application/json'
 

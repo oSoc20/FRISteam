@@ -66,7 +66,6 @@ def calculate_term_frequency(tokens):
 
 
 def calculate_relations(abstract, langTag):
-    print("CALCULATE_RELATIONS STARTED")
     tf_dict = calculate_term_frequency(preprocess_abstract(abstract, langTag))
     idf_dict = dict()
     if langTag == 'nl':
@@ -76,9 +75,10 @@ def calculate_relations(abstract, langTag):
 
     if tf_dict == {}:
         return {}
-    print("TFIDF PART")
     for keyword in tf_dict:
         if keyword in idf_dict:
             tf_dict[keyword] = tf_dict[keyword]+(idf_dict[keyword]/len(idf_dict))
-    print("CALCULATE_RELATIONS ENDED")
+    
+    if '-PRON-' in tf_dict:
+        tf_dict.pop('-PRON-')
     return tf_dict
