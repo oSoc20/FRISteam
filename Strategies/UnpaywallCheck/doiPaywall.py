@@ -49,7 +49,7 @@ def extract_doi_from_url(doi_url):
     Returns:
         doi: doi from the doi url
     """
-    slashparts = doi.split('https://doi.org/')
+    slashparts = doi_url.split('https://doi.org/')
 
     return slashparts[1]
 
