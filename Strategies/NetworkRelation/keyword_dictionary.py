@@ -33,6 +33,9 @@ keyword_dict_nl = collections.Counter()
 keyword_dict_en = collections.Counter()
 
 def compose_keyword_dictionary():
+    """function compose_keyword_dictionary : reads in a csv file with keywords from all publications/papers 
+    and produces two json files (one English, one Dutch) to store the keywords with their frequencies for easier and faster access.
+    """
     keywords_list_en =  read_with_lang("Utils/researchoutput_uuid_keywords.csv", 'en')
     keywords_list_nl =  read_with_lang("Utils/researchoutput_uuid_keywords.csv", 'nl')
     idf_dict_en = collections.Counter()
@@ -56,22 +59,36 @@ def compose_keyword_dictionary():
     f_nl.close
 
 def read_en_dictionary_from_file():
+    """function read_en_dictionary_from_file : opens the json file for the English keyword:frequency dictionary
+    """
     global keyword_dict_en
     with open("Strategies/NetworkRelation/keyword_dict_en.json", 'r') as f_en:
         keyword_dict_en = json.load(f_en)
 
 def read_nl_dictionary_from_file():
+    """function read_nl_dictionary_from_file : opens the json file for the Dutch keyword:frequency dictionary
+    """
     global keyword_dict_nl
     with open("Strategies/NetworkRelation/keyword_dict_nl.json", 'r') as f_nl:
         keyword_dict_nl = json.load(f_nl)
 
 def get_keyword_dict_nl():
+    """function get_keyword_dict_nl : loads the dutch keyword dictionary into memory
+
+    Returns:
+        dictionary {"keyword":frequency}: dictionary with keywords and their frequencies from all projects/publications for Dutch
+    """
     if not keyword_dict_nl:
         print("Load dutch keyword dictionary in memory")
         read_nl_dictionary_from_file()
     return keyword_dict_nl
 
 def get_keyword_dict_en():
+    """function get_keyword_dict_en : loads the English keyword dictionary into memory
+
+    Returns:
+        dictionary {"keyword":frequency}: dictionary with keywords and their frequencies from all projects/publications for English
+    """
     if not keyword_dict_en:
         print("Load english keyword dictionary in memory")
         read_en_dictionary_from_file()
