@@ -49,12 +49,12 @@ def compose_keyword_dictionary():
         idf_dict_nl[keyword.keyword] += 1
     
     json_en = json.dumps(idf_dict_en)
-    f_en = open("Strategies/NetworkRelation/keyword_dict_en.json", "w")
+    f_en = open(SCRIPT_DIR + "keyword_dict_en.json", "w")
     f_en.write(json_en)
     f_en.close
 
     json_nl = json.dumps(idf_dict_nl)
-    f_nl = open("Strategies/NetworkRelation/keyword_dict_nl.json", "w")
+    f_nl = open(SCRIPT_DIR + "keyword_dict_nl.json", "w")
     f_nl.write(json_nl)
     f_nl.close
 
