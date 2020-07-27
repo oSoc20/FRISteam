@@ -172,8 +172,14 @@ def textrank_keywords(abstract, langTag):
     if scores == []:
         return score_dict
     else:
+        if len(scores)< 2:
+            return Counter(scores)
+        print(f'scores before {scores}')
         mean = statistics.mean(scores)
         stdev = statistics.stdev(scores)
+        print(f'scores after {scores}')
+        if stdev == 0.0:
+            stdev = 1.0
         normalized_scores = {key:(float(value)-mean)/stdev for (key,value) in score_dict.items()}
         normalized_scores = {key:value/5+.5 for (key,value) in normalized_scores.items()}
         return Counter(normalized_scores)

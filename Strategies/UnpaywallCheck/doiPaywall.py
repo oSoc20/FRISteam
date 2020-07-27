@@ -51,6 +51,9 @@ def extract_doi_from_url(doi_url):
     """
     slashparts = doi_url.split('https://doi.org/')
 
+    if len(slashparts) < 2:
+        return ""
+
     return slashparts[1]
 
 

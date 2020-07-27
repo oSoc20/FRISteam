@@ -57,12 +57,12 @@ def compose_keyword_dictionary():
 
 def read_en_dictionary_from_file():
     global keyword_dict_en
-    with open("Strategies/NetworkRelation/keyword_dict_en.json", 'r') as f_en:
+    with open(SCRIPT_DIR + "/keyword_dict_en.json", 'r') as f_en:
         keyword_dict_en = json.load(f_en)
 
 def read_nl_dictionary_from_file():
     global keyword_dict_nl
-    with open("Strategies/NetworkRelation/keyword_dict_nl.json", 'r') as f_nl:
+    with open(SCRIPT_DIR + "/keyword_dict_nl.json", 'r') as f_nl:
         keyword_dict_nl = json.load(f_nl)
 
 def get_keyword_dict_nl():
@@ -76,4 +76,11 @@ def get_keyword_dict_en():
         print("Load english keyword dictionary in memory")
         read_en_dictionary_from_file()
     return keyword_dict_en
+
+
+if __name__ == '__main__':
+    print("starting...")
+    # read_en_dictionary_from_file()
+    print(os.path.isfile(SCRIPT_DIR + "\\keyword_dict_nl.json"))
+    print("finished.")
 
