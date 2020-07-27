@@ -66,6 +66,16 @@ def calculate_term_frequency(tokens):
 
 
 def calculate_relations(abstract, langTag):
+    """function calculate_relations : compares possible keywords (from an abstract) against the keywords from 
+    other projects. Score per keyword raises with each overlap.
+
+   Args:
+       abstract (string): an abstract (from project or publication) as a single string
+       langTag (string): the language of the words in text (e.g. 'en' for English and 'nl' for Dutch)
+
+   Returns:
+       tf_dict {dictionary of "keyword":score}: dictionary with new keywords and scores
+   """
     tf_dict = calculate_term_frequency(preprocess_abstract(abstract, langTag))
     idf_dict = dict()
     if langTag == 'nl':
