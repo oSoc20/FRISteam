@@ -53,6 +53,8 @@ def extract_doi_from_url(doi_url):
 
     return slashparts[1]
 
+
+
 def get_api_information_of_doi(directory_path_to_store, doi):
     """
     For the doi, we create a json file. We store thejson files in a directory.
@@ -100,6 +102,9 @@ def add_pdf_information_of_doi(directory_path, doi):
             pdf_url = "No pdf"
         
     
+    os.remove(filepath)
+    print("File Removed!")
+
     return data_received_from_Unpaywall_api, no_paywall, pdf_url
 
 
