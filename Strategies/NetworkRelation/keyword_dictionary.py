@@ -62,14 +62,14 @@ def read_en_dictionary_from_file():
     """function read_en_dictionary_from_file : opens the json file for the English keyword:frequency dictionary
     """
     global keyword_dict_en
-    with open("Strategies/NetworkRelation/keyword_dict_en.json", 'r') as f_en:
+    with open(SCRIPT_DIR + "/keyword_dict_en.json", 'r') as f_en:
         keyword_dict_en = json.load(f_en)
 
 def read_nl_dictionary_from_file():
     """function read_nl_dictionary_from_file : opens the json file for the Dutch keyword:frequency dictionary
     """
     global keyword_dict_nl
-    with open("Strategies/NetworkRelation/keyword_dict_nl.json", 'r') as f_nl:
+    with open(SCRIPT_DIR + "/keyword_dict_nl.json", 'r') as f_nl:
         keyword_dict_nl = json.load(f_nl)
 
 def get_keyword_dict_nl():
