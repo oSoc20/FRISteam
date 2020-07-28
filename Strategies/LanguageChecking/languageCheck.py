@@ -18,6 +18,7 @@ def check_if_english(text):
     print(doc._.language)
     if doc._.language["language"] == "en":
        return True
+    return False
 
 def check_if_dutch(text):
     """ function check_if_dutch : checks if the input text is in dutch
@@ -32,3 +33,4 @@ def check_if_dutch(text):
     print(doc._.language)
     if doc._.language["language"] == "nl":
        return True
+    return False

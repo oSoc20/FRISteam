@@ -32,25 +32,33 @@ class Keyword:
 class ProjectResult:
     """Project result object that will show enricher's results.
     :param uuid refers to the project that has been enriched
-    :param keywords must be a list of KeywordResult """
-    def __init__(self, uuid, keywords=None):
+    :param keywords must be a list of KeywordResult
+    :param alerts must be a list of string """
+    def __init__(self, uuid, keywords=None, alerts=None):
         if keywords is None:
             keywords = []
+        if alerts is None:
+            alerts = []
         self.uuid = uuid
         self.keywords = keywords
+        self.alerts = alerts
 
 
 class PublicationResult:
     """Publication result object that will show enricher's results.
         :param uuid refers to the project that has been enriched.
         :param keywords must be a list of KeywordResult.
-        :param doi is the reference to the doi for the publication."""
-    def __init__(self, uuid, doi, keywords=None):
+        :param doi is the reference to the doi for the publication.
+        :param alerts must be a list of string"""
+    def __init__(self, uuid, doi, keywords=None, alerts=None):
         if keywords is None:
             keywords = []
+        if alerts is None:
+            alerts = []
         self.uuid = uuid
         self.keywords = keywords
         self.doi = doi 
+        self.alerts = alerts
 
 
 class Doi:
