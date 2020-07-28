@@ -174,10 +174,8 @@ def textrank_keywords(abstract, langTag):
     else:
         if len(scores)< 2:
             return Counter(scores)
-        print(f'scores before {scores}')
         mean = statistics.mean(scores)
         stdev = statistics.stdev(scores)
-        print(f'scores after {scores}')
         if stdev == 0.0:
             stdev = 1.0
         normalized_scores = {key:(float(value)-mean)/stdev for (key,value) in score_dict.items()}
