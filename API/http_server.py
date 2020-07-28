@@ -9,7 +9,6 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Utils.fris_entities import Project, Publication
-from Utils.enricher_entities import ProjectResult, PublicationResult, Doi, Keyword
 import ServiceManager.service_manager as service_manager
 # import service_manager
 
