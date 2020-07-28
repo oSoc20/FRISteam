@@ -55,6 +55,8 @@ def extract_doi_from_url(doi_url):
     return slashparts[1]
 
 def add_pdf_information_of_doi(doi):
+    if doi == "":
+        return False, False, ""
     """
     add the different information to the doi object because of its json file
 
@@ -66,8 +68,6 @@ def add_pdf_information_of_doi(doi):
         List: List of the dois from the dois urls
     """
     data_received_from_Unpaywall_api = True
-    no_paywall = False
-    pdf_url = ""
 
     """
     doi = doi.replace('/','_')
