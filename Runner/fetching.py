@@ -93,6 +93,7 @@ for p in projects:
     json_project["titleEn"] = p["title"]["englishTitle"]
     json_project["titleNl"] = p["title"]["dutchTitle"]
     
+    print(p)
     headers = {'Content-Type': 'application/json'}
     response = requests.post("http://127.0.0.1:5000/api/projects/enrich", json = json_project, headers=headers)
     
