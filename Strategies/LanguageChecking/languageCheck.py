@@ -15,7 +15,6 @@ def check_if_english(text):
         boolean : returns true if english
     """
     doc = nlp(text)
-    print(doc._.language)
     if doc._.language["language"] == "en":
        return True
     return False
@@ -30,7 +29,6 @@ def check_if_dutch(text):
         boolean : returns true if dutch
     """
     doc = nlp(text)
-    print(doc._.language)
     if doc._.language["language"] == "nl":
        return True
     return False
