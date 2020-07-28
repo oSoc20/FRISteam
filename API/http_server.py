@@ -9,7 +9,6 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Utils.fris_entities import Project, Publication
-from Utils.enricher_entities import ProjectResult, PublicationResult, Doi, Keyword
 import ServiceManager.service_manager as service_manager
 # import service_manager
 
@@ -25,85 +24,83 @@ class MyEncoder(json.JSONEncoder):
 app = Flask(__name__)
 
 
-'''
- test route to check whether the server is alive
-'''
-@app.route("/")
-def hello():
-    return {'hello': 'world'}, 200
-
+"""
+ /ping
+ GET route to check whether the server is alive
+"""
 @app.route("/ping", methods=["GET"])
 def send_ping():
     return Response(None, 200)
 
-'''
+
+"""
+ /api/publications/enrich
  POST route to enrich publication data.
  It will build a Publication object from Form-Data sent via the POST request, enrich it and return enriched data as JSON
-'''
+"""
 @app.route("/api/publications/enrich", methods=["POST"])
 def enrich_pub_data():
     req = request.get_json(force=True)
+    publication = extract_publication_from_request(req)
+
+    enrich_res = service_manager.process_publication(publication)
+
+    response = Response(MyEncoder().encode(enrich_res), 200)
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Content-Type'] = 'application/json'
+
+    return response
+
+
+def extract_publication_from_request(req):
     uuid = req['uuid']
     title_en = req['titleEn']
     title_nl = req['titleNl']
-    
     keywords_en = []
     for keyword in req['keywordsEn']:
         keywords_en.append(keyword)
     keywords_nl = []
     for keyword in req['keywordsNl']:
         keywords_nl.append(keyword)
-
     abstract_en = req['abstractEn']
     abstract_nl = req['abstractNl']
     doi = req['doi']
-
-    # TODO:
     publication = Publication(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl, doi)
-    enrich_res = service_manager.process_publication(publication)
-
-    #test_res = PublicationResult("1234-5678-9000", Doi("thedoi.com", True, True, "thepdf.com"),
-                             #[Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
-
-    response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Content-Type'] = 'application/json'
-
-    return response, 200
+    return publication
 
 
-'''
+"""
+ /api/projects/enrich
  POST route to enrich project data.
  It will build a Project object from Form-Data sent via the POST request, enrich it and return enriched data as JSON
-'''
+"""
 @app.route("/api/projects/enrich", methods=["POST"])
 def enrich_proj_data():
     req = request.get_json(force=True)
+    project = extract_project_from_request(req)
+    enrich_res = service_manager.process_project(project)
+
+    response = Response(MyEncoder().encode(enrich_res), 200)
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Content-Type'] = 'application/json'
+
+    return response
+
+
+def extract_project_from_request(req):
     uuid = req['uuid']
     title_en = req['titleEn']
     title_nl = req['titleNl']
-
     keywords_en = []
     for keyword in req['keywordsEn']:
         keywords_en.append(keyword)
     keywords_nl = []
     for keyword in req['keywordsNl']:
         keywords_nl.append(keyword)
-
     abstract_en = req['abstractEn']
     abstract_nl = req['abstractNl']
-
-    # TODO:
     project = Project(uuid, title_en, title_nl, keywords_en, keywords_nl, abstract_en, abstract_nl)
-    enrich_res = service_manager.process_project(project)
-
-    #test_res = ProjectResult("1234-5678-9000", [Keyword(1.265, "new Key 1", "en"), Keyword(0.98245, "new Key 2", "en")])
-
-    response = Response(MyEncoder().encode(enrich_res))
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Content-Type'] = 'application/json'
-
-    return response, 200
+    return project
 
 
 @app.errorhandler(500)
