@@ -19,7 +19,7 @@ If you handle a publication json with a doi
 """
 
 
-def add_doi_object(publication_doi):
+def add_doi_object(publication_doi_url):
     """
     Return a doi object to the Enricher containing for the doi different information like : 
         doi, data_received_from_Unpaywall_api, no_paywall, pdf_url
@@ -30,7 +30,7 @@ def add_doi_object(publication_doi):
     Returns:
         Doi object: Doi object with the fields : doi, data_received_from_Unpaywall_api, no_paywall, pdf_url
     """
-    doi = extract_doi_from_url(publication_doi)
+    doi = extract_doi_from_url(publication_doi_url)
     data_received_from_Unpaywall_api, no_paywall, pdf_url = add_pdf_information_of_doi(doi)
     doi_obj = Doi(publication_doi, data_received_from_Unpaywall_api, no_paywall, pdf_url)
 
@@ -55,28 +55,23 @@ def extract_doi_from_url(doi_url):
     return slashparts[1]
 
 def add_pdf_information_of_doi(doi):
-    if doi == "":
-        return False, False, ""
+
     """
     add the different information to the doi object because of its json file
 
     Args:
         dois (str): doi 
-        directory_path (string): path of directory where are store the json files
     
     Returns:
-        List: List of the dois from the dois urls
+        bool, bool, str : data_received_from_Unpaywall_api, no_paywall, pdf_url
     """
+
+    if doi == "":
+        return False, False, ""
+
     data_received_from_Unpaywall_api = True
 
-    """
-    doi = doi.replace('/','_')
-    filepath = os.path.join(directory_path,'DOI{}.json'.format(doi))
-    filepath = filepath.replace('\\','/')
-    with open(filepath, 'r') as file :
-    """
-
-    file = get_publication(doi)
+    file = get_unpaywall_api_data(doi)
     try:
         jsonfile = json.loads(file)
     except:
@@ -93,13 +88,15 @@ def add_pdf_information_of_doi(doi):
 
 
 
-def get_publication(doi):
+def get_unpaywall_api_data(doi):
     """
     Get the json of the doi from the Unpaywall API and store it in the file "file_to_save_to"
 
     Args:
         doi (string): doi 
-        file_to_save_to (string): path of the file where to store 
+
+    Returns:
+        JSON string: Json string containing all the data from the Unpaywall API
     """
     url = f'http://api.unpaywall.org/v2/{doi}?email=baudlemartino@hotmail.com'
 
@@ -113,29 +110,3 @@ def get_publication(doi):
     return file_to_save_to
 
 
-
-
-def main():
-
-    #If you handle a csv file
-
-    csv_path = r"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/dois.csv"
-    dois_csv = import_doi_data(csv_path)
-
-    dois_list = extract_doi(dois_csv["doi"])
-    
-
-    dois_directory = "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS"
-
-    #get_api_information(dois_directory, dois_list)
-
-    dois_unpaywall_csv = add_pdf_information(dois_csv,"/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/DOIS")
-
-    merge_df = merge_dataframe_on_doi(dois_csv, dois_unpaywall_csv)
-
-    result_doi = remove_link_without_json(merge_df)
-
-    export_csv(result_doi, "/Users/martelee/Desktop/OSOC/FRISteam/Strategies/UnpaywallCheck/final_dois.csv")
-
-if __name__ == "__main__":
-    main()
