@@ -2,8 +2,8 @@
 The module containing functions for finding synonyms
 """
 import nltk
-# nltk.download('wordnet')
-# nltk.download('omw')
+nltk.download('wordnet')
+nltk.download('omw')
 from nltk.corpus import wordnet   #Import wordnet from the NLTK
 from collections import Counter
 
