@@ -94,3 +94,10 @@ def get_keyword_dict_en():
         read_en_dictionary_from_file()
     return keyword_dict_en
 
+
+if __name__ == '__main__':
+    print("starting...")
+    # read_en_dictionary_from_file()
+    print(os.path.isfile(SCRIPT_DIR + "\\keyword_dict_nl.json"))
+    print("finished.")
+

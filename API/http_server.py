@@ -119,4 +119,4 @@ def run(debug=False, threaded=True):
 
 if __name__ == '__main__':
     '''Launch the http server'''
-    run(True, False)
+    run(False, True)
