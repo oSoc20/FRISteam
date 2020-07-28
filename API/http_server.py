@@ -32,6 +32,9 @@ app = Flask(__name__)
 def hello():
     return {'hello': 'world'}, 200
 
+@app.route("/ping", methods=["GET"])
+def send_ping():
+    return Response(None, 200)
 
 '''
  POST route to enrich publication data.
