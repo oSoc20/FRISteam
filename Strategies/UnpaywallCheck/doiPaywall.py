@@ -32,7 +32,7 @@ def add_doi_object(publication_doi_url):
     """
     doi = extract_doi_from_url(publication_doi_url)
     data_received_from_Unpaywall_api, no_paywall, pdf_url = add_pdf_information_of_doi(doi)
-    doi_obj = Doi(publication_doi, data_received_from_Unpaywall_api, no_paywall, pdf_url)
+    doi_obj = Doi(publication_doi_url, data_received_from_Unpaywall_api, no_paywall, pdf_url)
 
     return doi_obj
 
