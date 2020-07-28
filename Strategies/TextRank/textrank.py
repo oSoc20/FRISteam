@@ -23,7 +23,13 @@ class TextRank4Keyword():
         self.node_weight = None # save keywords and its weight
 
     def set_stopwords(self, stopwords, langTag):  
-        """Set stop words"""
+        """function set_stopwords : sets stopwords
+
+        Args: 
+            stopwords: list of words that will be excluded as possible keywords
+            langTag (string): the language of the words in wordList and the synonyms (e.g. 'eng' for English and 'nld' for Dutch)
+        
+        """
         if langTag == "en":
             for word in en_STOP_WORDS.union(set(stopwords)):
                 lexeme = ensp.vocab[word]
@@ -35,6 +41,15 @@ class TextRank4Keyword():
     
     def sentence_segment(self, doc, candidate_pos, lower):
         """Store those words only in cadidate_pos"""
+        """function sentence_segment : only store words with wanted pos tags
+
+        Args: 
+            candidate_pos: pos tags which serve as possible candidates, typically ['NOUN', 'PROPN']
+            lower (boolean): should keywords be lowercased or not?
+
+        Returns:
+            list of lists: one list per sentence with single words as strings
+        """
         sentences = []
         for sent in doc.sents:
             selected_words = []
@@ -49,7 +64,14 @@ class TextRank4Keyword():
         return sentences
         
     def get_vocab(self, sentences):
-        """Get all tokens"""
+        """function get_vocab : creates a vocabulary dictionary
+
+        Args:
+            sentences ([list of lists of strings]): single words from a sentence in a list of lists
+
+        Returns:
+            dictionary {"word":frequency}: dictionary with words and their frequency
+        """
         vocab = OrderedDict()
         i = 0
         for sentence in sentences:
@@ -61,6 +83,13 @@ class TextRank4Keyword():
     
     def get_token_pairs(self, window_size, sentences):
         """Build token_pairs from windows in sentences"""
+        """function get_token_pairs : 
+        Args:
+            window_size: integer, defines 
+            sentences: list of lists with words per sentence
+        Returns:
+            list of tuples [("word", sentence index)]: 
+        """
         token_pairs = list()
         for sentence in sentences:
             for i, word in enumerate(sentence):
@@ -72,11 +101,26 @@ class TextRank4Keyword():
                         token_pairs.append(pair)
         return token_pairs
         
-    def symmetrize(self, a):
-        return a + a.T - np.diag(a.diagonal())
+    def symmetrize(self, matrix):
+        """function symmetrize : symmetrizes the matrix
+
+        Args:
+            matrix (list of lists): list of lists
+
+        Returns:
+            matrix (list of lists): symmetrized matrix
+        """
+        return matrix + matrix.T - np.diag(matrix.diagonal())
     
     def get_matrix(self, vocab, token_pairs):
-        """Get normalized matrix"""
+        """function get_matrix : builds a normalized matrix with the vocabulary and possible keywords
+        
+        Args:
+            vocab: dictionary with words and their frequency
+            token_pairs: list of tuples with words and their sentence (by index)
+        Returns:
+            list of lists (matrix)
+        """
         # Build matrix
         vocab_size = len(vocab)
         g = np.zeros((vocab_size, vocab_size), dtype='float')
@@ -89,13 +133,18 @@ class TextRank4Keyword():
         
         # Normalize matrix by column
         norm = np.sum(g, axis=0)
-        g_norm = np.divide(g, norm, where=norm!=0) # this is ignore the 0 element in norm
+        g_norm = np.divide(g, norm, where=norm!=0) 
         
         return g_norm
 
     
     def get_keywords(self, number=10):
-        """Print top number keywords"""
+        """function get_keywords : extracts the keywords with the highest scores
+        Args:
+            number: maximum number of keywords extracted
+        Returns:
+            keyword_list {"keyword":score}: dictionary with keywords and their scores
+        """
         keyword_list = {}
         node_weight = OrderedDict(sorted(self.node_weight.items(), key=lambda t: t[1], reverse=True))
         if node_weight == OrderedDict():
@@ -113,8 +162,16 @@ class TextRank4Keyword():
                 candidate_pos=['NOUN', 'PROPN'], 
                 window_size=4, lower=False, stopwords=list()
                 ):
-        """Main function to analyze text"""
-        
+        """function analyze : main function to analyze a text and calculates the weighting of keywords
+
+        Args:
+            text (string): string to be analyzed (e.g. abstract)
+            langTag (string): the language of the words in wordList and the synonyms (e.g. 'eng' for English and 'nld' for Dutch)
+            candidate_pos (list, optional): the pos tags that are suitable candidates. Defaults to ['NOUN', 'PROPN'].
+            window_size (int, optional): window size (dependency range). Defaults to 4.
+            lower (bool, optional): lowercases all words or not. Defaults to False.
+            stopwords ([type], optional): the list of excluded words. Defaults to list().
+        """
         # Set stop words
         self.set_stopwords(stopwords, langTag)
         
@@ -156,15 +213,16 @@ class TextRank4Keyword():
         self.node_weight = node_weight
 
 def textrank_keywords(abstract, langTag):
-    """function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank and normalizes them between 0 and 1
+    """function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank and 
+    normalizes them between 0 and 1
 
    Args:
        abstract (string): an abstract (or paper) as a string
        langTag (string): the language of the words in wordList and the synonyms (e.g. 'eng' for English and 'nld' for Dutch)
 
    Returns:
-       dict: {dictionary of terms with their frequency relative to the total amount of words}
-   """
+       Counter(normalized_scores) {"keyword":score}: dictionary with keywords and their score
+    """
     tr4w = TextRank4Keyword()
     tr4w.analyze(abstract, langTag, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
     score_dict = tr4w.get_keywords(10)
