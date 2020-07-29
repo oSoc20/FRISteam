@@ -29,8 +29,13 @@ class TestDoiPaywall(unittest.TestCase):
         self.assertRegex(extract_doi_from_url(publication_doi),'^([a-zA-Z0-9_.\/])*$')
         
 
-    #def test_add_pdf_information_of_doi(self):
-        
+    def test_add_pdf_information_of_doi(self):
+        doi = extract_doi_from_url(publication_doi_url)
+        data_received_from_Unpaywall = bool
+        no_paywall = bool
+        pdf_url = str
+        self.assertTrue(add_pdf_information_of_doi(doi),(data_received_from_Unpaywall, no_paywall, pdf_url))
+
 
     def test_get_unpaywall_api_data(self):
 
