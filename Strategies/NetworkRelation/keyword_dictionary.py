@@ -36,8 +36,8 @@ def compose_keyword_dictionary():
     """function compose_keyword_dictionary : reads in a csv file with keywords from all publications/papers 
     and produces two json files (one English, one Dutch) to store the keywords with their frequencies for easier and faster access.
     """
-    keywords_list_en =  read_with_lang("Utils/researchoutput_uuid_keywords.csv", 'en')
-    keywords_list_nl =  read_with_lang("Utils/researchoutput_uuid_keywords.csv", 'nl')
+    keywords_list_en =  read_with_lang(SCRIPT_DIR + "/../../Utils/researchoutput_uuid_keywords.csv", 'en')
+    keywords_list_nl =  read_with_lang(SCRIPT_DIR + "/../../Utils/researchoutput_uuid_keywords.csv", 'nl')
     idf_dict_en = collections.Counter()
     for keyword in keywords_list_en:
         keyword.keyword = " ".join([token.lemma_.lower() for token in ensp_singlewords(keyword.keyword)])
@@ -98,6 +98,6 @@ def get_keyword_dict_en():
 if __name__ == '__main__':
     print("starting...")
     # read_en_dictionary_from_file()
-    print(os.path.isfile(SCRIPT_DIR + "\\keyword_dict_nl.json"))
+    print(os.path.isfile(SCRIPT_DIR + "/../../Utils/researchoutput_uuid_keywords.csv"))
     print("finished.")
 
