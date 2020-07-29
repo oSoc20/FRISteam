@@ -2,7 +2,7 @@ import json
 from flask import Flask, Response
 
 from flask_restful import request
-from flas_cors import CORS
+from flask_cors import CORS
 import sys
 import os
 #3 lines of code tot get the import form other files working
@@ -43,15 +43,17 @@ def send_ping():
 @app.route("/api/publications/enrich", methods=["POST"])
 def enrich_pub_data():
     req = request.get_json(force=True)
-    publication = extract_publication_from_request(req)
+    try:
+        publication = extract_publication_from_request(req)
+        enrich_res = service_manager.process_publication(publication)
 
-    enrich_res = service_manager.process_publication(publication)
+        response = Response(MyEncoder().encode(enrich_res), 200)
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        response.headers['Content-Type'] = 'application/json'
 
-    response = Response(MyEncoder().encode(enrich_res), 200)
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Content-Type'] = 'application/json'
-
-    return response
+        return response
+    except Exception as e:
+        return Response(f"Invalid data or missing values. {e.args}", 400)
 
 
 def extract_publication_from_request(req):
@@ -79,14 +81,17 @@ def extract_publication_from_request(req):
 @app.route("/api/projects/enrich", methods=["POST"])
 def enrich_proj_data():
     req = request.get_json(force=True)
-    project = extract_project_from_request(req)
-    enrich_res = service_manager.process_project(project)
+    try:
+        project = extract_project_from_request(req)
+        enrich_res = service_manager.process_project(project)
 
-    response = Response(MyEncoder().encode(enrich_res), 200)
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Content-Type'] = 'application/json'
+        response = Response(MyEncoder().encode(enrich_res), 200)
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        response.headers['Content-Type'] = 'application/json'
 
-    return response
+        return response
+    except Exception as e:
+        return Response(f"Invalid data or missing values. {e.args}", 400)
 
 
 def extract_project_from_request(req):
