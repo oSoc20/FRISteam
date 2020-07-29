@@ -20,7 +20,7 @@ import ServiceManager.service_manager as service_manager
  Encoding class to encode an object to JSON
 '''
 class MyEncoder(json.JSONEncoder):
-    def default(self, o):
+    def default(self, o): # pylint: disable=E0202
         return o.__dict__
 
 
