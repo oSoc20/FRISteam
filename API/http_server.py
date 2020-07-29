@@ -30,6 +30,15 @@ CORS(app)
 
 
 """
+ /
+ Will show a welcome message to the api.
+"""
+@app.route("/")
+def send_root():
+    return "Welcome to FRIS-Enricher API."
+
+
+"""
  /ping
  GET route to check whether the server is alive
 """
