@@ -13,8 +13,7 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 '''
  template folder needed to serve the documentation's html file. 
 '''
-template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-template_dir = os.path.join(template_dir, 'FRISteam')
+template_dir = os.path.join(SCRIPT_DIR, '..')
 template_dir = os.path.join(template_dir, 'docs')
 template_dir = os.path.join(template_dir, '_build')
 template_dir = os.path.join(template_dir, 'html')
