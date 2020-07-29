@@ -1,0 +1,851 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Open Knowledge Belgium &mdash; fris  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> fris
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Open Knowledge Belgium</a><ul>
+<li><a class="reference internal" href="#presentation">Presentation</a></li>
+<li><a class="reference internal" href="#mission-and-vision">Mission and vision</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#open-summer-of-code-osoc">Open Summer of Code (OSOC)</a></li>
+<li><a class="reference internal" href="#purpose-of-the-project">Purpose of the project</a></li>
+<li><a class="reference internal" href="#flowchart-of-the-project">FlowChart of the project</a></li>
+<li><a class="reference internal" href="#fristeam-cleanup-package">FRISteam.Cleanup package</a></li>
+<li><a class="reference internal" href="#fristeam-enricher-package">FRISteam.Enricher package</a></li>
+<li><a class="reference internal" href="#fristeam-servicemanager-package">FRISteam.ServiceManager package</a></li>
+<li><a class="reference internal" href="#fristeam-strategies-languagechecking-package">FRISteam.Strategies.LanguageChecking package</a></li>
+<li><a class="reference internal" href="#fristeam-strategies-networkrelation-package">FRISteam.Strategies.NetworkRelation package</a></li>
+<li><a class="reference internal" href="#fristeam-strategies-synonyms-package">FRISteam.Strategies.Synonyms package</a></li>
+<li><a class="reference internal" href="#fristeam-strategies-textrank-package">FRISteam.Strategies.TextRank package</a></li>
+<li><a class="reference internal" href="#fristeam-strategies-unpaywallcheck-package">FRISteam.Strategies.UnpaywallCheck package</a></li>
+<li><a class="reference internal" href="#fristeam-utils-package">FRISteam.Utils package</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">fris</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Open Knowledge Belgium</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="open-knowledge-belgium">
+<h1>Open Knowledge Belgium<a class="headerlink" href="#open-knowledge-belgium" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="presentation">
+<h2>Presentation<a class="headerlink" href="#presentation" title="Permalink to this headline">¶</a></h2>
+<p>Open Knowledge Belgium is an umbrella organisation (non-profit/vzw/asbl) for Open Knowledge initiatives. We’re a grass-roots organisation that consists of people, mainly volunteers, passionate about openness, using advocacy, research, technology and projects to unlock information, enabling people to use and share knowledge. We’re also one of the local chapters of the international Open Knowledge network. There are numerous Open Knowledge initiatives in Belgium. In order to give these communities access to resources faster, an umbrella organisation was needed. That’s where Open Knowledge Belgium comes in. We make knowledge sharing possible and let different organisations and cultures cross-polinate.</p>
+</div>
+<div class="section" id="mission-and-vision">
+<h2>Mission and vision<a class="headerlink" href="#mission-and-vision" title="Permalink to this headline">¶</a></h2>
+<p>Mission We want to open up knowledge in Belgium and see it used and useful. We endeavour to achieve this through both a bottom up and community driven way, as well as through working closely together with governments and organisations. We want to connect our four main actors: the community, researchers, governments and industries. Even more, we aspire to let them work together as a whole, instead of seperate units. Vision A world where knowledge creates power for the many, not the few. That’s what we’re going for. We believe that vibrant Open Knowledge commons will empower citizens and enable fair and sustainable societies. We aim to achieve this not only within the Belgian borders but inspire and get inspired by communities all over the world. We keep spreading the power of openness, hoping one day Open Knowledge will be the standard.</p>
+</div>
+</div>
+<div class="section" id="open-summer-of-code-osoc">
+<h1>Open Summer of Code (OSOC)<a class="headerlink" href="#open-summer-of-code-osoc" title="Permalink to this headline">¶</a></h1>
+<p>Open Summer of code is a 4-week summer programme in July, that provides Belgian-based students with the training, network and support necessary to transform open innovation projects into powerful real-world services.</p>
+</div>
+<div class="section" id="purpose-of-the-project">
+<h1>Purpose of the project<a class="headerlink" href="#purpose-of-the-project" title="Permalink to this headline">¶</a></h1>
+<p>The goal of this project is to enrich the database of FRIS and more specific enrich the keywords of the publications</p>
+</div>
+<div class="section" id="flowchart-of-the-project">
+<h1>FlowChart of the project<a class="headerlink" href="#flowchart-of-the-project" title="Permalink to this headline">¶</a></h1>
+<p>This flowchart represent the architecture that we used to complete this project</p>
+<a class="reference internal image-reference" href="_images/flowchart2.png"><img alt="Flowchart of this project" src="_images/flowchart2.png" style="width: 800px; height: 400px;" /></a>
+</div>
+<div class="section" id="fristeam-cleanup-package">
+<h1>FRISteam.Cleanup package<a class="headerlink" href="#fristeam-cleanup-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Cleanup.datacleaning"></span><p>Python module to clean data.</p>
+<p>The characters that are not supposed to be there like ‘&lt;p&gt;’, are removed.
+The data is being placed into the right encoding.</p>
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.actual_cleaning">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">actual_cleaning</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.actual_cleaning" title="Permalink to this definition">¶</a></dt>
+<dd><p>function actual_cleaning: Do the actual cleaning of the data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): the original text</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: the cleaned text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.clean_data">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>function clean_data: gets the project</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project (string): the original project data</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: the fully cleaned project data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.clean_doi">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_doi" title="Permalink to this definition">¶</a></dt>
+<dd><p>function clean_doi:  remove “acm” at the end of a doi url</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>doi ([string]): doi url of the publication</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: cleaned doi without “acm”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.clean_html">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">clean_html</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_html</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.clean_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>function clean_html: get the HTML-tags out of the data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>raw_html (string): original string with HTML-tags in it.</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: clean string without HTML-tags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Cleanup.datacleaning.remove_nbsp">
+<code class="sig-prename descclassname">FRISteam.Cleanup.datacleaning.</code><code class="sig-name descname">remove_nbsp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Cleanup.datacleaning.remove_nbsp" title="Permalink to this definition">¶</a></dt>
+<dd><p>function remove_nbsp: Remove non breaking spaces from data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): original text</p>
+</dd>
+<dt>Returns:</dt><dd><p>string: cleaned text without the nbsp</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-enricher-package">
+<h1>FRISteam.Enricher package<a class="headerlink" href="#fristeam-enricher-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Enricher.enricher"></span><dl class="py function">
+<dt id="FRISteam.Enricher.enricher.enrich_project">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">enrich_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.enrich_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates new keywords for a project through a combination of different NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project_obj (Utils.fris_entities.Project): Instance of Project class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.ProjectResult: Instance of ProjectResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.enrich_publication">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">enrich_publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.enrich_publication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates new keywords for a publication through a combination of different NLP strategies and finds the pdf of the publication through the DOI</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>publication_obj (Utils.fris_entities.Publication): Instance of Publication class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.PublicationResult: Instance of PublicationResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_best_keywords_en">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_best_keywords_en</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">max_number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_best_keywords_en" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects max_number of new English keywords through NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_en (string): English abstract
+keywords_en (list(string)): English keywords
+max_number (int): maximum number of keywords returned</p>
+</dd>
+<dt>Returns:</dt><dd><p>list([string, float]): Returns a list of [keyword,score] tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_best_keywords_nl">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_best_keywords_nl</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">max_number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_best_keywords_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects max_number of new Dutch keywords through NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_nl (string): Dutch abstract
+keywords_nl (list(string)): Dutch keywords
+max_number (int): maximum number of keywords returned</p>
+</dd>
+<dt>Returns:</dt><dd><p>list([string, float]): Returns a list of [keyword,score] tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_keywords">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Help function that gets new English and Dutch keywords, concatenates them and returns them</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_en (string): English abstract
+keywords_en (list(string)): English keywords
+abstract_nl (string): Dutch abstract
+keywords_nl (list(string)): Dutch keywords</p>
+</dd>
+<dt>Returns:</dt><dd><p>list(Utils.enricher_entities.Keyword): List of instances of the Keyword class, the newly generated keywords with scores and language tags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_language_alerts">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_language_alerts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_language_alerts" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>title_en (string): [description]
+title_nl (string): [description]
+abstract_en (string): [description]
+abstract_nl (string): [description]</p>
+</dd>
+<dt>Returns:</dt><dd><p>list(string): list of alert strings</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-servicemanager-package">
+<h1>FRISteam.ServiceManager package<a class="headerlink" href="#fristeam-servicemanager-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.ServiceManager.service_manager"></span><dl class="py function">
+<dt id="FRISteam.ServiceManager.service_manager.process_project">
+<code class="sig-prename descclassname">FRISteam.ServiceManager.service_manager.</code><code class="sig-name descname">process_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.ServiceManager.service_manager.process_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function sends a project object through data cleaning and passes the cleaned object to the enricher</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project_obj (Utils.fris_entities.Project): Instance of Project class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.ProjectResult: Instance of ProjectResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.ServiceManager.service_manager.process_publication">
+<code class="sig-prename descclassname">FRISteam.ServiceManager.service_manager.</code><code class="sig-name descname">process_publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.ServiceManager.service_manager.process_publication" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function sends a publication object through data cleaning and passes the cleaned object to the enricher</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>publication_obj (Utils.fris_entities.Publication): Instance of Publication class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.PublicationResult: Instance of PublicationResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-strategies-languagechecking-package">
+<h1>FRISteam.Strategies.LanguageChecking package<a class="headerlink" href="#fristeam-strategies-languagechecking-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Strategies.LanguageChecking.languageCheck"></span><dl class="py function">
+<dt id="FRISteam.Strategies.LanguageChecking.languageCheck.check_if_dutch">
+<code class="sig-prename descclassname">FRISteam.Strategies.LanguageChecking.languageCheck.</code><code class="sig-name descname">check_if_dutch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.LanguageChecking.languageCheck.check_if_dutch" title="Permalink to this definition">¶</a></dt>
+<dd><p>function check_if_dutch : checks if the input text is in dutch</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): The text which is checked if it is in dutch</p>
+</dd>
+<dt>Returns:</dt><dd><p>boolean : returns true if dutch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.LanguageChecking.languageCheck.check_if_english">
+<code class="sig-prename descclassname">FRISteam.Strategies.LanguageChecking.languageCheck.</code><code class="sig-name descname">check_if_english</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.LanguageChecking.languageCheck.check_if_english" title="Permalink to this definition">¶</a></dt>
+<dd><p>function check_if_english: checks if the input text is in english</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): The text which is checked if it is in english</p>
+</dd>
+<dt>Returns:</dt><dd><p>boolean : returns true if english</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-strategies-networkrelation-package">
+<h1>FRISteam.Strategies.NetworkRelation package<a class="headerlink" href="#fristeam-strategies-networkrelation-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Strategies.NetworkRelation.keyword_dictionary"></span><dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.compose_keyword_dictionary">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">compose_keyword_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.compose_keyword_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>function compose_keyword_dictionary : reads in a csv file with keywords from all publications/papers 
+and produces two json files (one English, one Dutch) to store the keywords with their frequencies for easier and faster access.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_en">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">get_keyword_dict_en</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_en" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_keyword_dict_en : loads the English keyword dictionary into memory</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dictionary {“keyword”:frequency}: dictionary with keywords and their frequencies from all projects/publications for English</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_nl">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">get_keyword_dict_nl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_keyword_dict_nl : loads the dutch keyword dictionary into memory</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dictionary {“keyword”:frequency}: dictionary with keywords and their frequencies from all projects/publications for Dutch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_en_dictionary_from_file">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">read_en_dictionary_from_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_en_dictionary_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>function read_en_dictionary_from_file : opens the json file for the English keyword:frequency dictionary</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_nl_dictionary_from_file">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">read_nl_dictionary_from_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_nl_dictionary_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>function read_nl_dictionary_from_file : opens the json file for the Dutch keyword:frequency dictionary</p>
+</dd></dl>
+
+<span class="target" id="module-FRISteam.Strategies.NetworkRelation.networkrelation"></span><dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.calculate_relations">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">calculate_relations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.calculate_relations" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>function calculate_relations<span class="classifier">compares possible keywords (from an abstract) against the keywords from </span></dt><dd><p>other projects. Score per keyword raises with each overlap.</p>
+</dd>
+<dt>Args:</dt><dd><p>abstract (string): an abstract (from project or publication) as a single string
+langTag (string): the language of the words in text (e.g. ‘en’ for English and ‘nl’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>tf_dict {dictionary of “keyword”:score}: dictionary with new keywords and scores</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.calculate_term_frequency">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">calculate_term_frequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tokens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.calculate_term_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>function term_frequency : calculates the frequencies of terms from a list of words</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>tokens ([list of strings]): a list of strings (e.g. single words from an abstract)</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: {dictionary of possible keywords with their frequency relative to the total amount of words}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.preprocess_abstract">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">preprocess_abstract</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.preprocess_abstract" title="Permalink to this definition">¶</a></dt>
+<dd><p>function preprocess_abstract : preprocesses a string (e.g. an abstract) with lowercasing, lemmatizing, stopword removal</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): a string
+langTag (string): the language of the words in text (e.g. ‘en’ for English and ‘nl’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>list [of strings]: list of strings with the keyword candidates</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-strategies-synonyms-package">
+<h1>FRISteam.Strategies.Synonyms package<a class="headerlink" href="#fristeam-strategies-synonyms-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Strategies.Synonyms.synonyms"></span><p>The module containing functions for finding synonyms</p>
+<dl class="py function">
+<dt id="FRISteam.Strategies.Synonyms.synonyms.get_synonym_by_word">
+<code class="sig-prename descclassname">FRISteam.Strategies.Synonyms.synonyms.</code><code class="sig-name descname">get_synonym_by_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.Synonyms.synonyms.get_synonym_by_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_synonym_by_word: get synonyms from a word in a specified language</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>word (string): the word to find synonyms for
+langTag (string): the language of the word (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>dictionary: Counter dictionary of [synonym_string, frequency_score]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.Synonyms.synonyms.get_synonym_by_word_list">
+<code class="sig-prename descclassname">FRISteam.Strategies.Synonyms.synonyms.</code><code class="sig-name descname">get_synonym_by_word_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wordList</span></em>, <em class="sig-param"><span class="n">langTag</span></em>, <em class="sig-param"><span class="n">max_nr_synonyms</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.Synonyms.synonyms.get_synonym_by_word_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_synonym_by_word_list : get synonyms from a list of words in a specified language</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>wordList (list(string)): the list of words to find synonyms for
+langTag (string):  the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)
+max_nr_synonyms (int): limits the number of synonyms in the output dictionary</p>
+</dd>
+<dt>Returns:</dt><dd><p>counter dictionary : [synonym_string, frequency_score] in order of highest score</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-strategies-textrank-package">
+<h1>FRISteam.Strategies.TextRank package<a class="headerlink" href="#fristeam-strategies-textrank-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Strategies.TextRank.textrank"></span><dl class="py class">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Strategies.TextRank.textrank.</code><code class="sig-name descname">TextRank4Keyword</code><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Extract keywords from text</p>
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze">
+<code class="sig-name descname">analyze</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">langTag</span></em>, <em class="sig-param"><span class="n">candidate_pos</span><span class="o">=</span><span class="default_value">['NOUN', 'PROPN']</span></em>, <em class="sig-param"><span class="n">window_size</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">lower</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">stopwords</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze" title="Permalink to this definition">¶</a></dt>
+<dd><p>function analyze : main function to analyze a text and calculates the weighting of keywords</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): string to be analyzed (e.g. abstract)
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)
+candidate_pos (list, optional): the pos tags that are suitable candidates. Defaults to [‘NOUN’, ‘PROPN’].
+window_size (int, optional): window size (dependency range). Defaults to 4.
+lower (bool, optional): lowercases all words or not. Defaults to False.
+stopwords ([type], optional): the list of excluded words. Defaults to list().</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords">
+<code class="sig-name descname">get_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_keywords : extracts the keywords with the highest scores
+Args:</p>
+<blockquote>
+<div><p>number: maximum number of keywords extracted</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>keyword_list {“keyword”:score}: dictionary with keywords and their scores</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix">
+<code class="sig-name descname">get_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab</span></em>, <em class="sig-param"><span class="n">token_pairs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_matrix : builds a normalized matrix with the vocabulary and possible keywords</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>vocab: dictionary with words and their frequency
+token_pairs: list of tuples with words and their sentence (by index)</p>
+</dd>
+<dt>Returns:</dt><dd><p>list of lists (matrix)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_token_pairs">
+<code class="sig-name descname">get_token_pairs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window_size</span></em>, <em class="sig-param"><span class="n">sentences</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_token_pairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build token_pairs from windows in sentences</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab">
+<code class="sig-name descname">get_vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentences</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_vocab : creates a vocabulary dictionary</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>sentences ([list of lists of strings]): single words from a sentence in a list of lists</p>
+</dd>
+<dt>Returns:</dt><dd><p>dictionary {“word”:frequency}: dictionary with words and their frequency</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.sentence_segment">
+<code class="sig-name descname">sentence_segment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doc</span></em>, <em class="sig-param"><span class="n">candidate_pos</span></em>, <em class="sig-param"><span class="n">lower</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.sentence_segment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store those words only in cadidate_pos</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords">
+<code class="sig-name descname">set_stopwords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stopwords</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords" title="Permalink to this definition">¶</a></dt>
+<dd><p>function set_stopwords : sets stopwords</p>
+<dl class="simple">
+<dt>Args: </dt><dd><p>stopwords: list of words that will be excluded as possible keywords
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize">
+<code class="sig-name descname">symmetrize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize" title="Permalink to this definition">¶</a></dt>
+<dd><p>function symmetrize : symmetrizes the matrix</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>matrix (list of lists): list of lists</p>
+</dd>
+<dt>Returns:</dt><dd><p>matrix (list of lists): symmetrized matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.TextRank.textrank.textrank_keywords">
+<code class="sig-prename descclassname">FRISteam.Strategies.TextRank.textrank.</code><code class="sig-name descname">textrank_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.textrank_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>function textrank_keywords<span class="classifier">main function to automatically extract keywords from an abstract with TextRank and </span></dt><dd><p>normalizes them between 0 and 1</p>
+</dd>
+<dt>Args:</dt><dd><p>abstract (string): an abstract (or paper) as a string
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>Counter(normalized_scores) {“keyword”:score}: dictionary with keywords and their score</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-strategies-unpaywallcheck-package">
+<h1>FRISteam.Strategies.UnpaywallCheck package<a class="headerlink" href="#fristeam-strategies-unpaywallcheck-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Strategies.UnpaywallCheck.doiPaywall"></span><p>Author Baudouin Martelee
+FRISteam</p>
+<dl class="py function">
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_doi_object">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">add_doi_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_doi_url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_doi_object" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Return a doi object to the Enricher containing for the doi different information like<span class="classifier"></span></dt><dd><p>doi, data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
+</dd>
+<dt>Args:</dt><dd><p>publication_doi (str): doi of a publication</p>
+</dd>
+<dt>Returns:</dt><dd><p>Doi object: Doi object with the fields : doi, data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information_of_doi">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">add_pdf_information_of_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information_of_doi" title="Permalink to this definition">¶</a></dt>
+<dd><p>add the different information to the doi object because of its json file</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dois (str): doi</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool, bool, str : data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi_from_url">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">extract_doi_from_url</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi_url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract doi from a doi url</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>doi url (str): doi url</p>
+</dd>
+<dt>Returns:</dt><dd><p>doi: doi from the doi url</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_unpaywall_api_data">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">get_unpaywall_api_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_unpaywall_api_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the json of the doi from the Unpaywall API and store it in the file “file_to_save_to”</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>doi (string): doi</p>
+</dd>
+<dt>Returns:</dt><dd><p>JSON string: Json string containing all the data from the Unpaywall API</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fristeam-utils-package">
+<h1>FRISteam.Utils package<a class="headerlink" href="#fristeam-utils-package" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-FRISteam.Utils.csv_reader"></span><dl class="py function">
+<dt id="FRISteam.Utils.csv_reader.read">
+<code class="sig-prename descclassname">FRISteam.Utils.csv_reader.</code><code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.csv_reader.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Utils.csv_reader.read_with_lang">
+<code class="sig-prename descclassname">FRISteam.Utils.csv_reader.</code><code class="sig-name descname">read_with_lang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">language</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.csv_reader.read_with_lang" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-FRISteam.Utils.enricher_entities"></span><p>Object that will be used to show the enricher’s results for projects and publications.
+The schema below follows the FRIS’ suggested schema:
+{</p>
+<blockquote>
+<div><dl>
+<dt>“ProjectResult”: {</dt><dd><dl>
+<dt>“uuid”: “9168910c-f8af-4842-b6d7-04cbb1f79abf”,</dt><dd><dl>
+<dt>“keywords”: {</dt><dd><dl class="simple">
+<dt>“KeywordResult”: {</dt><dd><p>“Score”: “1.0005”,
+“Value”: “A.I.”,
+“Language”: “nl”</p>
+</dd>
+</dl>
+<p>},
+“KeywordResult”: {</p>
+<blockquote>
+<div><p>“Score”: “2.0505”,
+“Value”: “Machine Learning”,
+“Language”: “nl”</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<dl class="py class">
+<dt id="FRISteam.Utils.enricher_entities.Doi">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.enricher_entities.</code><code class="sig-name descname">Doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em>, <em class="sig-param"><span class="n">data_received</span></em>, <em class="sig-param"><span class="n">no_paywall</span></em>, <em class="sig-param"><span class="n">pdf_url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.enricher_entities.Doi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Doi object that will be used in a PublicationResult Object.
+:param doi is the reference to the doi for the publication.
+:param data_received refers if the Unpaywall API can reach the doi or not.
+:param no_paywall declare if there is a paywall or not in the doi link.
+:param pdf_url refers to a pdf url if there isn’t a paywall.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="FRISteam.Utils.enricher_entities.Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.enricher_entities.</code><code class="sig-name descname">Keyword</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">score</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">language</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.enricher_entities.Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Keyword result object that will show the enricher’s results.
+:param score is the score assigned by the enricher to the newly extracted keyword.
+:param value is the newly extracted keyword.
+:param language is the language of the new keyword extracted by the enricher.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="FRISteam.Utils.enricher_entities.ProjectResult">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.enricher_entities.</code><code class="sig-name descname">ProjectResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">keywords</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">alerts</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.enricher_entities.ProjectResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Project result object that will show enricher’s results.
+:param uuid refers to the project that has been enriched
+:param keywords must be a list of KeywordResult
+:param alerts must be a list of string</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="FRISteam.Utils.enricher_entities.PublicationResult">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.enricher_entities.</code><code class="sig-name descname">PublicationResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">doi</span></em>, <em class="sig-param"><span class="n">keywords</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">alerts</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.enricher_entities.PublicationResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Publication result object that will show enricher’s results.
+:param uuid refers to the project that has been enriched.
+:param keywords must be a list of KeywordResult.
+:param doi is the reference to the doi for the publication.
+:param alerts must be a list of string</p>
+</dd></dl>
+
+<span class="target" id="module-FRISteam.Utils.fris_entities"></span><dl class="py class">
+<dt id="FRISteam.Utils.fris_entities.Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Keyword</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keyword</span></em>, <em class="sig-param"><span class="n">locale</span></em>, <em class="sig-param"><span class="n">uuid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Entity object used for the keywords.csv file.
+The csv file contains 3 columns with keyword value, language and research output’s uuid.
+:param keyword the keyword’s value.
+:param locale the keyword’s language.
+:param uuid the research output’s uuid.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="FRISteam.Utils.fris_entities.Project">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object containing all the project’s data.
+:param uuid the project’s uuid.
+:param title_en the project’s english title.
+:param title_nl the project’s dutch title .
+:param keywords_en the project’s english keywords.
+:param keywords_nl the project’s dutch keywords.
+:param abstract_en the project’s english abstract.
+:param abstract_nl the project’s dutch abstract.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="FRISteam.Utils.fris_entities.Publication">
+<em class="property">class </em><code class="sig-prename descclassname">FRISteam.Utils.fris_entities.</code><code class="sig-name descname">Publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uuid</span></em>, <em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Utils.fris_entities.Publication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Object containing all the publication’s data.
+:param uuid the publication’s uuid.
+:param title_en the publication’s english title.
+:param title_nl the publication’s dutch title .
+:param keywords_en the publication’s english keywords.
+:param keywords_nl the publication’s dutch keywords.
+:param abstract_en the publication’s english abstract.
+:param abstract_nl the publication’s dutch abstract.
+:param doi publication’s doi link.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nobody
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
