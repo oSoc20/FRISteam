@@ -9,6 +9,9 @@ import os
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+print("Starting Server (This can take a few minutes)")
+
 from Utils.fris_entities import Project, Publication
 import ServiceManager.service_manager as service_manager
 # import service_manager
