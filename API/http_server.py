@@ -14,7 +14,7 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
  template folder needed to serve the documentation's html file. 
 '''
 template_dir = os.path.join(SCRIPT_DIR, '..')
-template_dir = os.path.join(template_dir, 'docs')
+template_dir = os.path.join(template_dir, 'docOnepage')
 template_dir = os.path.join(template_dir, '_build')
 template_dir = os.path.join(template_dir, 'html')
 
@@ -49,10 +49,14 @@ def send_root():
 """
  /documentation
  It will render the html page with all the documentation for the backend
+ 
+ /documentation/{filename}
+ It will render the page pointed by the path.
 """
-@app.route("/documentation")
-def serve_doc_html():
-    return render_template("index.html")
+@app.route('/documentation', defaults={'filename': 'index.html'})
+def serve_doc_from_path(filename):
+    return render_template(filename)
+
 
 """
  /ping
