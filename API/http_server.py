@@ -2,6 +2,7 @@ import json
 from flask import Flask, Response
 
 from flask_restful import request
+from flas_cors import CORS
 import sys
 import os
 #3 lines of code tot get the import form other files working
@@ -22,6 +23,7 @@ class MyEncoder(json.JSONEncoder):
 
 # initialization for the API
 app = Flask(__name__)
+CORS(app)
 
 
 """
