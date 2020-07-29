@@ -44,5 +44,5 @@ It will return the enriched data for a publication as response as JSON.
 ````
 
 ## Maintenance
-To find compare our enriched keywords to the other keywords in the entire system we use the "./Utils/researchoutput_uuid_keywords.csv" file and functions to read from this file in "csv_reader.py". This is used in "./Strategies/NetworkRelation/keyword_dictionary.py" to write two dictionaries to json files for memoization purposes.
+To compare our enriched keywords to the other keywords in the entire system we use the "./Utils/researchoutput_uuid_keywords.csv" file. The functions to read from this file are in "./Utils/csv_reader.py". This is used in "./Strategies/NetworkRelation/keyword_dictionary.py" to write two dictionaries to json files for memoization purposes.
 To maintain this, update the csv file and the functions in "csv_reader.py" and run the "compose_keyword_dictionary" function in "./Strategies/NetworkRelation/keyword_dictionary.py". This should re-generate the two dictionary jsons.  
