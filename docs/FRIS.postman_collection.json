@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "ae0b7492-f2c6-4571-beab-fdbb5ec9ace6",
+		"name": "FRIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Enrich Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"uuid\": \"2fc28660-7f7c-49f1-aaa4-5e2985deefe4\",\r\n  \"keywordsEn\": [\"Electrocatalysis\",\"Sustainability\"],\r\n  \"keywordsNl\": [],\r\n  \"titleEn\": \"Electrocatalytic N-functionalisation of olefins towards aziridines and amines\",\r\n  \"titleNl\": \"Elektrokatalytische N-functionalisatie van olefines ter vorming van aziridines en amines\",\r\n  \"abstractEn\": \"&lt;p&gt;Many N-containing key chemicals like aryl- andÂ alkylamines and&lt;/p&gt;&lt;p&gt;aziridines are synthesised through indirect methods, which have very&lt;/p&gt;&lt;p&gt;poor atom efficiency and produce a lot of side products. In the&lt;/p&gt;&lt;p&gt;context of sustainability and using renewable energy sources, new&lt;/p&gt;&lt;p&gt;synthetic approaches are needed, especially for chemicals with high&lt;/p&gt;&lt;p&gt;energy content like aziridines. The proposed research will use&lt;/p&gt;&lt;p&gt;electricity drivenÂ catalytic processes together with simple N-sources&lt;/p&gt;&lt;p&gt;like ammonia to produce N-containing key chemicals.&lt;/p&gt;&lt;p&gt;As a start, the iodide-mediated aziridination with NH3 and styrene as&lt;/p&gt;&lt;p&gt;the model olefin will be â€˜electrifiedâ€™. As developed by our group, this&lt;/p&gt;&lt;p&gt;process used a chemical oxidant, but we will now drive it by a twoelectron&lt;/p&gt;&lt;p&gt;anodic oxidation. We will develop theÂ process both for&lt;/p&gt;&lt;p&gt;aromatic and for aliphaticÂ olefins, using commercially available&lt;/p&gt;&lt;p&gt;electrodes to start with. Next, we will also develop Nfunctionalisations&lt;/p&gt;&lt;p&gt;of olefins that proceed via one-electron oxidations.&lt;/p&gt;&lt;p&gt;This will requireÂ that we harness the reactivity of the N-source, and&lt;/p&gt;&lt;p&gt;that we design new electrode materials for controlled oxidation of the&lt;/p&gt;&lt;p&gt;N-source. We focus on Ni-containing electrodes, well known from&lt;/p&gt;&lt;p&gt;e.g. urea oxidation. Eventually upscaling and workup of the reactions&lt;/p&gt;&lt;p&gt;will be demonstrated for 2 molecules of industrial interest.&lt;/p&gt;\",\r\n  \"abstractNl\": \"&lt;p&gt;Heel wat N-bevattende chemicaliÃ«n (aryl- en alkylamines, aziridines)&lt;/p&gt;&lt;p&gt;worden door indirecte methodes gemaakt, wat een slechte&lt;/p&gt;&lt;p&gt;atoomeconomie en veel afvalproductie meebrengt. In de context van&lt;/p&gt;&lt;p&gt;duurzaamheid en gebruik van hernieuwbare energie zijn nieuwe&lt;/p&gt;&lt;p&gt;synthesewegen nodig, vooral voor energierijke molecules zoals&lt;/p&gt;&lt;p&gt;aziridines. Het project combineert elektrokatalyse met eenvoudige&lt;/p&gt;&lt;p&gt;stikstofbronnen, zoals ammoniak, om een aantal N-bevattende&lt;/p&gt;&lt;p&gt;sleutelchemicaliÃ«n te maken.&lt;/p&gt;&lt;p&gt;We starten met de â€˜electrificatieâ€™ van de jodide-gemedieerde&lt;/p&gt;&lt;p&gt;aziridinatie van styreen met ammoniak. Voor deze reactie gebruikten&lt;/p&gt;&lt;p&gt;we eerder een chemische oxidatie, maar nu laten we de reactie&lt;/p&gt;&lt;p&gt;opgaan door een 2-elektron anodische oxidatie. WeÂ ontwikkelen het&lt;/p&gt;&lt;p&gt;proces zowel voor aromatische als alifatische olefines, startend met&lt;/p&gt;&lt;p&gt;commerciÃ«le elektrodes. Vervolgens werken we opÂ Nfunctionalisaties&lt;/p&gt;&lt;p&gt;van olefines via 1-elektron oxidaties. Dit vraagt dat&lt;/p&gt;&lt;p&gt;we de reactiviteit van de N-bron in bedwang houden, en dat we&lt;/p&gt;&lt;p&gt;nieuwe elektrodes ontwerpen voor gecontroleerde oxidatie van de Nbron.&lt;/p&gt;&lt;p&gt;We werken vooral met Ni-bevattende elektrodes, zoals ze ook&lt;/p&gt;&lt;p&gt;voor ureum oxidatie gebruikt worden. Tenslotte tonenÂ we de&lt;/p&gt;&lt;p&gt;opschaling en opwerking van de reacties voor 2 industrieel&lt;/p&gt;&lt;p&gt;interessante molecules.&lt;/p&gt;&lt;p&gt;Â &lt;/p&gt;\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fris-enricher.herokuapp.com/api/projects/enrich",
+					"protocol": "https",
+					"host": [
+						"fris-enricher",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"projects",
+						"enrich"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enrich Publications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"uuid\": \"85dbe745-772d-472e-b5fa-3e6d36f966d4\",\r\n  \"keywordsEn\": [],\r\n  \"keywordsNl\": [],\r\n   \"titleEn\": \"Methylglyoxal, a glycolysis metabolite, triggers metastasis through MEK/ERK/SMAD1 pathway activation in breast cancer\",\r\n  \"titleNl\": \"\",\r\n  \"abstractEn\": \"BackgroundElevated aerobic glycolysis rate is a biochemical alteration associated with malignant transformation and cancer progression. This metabolic shift unavoidably generates methylglyoxal (MG), a potent inducer of dicarbonyl stress through the formation of advanced glycation end products (AGEs). We have previously shown that the silencing of glyoxalase 1 (GLO1), the main MG detoxifying enzyme, generates endogenous dicarbonyl stress resulting in enhanced growth and metastasis in vivo. However, the molecular mechanisms through which MG stress promotes metastasis development remain to be unveiled.MethodsIn this study, we used RNA sequencing analysis to investigate gene-expression profiling of GLO1-depleted breast cancer cells and we validated the regulated expression of selected genes of interest by RT-qPCR. Using in vitro and in vivo assays, we demonstrated the acquisition of a pro-metastatic phenotype related to dicarbonyl stress in MDA-MB-231, MDA-MB-468 and MCF7 breast cancer cellular models. Hyperactivation of MEK/ERK/SMAD1 pathway was evidenced using western blotting upon endogenous MG stress and exogenous MG treatment conditions. MEK and SMAD1 regulation of MG pro-metastatic signature genes in breast cancer cells was demonstrated by RT-qPCR.ResultsHigh-throughput transcriptome profiling of GLO1-depleted breast cancer cells highlighted a pro-metastatic signature that establishes novel connections between MG dicarbonyl stress, extracellular matrix (ECM) remodeling by neoplastic cells and enhanced cell migration. Mechanistically, we showed that these metastasis-related processes are functionally linked to MEK/ERK/SMAD1 cascade activation in breast cancer cells. We showed that sustained MEK/ERK activation in GLO1-depleted cells notably occurred through the down-regulation of the expression of dual specificity phosphatases in MG-stressed breast cancer cells. The use of carnosine and aminoguanidine, two potent MG scavengers, reversed MG stress effects in in vitro and in vivo experimental settings.ConclusionsThese results uncover for the first time the key role of MG dicarbonyl stress in the induction of ECM remodeling and the activation of migratory signaling pathways, both in favor of enhanced metastatic dissemination of breast cancer cells. Importantly, the efficient inhibition of mitogen-activated protein kinase (MAPK) signaling using MG scavengers further emphasizes the need to investigate their therapeutic potential across different malignancies.\",\r\n  \"abstractNl\": \"\",\r\n  \"doi\": \"https://doi.org/10.1186/s13058-018-1095-7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fris-enricher.herokuapp.com/api/publications/enrich",
+					"protocol": "https",
+					"host": [
+						"fris-enricher",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"publications",
+						"enrich"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fris-enricher.herokuapp.com/ping",
+					"protocol": "https",
+					"host": [
+						"fris-enricher",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
