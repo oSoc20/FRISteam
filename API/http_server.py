@@ -1,5 +1,5 @@
 import json
-from flask import Flask, Response
+from flask import Flask, Response, render_template
 
 from flask_restful import request
 from flask_cors import CORS
@@ -9,6 +9,15 @@ import os
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+'''
+ template folder needed to serve the documentation's html file. 
+'''
+template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+template_dir = os.path.join(template_dir, 'FRISteam')
+template_dir = os.path.join(template_dir, 'docs')
+template_dir = os.path.join(template_dir, '_build')
+template_dir = os.path.join(template_dir, 'html')
 
 print("Starting Server (This can take a few minutes)")
 
@@ -25,7 +34,7 @@ class MyEncoder(json.JSONEncoder):
 
 
 # initialization for the API
-app = Flask(__name__)
+app = Flask(__name__, template_folder=template_dir)
 CORS(app)
 
 
@@ -37,6 +46,14 @@ CORS(app)
 def send_root():
     return "Welcome to FRIS-Enricher API."
 
+
+"""
+ /documentation
+ It will render the html page with all the documentation for the backend
+"""
+@app.route("/documentation")
+def serve_doc_html():
+    return render_template("index.html")
 
 """
  /ping
