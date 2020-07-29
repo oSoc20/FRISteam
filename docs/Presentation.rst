@@ -9,5 +9,3 @@ Presentation
    Company 
 
    Purposes
-
-   Flowchart

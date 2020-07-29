@@ -86,11 +86,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flowchart.html">FlowChart of the project</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Enricher.html">FRISteam.Enricher package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.ServiceManager.html">FRISteam.ServiceManager package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="FRISteam.Strategies.html">FRISteam.Strategies package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="FRISteam.Strategies.html#subpackages">Subpackages</a></li>
@@ -181,112 +180,54 @@
 <p>Author Baudouin Martelee
 FRISteam</p>
 <dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">add_pdf_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dois_csv</span></em>, <em class="sig-param"><span class="n">directory_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information" title="Permalink to this definition">¶</a></dt>
-<dd><p>Fill the basic csv with different information like if the data is received from unpaywall, if there is a paywall or not,
-if there is a url for pdf.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>dois_csv (Csv file): csv file containing the differents dois
-directory_path (string): path of directory where are store the json files</p>
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_doi_object">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">add_doi_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_doi_url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_doi_object" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Return a doi object to the Enricher containing for the doi different information like<span class="classifier"></span></dt><dd><p>doi, data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
 </dd>
-<dt>Returns:</dt><dd><p>List: List of the dois from the dois urls</p>
+<dt>Args:</dt><dd><p>publication_doi (str): doi of a publication</p>
 </dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.export_csv">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">export_csv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataframe</span></em>, <em class="sig-param"><span class="n">csv_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.export_csv" title="Permalink to this definition">¶</a></dt>
-<dd><p>Export csv from a dataframe</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>dataframe (Dataframe): Dataframe
-csv_path (string): path to store the new csv file</p>
+<dt>Returns:</dt><dd><p>Doi object: Doi object with the fields : doi, data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">extract_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dois_urls_series</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi" title="Permalink to this definition">¶</a></dt>
-<dd><p>Extract dois from the dois urls and store them in a list</p>
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information_of_doi">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">add_pdf_information_of_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.add_pdf_information_of_doi" title="Permalink to this definition">¶</a></dt>
+<dd><p>add the different information to the doi object because of its json file</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>dois_urls_series (Series): Series od the dois url</p>
+<dt>Args:</dt><dd><p>dois (str): doi</p>
 </dd>
-<dt>Returns:</dt><dd><p>List: List of the dois from the dois urls</p>
+<dt>Returns:</dt><dd><p>bool, bool, str : data_received_from_Unpaywall_api, no_paywall, pdf_url</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_api_information">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">get_api_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory_path_to_store</span></em>, <em class="sig-param"><span class="n">dois_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_api_information" title="Permalink to this definition">¶</a></dt>
-<dd><p>For each doi of the doi list, we create a json file. We store all the different json files in a directory.</p>
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi_from_url">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">extract_doi_from_url</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi_url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.extract_doi_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract doi from a doi url</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>directory_path_to_store (string): path of the directory where to store the json files 
-dois_list (List): list containing dois</p>
+<dt>Args:</dt><dd><p>doi url (str): doi url</p>
+</dd>
+<dt>Returns:</dt><dd><p>doi: doi from the doi url</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_publication">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">get_publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em>, <em class="sig-param"><span class="n">file_to_save_to</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_publication" title="Permalink to this definition">¶</a></dt>
+<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_unpaywall_api_data">
+<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">get_unpaywall_api_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">doi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.get_unpaywall_api_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the json of the doi from the Unpaywall API and store it in the file “file_to_save_to”</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>doi (string): doi 
-file_to_save_to (string): path of the file where to store</p>
+<dt>Args:</dt><dd><p>doi (string): doi</p>
+</dd>
+<dt>Returns:</dt><dd><p>JSON string: Json string containing all the data from the Unpaywall API</p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.import_doi_data">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">import_doi_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">csv_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.import_doi_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>Import data form a csv file containing doi url</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>csv_path (string): path of the csv file</p>
-</dd>
-<dt>Returns:</dt><dd><p>Dataframe: dataframe containing data of the csvfile</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.main">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.main" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.merge_dataframe_on_doi">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">merge_dataframe_on_doi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first_df</span></em>, <em class="sig-param"><span class="n">second_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.merge_dataframe_on_doi" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]
-Merge 2 dataframe to create 1 dataframe</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>first_df (DataFrame): dataframe containing publication title and doi
-second_df (DataFrame): dataframe containing doi, url for pdf ,…</p>
-</dd>
-<dt>Returns:</dt><dd><p>DataFrame: Result dataFrame</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt id="FRISteam.Strategies.UnpaywallCheck.doiPaywall.remove_link_without_json">
-<code class="sig-prename descclassname">FRISteam.Strategies.UnpaywallCheck.doiPaywall.</code><code class="sig-name descname">remove_link_without_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.UnpaywallCheck.doiPaywall.remove_link_without_json" title="Permalink to this definition">¶</a></dt>
-<dd><p>This fonction is to avoid double item in the csv. If the data aren’t fetch from the Unpaywall api, we remove the doublon.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>df (DataFrame): Dataframe to cleaned</p>
-</dd>
-<dt>Returns:</dt><dd><p>[DataFrame]: DataFrame cleaned</p>
-</dd>
-</dl>
-</dd></dl>
-
-</div>
-<div class="section" id="module-FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData">
-<span id="fristeam-strategies-unpaywallcheck-doipaywalljsondata-module"></span><h2>FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData module<a class="headerlink" href="#module-FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData" title="Permalink to this headline">¶</a></h2>
-<p>Author Baudouin Martelee
-FRISteam</p>
 </div>
 </div>
 

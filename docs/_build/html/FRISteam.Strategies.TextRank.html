@@ -86,11 +86,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flowchart.html">FlowChart of the project</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Enricher.html">FRISteam.Enricher package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.ServiceManager.html">FRISteam.ServiceManager package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="FRISteam.Strategies.html">FRISteam.Strategies package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="FRISteam.Strategies.html#subpackages">Subpackages</a></li>
@@ -186,19 +185,43 @@
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze">
 <code class="sig-name descname">analyze</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">langTag</span></em>, <em class="sig-param"><span class="n">candidate_pos</span><span class="o">=</span><span class="default_value">['NOUN', 'PROPN']</span></em>, <em class="sig-param"><span class="n">window_size</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">lower</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">stopwords</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.analyze" title="Permalink to this definition">¶</a></dt>
-<dd><p>Main function to analyze text</p>
+<dd><p>function analyze : main function to analyze a text and calculates the weighting of keywords</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): string to be analyzed (e.g. abstract)
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)
+candidate_pos (list, optional): the pos tags that are suitable candidates. Defaults to [‘NOUN’, ‘PROPN’].
+window_size (int, optional): window size (dependency range). Defaults to 4.
+lower (bool, optional): lowercases all words or not. Defaults to False.
+stopwords ([type], optional): the list of excluded words. Defaults to list().</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords">
 <code class="sig-name descname">get_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_keywords" title="Permalink to this definition">¶</a></dt>
-<dd><p>Print top number keywords</p>
+<dd><p>function get_keywords : extracts the keywords with the highest scores
+Args:</p>
+<blockquote>
+<div><p>number: maximum number of keywords extracted</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>keyword_list {“keyword”:score}: dictionary with keywords and their scores</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix">
 <code class="sig-name descname">get_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab</span></em>, <em class="sig-param"><span class="n">token_pairs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_matrix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get normalized matrix</p>
+<dd><p>function get_matrix : builds a normalized matrix with the vocabulary and possible keywords</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>vocab: dictionary with words and their frequency
+token_pairs: list of tuples with words and their sentence (by index)</p>
+</dd>
+<dt>Returns:</dt><dd><p>list of lists (matrix)</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -210,7 +233,13 @@
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab">
 <code class="sig-name descname">get_vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentences</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.get_vocab" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get all tokens</p>
+<dd><p>function get_vocab : creates a vocabulary dictionary</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>sentences ([list of lists of strings]): single words from a sentence in a list of lists</p>
+</dd>
+<dt>Returns:</dt><dd><p>dictionary {“word”:frequency}: dictionary with words and their frequency</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -222,25 +251,38 @@
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords">
 <code class="sig-name descname">set_stopwords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stopwords</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.set_stopwords" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set stop words</p>
+<dd><p>function set_stopwords : sets stopwords</p>
+<dl class="simple">
+<dt>Args: </dt><dd><p>stopwords: list of words that will be excluded as possible keywords
+langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize">
-<code class="sig-name descname">symmetrize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="sig-name descname">symmetrize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.TextRank4Keyword.symmetrize" title="Permalink to this definition">¶</a></dt>
+<dd><p>function symmetrize : symmetrizes the matrix</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>matrix (list of lists): list of lists</p>
+</dd>
+<dt>Returns:</dt><dd><p>matrix (list of lists): symmetrized matrix</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
 <dt id="FRISteam.Strategies.TextRank.textrank.textrank_keywords">
 <code class="sig-prename descclassname">FRISteam.Strategies.TextRank.textrank.</code><code class="sig-name descname">textrank_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.TextRank.textrank.textrank_keywords" title="Permalink to this definition">¶</a></dt>
-<dd><p>function textrank_keywords : main function to automatically extract keywords from an abstract with TextRank and normalizes them between 0 and 1</p>
-<dl class="simple">
+<dd><dl class="simple">
+<dt>function textrank_keywords<span class="classifier">main function to automatically extract keywords from an abstract with TextRank and </span></dt><dd><p>normalizes them between 0 and 1</p>
+</dd>
 <dt>Args:</dt><dd><p>abstract (string): an abstract (or paper) as a string
 langTag (string): the language of the words in wordList and the synonyms (e.g. ‘eng’ for English and ‘nld’ for Dutch)</p>
 </dd>
-<dt>Returns:</dt><dd><p>list: {dictionary of terms with their frequency relative to the total amount of words}</p>
+<dt>Returns:</dt><dd><p>Counter(normalized_scores) {“keyword”:score}: dictionary with keywords and their score</p>
 </dd>
 </dl>
 </dd></dl>

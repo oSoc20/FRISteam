@@ -10,11 +10,4 @@ FRISteam.Strategies.UnpaywallCheck.doiPaywall module
    :undoc-members:
    :show-inheritance:
 
-FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData module
-------------------------------------------------------------
-
-.. automodule:: FRISteam.Strategies.UnpaywallCheck.doiPaywallJsonData
-   :members:
-   :undoc-members:
-   :show-inheritance:
 

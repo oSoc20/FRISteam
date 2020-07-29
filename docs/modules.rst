@@ -7,6 +7,8 @@ FRISteam
 
    Presentation
 
+   Flowchart
+
    FRISteam
 
    Requirements

@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FRISteam.Runner package" href="FRISteam.Runner.html" />
+    <link rel="next" title="FRISteam.ServiceManager package" href="FRISteam.ServiceManager.html" />
     <link rel="prev" title="FRISteam.Cleanup package" href="FRISteam.Cleanup.html" /> 
 </head>
 
@@ -86,14 +86,13 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flowchart.html">FlowChart of the project</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">FRISteam.Enricher package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#module-FRISteam.Enricher.enricher">FRISteam.Enricher.enricher module</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.ServiceManager.html">FRISteam.ServiceManager package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Strategies.html">FRISteam.Strategies package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Utils.html">FRISteam.Utils package</a></li>
@@ -179,12 +178,84 @@
 <dl class="py function">
 <dt id="FRISteam.Enricher.enricher.enrich_project">
 <code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">enrich_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.enrich_project" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Generates new keywords for a project through a combination of different NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project_obj (Utils.fris_entities.Project): Instance of Project class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.ProjectResult: Instance of ProjectResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt id="FRISteam.Enricher.enricher.enrich_publication">
 <code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">enrich_publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.enrich_publication" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Generates new keywords for a publication through a combination of different NLP strategies and finds the pdf of the publication through the DOI</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>publication_obj (Utils.fris_entities.Publication): Instance of Publication class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.PublicationResult: Instance of PublicationResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_best_keywords_en">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_best_keywords_en</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">max_number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_best_keywords_en" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects max_number of new English keywords through NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_en (string): English abstract
+keywords_en (list(string)): English keywords
+max_number (int): maximum number of keywords returned</p>
+</dd>
+<dt>Returns:</dt><dd><p>list([string, float]): Returns a list of [keyword,score] tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_best_keywords_nl">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_best_keywords_nl</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em>, <em class="sig-param"><span class="n">max_number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_best_keywords_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects max_number of new Dutch keywords through NLP strategies</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_nl (string): Dutch abstract
+keywords_nl (list(string)): Dutch keywords
+max_number (int): maximum number of keywords returned</p>
+</dd>
+<dt>Returns:</dt><dd><p>list([string, float]): Returns a list of [keyword,score] tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_keywords">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">keywords_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em>, <em class="sig-param"><span class="n">keywords_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Help function that gets new English and Dutch keywords, concatenates them and returns them</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>abstract_en (string): English abstract
+keywords_en (list(string)): English keywords
+abstract_nl (string): Dutch abstract
+keywords_nl (list(string)): Dutch keywords</p>
+</dd>
+<dt>Returns:</dt><dd><p>list(Utils.enricher_entities.Keyword): List of instances of the Keyword class, the newly generated keywords with scores and language tags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Enricher.enricher.get_language_alerts">
+<code class="sig-prename descclassname">FRISteam.Enricher.enricher.</code><code class="sig-name descname">get_language_alerts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">title_en</span></em>, <em class="sig-param"><span class="n">title_nl</span></em>, <em class="sig-param"><span class="n">abstract_en</span></em>, <em class="sig-param"><span class="n">abstract_nl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Enricher.enricher.get_language_alerts" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>title_en (string): [description]
+title_nl (string): [description]
+abstract_en (string): [description]
+abstract_nl (string): [description]</p>
+</dd>
+<dt>Returns:</dt><dd><p>list(string): list of alert strings</p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 </div>
@@ -197,7 +268,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="FRISteam.Runner.html" class="btn btn-neutral float-right" title="FRISteam.Runner package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="FRISteam.ServiceManager.html" class="btn btn-neutral float-right" title="FRISteam.ServiceManager package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="FRISteam.Cleanup.html" class="btn btn-neutral float-left" title="FRISteam.Cleanup package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

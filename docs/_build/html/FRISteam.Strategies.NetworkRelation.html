@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FRISteam.Strategies.Rake package" href="FRISteam.Strategies.Rake.html" />
+    <link rel="next" title="FRISteam.Strategies.LanguageChecking package" href="FRISteam.Strategies.LanguageChecking.html" />
     <link rel="prev" title="FRISteam.Strategies package" href="FRISteam.Strategies.html" /> 
 </head>
 
@@ -86,11 +86,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flowchart.html">FlowChart of the project</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Enricher.html">FRISteam.Enricher package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.ServiceManager.html">FRISteam.ServiceManager package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="FRISteam.Strategies.html">FRISteam.Strategies package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="FRISteam.Strategies.html#subpackages">Subpackages</a></li>
@@ -176,8 +175,89 @@
             
   <div class="section" id="fristeam-strategies-networkrelation-package">
 <h1>FRISteam.Strategies.NetworkRelation package<a class="headerlink" href="#fristeam-strategies-networkrelation-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-FRISteam.Strategies.NetworkRelation">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-FRISteam.Strategies.NetworkRelation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-FRISteam.Strategies.NetworkRelation.networkrelation">
+<span id="fristeam-strategies-networkrelation-networkrelation-module"></span><h2>FRISteam.Strategies.NetworkRelation.networkrelation module<a class="headerlink" href="#module-FRISteam.Strategies.NetworkRelation.networkrelation" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.calculate_relations">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">calculate_relations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">abstract</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.calculate_relations" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>function calculate_relations<span class="classifier">compares possible keywords (from an abstract) against the keywords from </span></dt><dd><p>other projects. Score per keyword raises with each overlap.</p>
+</dd>
+<dt>Args:</dt><dd><p>abstract (string): an abstract (from project or publication) as a single string
+langTag (string): the language of the words in text (e.g. ‘en’ for English and ‘nl’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>tf_dict {dictionary of “keyword”:score}: dictionary with new keywords and scores</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.calculate_term_frequency">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">calculate_term_frequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tokens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.calculate_term_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>function term_frequency : calculates the frequencies of terms from a list of words</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>tokens ([list of strings]): a list of strings (e.g. single words from an abstract)</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: {dictionary of possible keywords with their frequency relative to the total amount of words}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.networkrelation.preprocess_abstract">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.networkrelation.</code><code class="sig-name descname">preprocess_abstract</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">langTag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.networkrelation.preprocess_abstract" title="Permalink to this definition">¶</a></dt>
+<dd><p>function preprocess_abstract : preprocesses a string (e.g. an abstract) with lowercasing, lemmatizing, stopword removal</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): a string
+langTag (string): the language of the words in text (e.g. ‘en’ for English and ‘nl’ for Dutch)</p>
+</dd>
+<dt>Returns:</dt><dd><p>list [of strings]: list of strings with the keyword candidates</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-FRISteam.Strategies.NetworkRelation.keyword_dictionary">
+<span id="fristeam-strategies-networkrelation-keyword-dictionary-module"></span><h2>FRISteam.Strategies.NetworkRelation.keyword_dictionary module<a class="headerlink" href="#module-FRISteam.Strategies.NetworkRelation.keyword_dictionary" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.compose_keyword_dictionary">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">compose_keyword_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.compose_keyword_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>function compose_keyword_dictionary : reads in a csv file with keywords from all publications/papers 
+and produces two json files (one English, one Dutch) to store the keywords with their frequencies for easier and faster access.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_en">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">get_keyword_dict_en</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_en" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_keyword_dict_en : loads the English keyword dictionary into memory</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dictionary {“keyword”:frequency}: dictionary with keywords and their frequencies from all projects/publications for English</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_nl">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">get_keyword_dict_nl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.get_keyword_dict_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>function get_keyword_dict_nl : loads the dutch keyword dictionary into memory</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dictionary {“keyword”:frequency}: dictionary with keywords and their frequencies from all projects/publications for Dutch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_en_dictionary_from_file">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">read_en_dictionary_from_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_en_dictionary_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>function read_en_dictionary_from_file : opens the json file for the English keyword:frequency dictionary</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_nl_dictionary_from_file">
+<code class="sig-prename descclassname">FRISteam.Strategies.NetworkRelation.keyword_dictionary.</code><code class="sig-name descname">read_nl_dictionary_from_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.NetworkRelation.keyword_dictionary.read_nl_dictionary_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>function read_nl_dictionary_from_file : opens the json file for the Dutch keyword:frequency dictionary</p>
+</dd></dl>
+
 </div>
 </div>
 
@@ -189,7 +269,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="FRISteam.Strategies.Rake.html" class="btn btn-neutral float-right" title="FRISteam.Strategies.Rake package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="FRISteam.Strategies.LanguageChecking.html" class="btn btn-neutral float-right" title="FRISteam.Strategies.LanguageChecking package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="FRISteam.Strategies.html" class="btn btn-neutral float-left" title="FRISteam.Strategies package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

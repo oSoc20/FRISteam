@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="FRISteam.Strategies package" href="FRISteam.Strategies.html" />
-    <link rel="prev" title="FRISteam.Runner package" href="FRISteam.Runner.html" /> 
+    <link rel="prev" title="FRISteam.Enricher package" href="FRISteam.Enricher.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,11 +86,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flowchart.html">FlowChart of the project</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FRISteam.Enricher.html">FRISteam.Enricher package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">FRISteam.ServiceManager package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#module-FRISteam.ServiceManager.service_manager">FRISteam.ServiceManager.service_manager module</a></li>
 </ul>
@@ -179,12 +178,26 @@
 <dl class="py function">
 <dt id="FRISteam.ServiceManager.service_manager.process_project">
 <code class="sig-prename descclassname">FRISteam.ServiceManager.service_manager.</code><code class="sig-name descname">process_project</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.ServiceManager.service_manager.process_project" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function sends a project object through data cleaning and passes the cleaned object to the enricher</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>project_obj (Utils.fris_entities.Project): Instance of Project class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.ProjectResult: Instance of ProjectResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt id="FRISteam.ServiceManager.service_manager.process_publication">
 <code class="sig-prename descclassname">FRISteam.ServiceManager.service_manager.</code><code class="sig-name descname">process_publication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">publication_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.ServiceManager.service_manager.process_publication" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function sends a publication object through data cleaning and passes the cleaned object to the enricher</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>publication_obj (Utils.fris_entities.Publication): Instance of Publication class</p>
+</dd>
+<dt>Returns:</dt><dd><p>Utils.enricher_entities.PublicationResult: Instance of PublicationResult containing enriched data</p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 </div>
@@ -200,7 +213,7 @@
         <a href="FRISteam.Strategies.html" class="btn btn-neutral float-right" title="FRISteam.Strategies package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="FRISteam.Runner.html" class="btn btn-neutral float-left" title="FRISteam.Runner package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="FRISteam.Enricher.html" class="btn btn-neutral float-left" title="FRISteam.Enricher package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

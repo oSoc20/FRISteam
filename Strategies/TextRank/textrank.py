@@ -139,7 +139,7 @@ class TextRank4Keyword():
 
     
     def get_keywords(self, number=10):
-        """function get_keywords : extracts the keywords with the highest scores
+        r"""function get_keywords : extracts the keywords with the highest scores
         Args:
             number: maximum number of keywords extracted
         Returns:

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FRISteam.Strategies.Rake package &mdash; FRISTeam  documentation</title>
+  <title>FRISteam.Strategies.LanguageChecking package &mdash; FRISTeam  documentation</title>
   
 
   
@@ -35,9 +35,7 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FRISteam.Strategies.Synonyms package" href="FRISteam.Strategies.Synonyms.html" />
-    <link rel="prev" title="FRISteam.Strategies.NetworkRelation package" href="FRISteam.Strategies.NetworkRelation.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,26 +81,8 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">FRISteam</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Presentation.html">Presentation</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="FRISteam.html">Modules</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.API.html">FRISteam.API package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Cleanup.html">FRISteam.Cleanup package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Enricher.html">FRISteam.Enricher package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Runner.html">FRISteam.Runner package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.ServiceManager.html">FRISteam.ServiceManager package</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="FRISteam.Strategies.html">FRISteam.Strategies package</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="FRISteam.Strategies.html#subpackages">Subpackages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="FRISteam.Utils.html">FRISteam.Utils package</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Requirements.html">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Credits.html">Credits</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">FRISteam</a></li>
 </ul>
 
             
@@ -149,19 +129,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="modules.html">FRISteam</a> &raquo;</li>
-        
-          <li><a href="FRISteam.html">Modules</a> &raquo;</li>
-        
-          <li><a href="FRISteam.Strategies.html">FRISteam.Strategies package</a> &raquo;</li>
-        
-      <li>FRISteam.Strategies.Rake package</li>
+      <li>FRISteam.Strategies.LanguageChecking package</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/FRISteam.Strategies.Rake.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/LanguageChecking.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,10 +148,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="fristeam-strategies-rake-package">
-<h1>FRISteam.Strategies.Rake package<a class="headerlink" href="#fristeam-strategies-rake-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-FRISteam.Strategies.Rake">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-FRISteam.Strategies.Rake" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="fristeam-strategies-languagechecking-package">
+<h1>FRISteam.Strategies.LanguageChecking package<a class="headerlink" href="#fristeam-strategies-languagechecking-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-FRISteam.Strategies.LanguageChecking.languageCheck">
+<span id="fristeam-strategies-languagechecking-languagecheck-module"></span><h2>FRISteam.Strategies.LanguageChecking.languageCheck module<a class="headerlink" href="#module-FRISteam.Strategies.LanguageChecking.languageCheck" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="FRISteam.Strategies.LanguageChecking.languageCheck.check_if_dutch">
+<code class="sig-prename descclassname">FRISteam.Strategies.LanguageChecking.languageCheck.</code><code class="sig-name descname">check_if_dutch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.LanguageChecking.languageCheck.check_if_dutch" title="Permalink to this definition">¶</a></dt>
+<dd><p>function check_if_dutch : checks if the input text is in dutch</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): The text which is checked if it is in dutch</p>
+</dd>
+<dt>Returns:</dt><dd><p>boolean : returns true if dutch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FRISteam.Strategies.LanguageChecking.languageCheck.check_if_english">
+<code class="sig-prename descclassname">FRISteam.Strategies.LanguageChecking.languageCheck.</code><code class="sig-name descname">check_if_english</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FRISteam.Strategies.LanguageChecking.languageCheck.check_if_english" title="Permalink to this definition">¶</a></dt>
+<dd><p>function check_if_english: checks if the input text is in english</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (string): The text which is checked if it is in english</p>
+</dd>
+<dt>Returns:</dt><dd><p>boolean : returns true if english</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 </div>
 
@@ -186,15 +184,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="FRISteam.Strategies.Synonyms.html" class="btn btn-neutral float-right" title="FRISteam.Strategies.Synonyms package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="FRISteam.Strategies.NetworkRelation.html" class="btn btn-neutral float-left" title="FRISteam.Strategies.NetworkRelation package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
