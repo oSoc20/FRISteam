@@ -1,5 +1,5 @@
 """
-Test module for the synonyms module
+Test module for the languagecheck module
 """
 import unittest
 import sys
