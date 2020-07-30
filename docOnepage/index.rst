@@ -3,7 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
+Welcome to FRISteam documentation 
+=================================
 
 .. toctree::
    :maxdepth: 2
@@ -207,7 +208,22 @@ FRISteam.Utils.fris\_entities module
    :show-inheritance:
 
 
+Team
+====
 
+We are a team of 6 people including 1 coach, 1 student coach and 4 students. 
+
+* Nelissen Toon - Coach
+
+* Jolan Huyvaert - Student Coach
+
+* Angioni Gianluca - Student
+
+* Becker Lisa - Student
+
+* Bruynseels Emmy - Student
+
+* Martelée Baudouin - Student
 
 
 
