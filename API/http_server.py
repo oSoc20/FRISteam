@@ -1,5 +1,5 @@
 import json
-from flask import Flask, Response, render_template
+from flask import Flask, Response, render_template, send_from_directory
 
 from flask_restful import request
 from flask_cors import CORS
@@ -18,6 +18,11 @@ template_dir = os.path.join(template_dir, 'docOnepage')
 template_dir = os.path.join(template_dir, '_build')
 template_dir = os.path.join(template_dir, 'html')
 
+static_dir = os.path.join(template_dir, '_static')
+images_dir = os.path.join(template_dir, '_images')
+sources_dir = os.path.join(template_dir, '_sources')
+
+
 print("Starting Server (This can take a few minutes)")
 
 from Utils.fris_entities import Project, Publication
@@ -33,7 +38,7 @@ class MyEncoder(json.JSONEncoder):
 
 
 # initialization for the API
-app = Flask(__name__, template_folder=template_dir)
+app = Flask(__name__, template_folder=template_dir, static_url_path='')
 CORS(app)
 
 
@@ -56,6 +61,21 @@ def send_root():
 @app.route('/documentation', defaults={'filename': 'index.html'})
 def serve_doc_from_path(filename):
     return render_template(filename)
+
+
+@app.route("/_static/<path:path>")
+def serve_static(path):
+    return send_from_directory(static_dir, path)
+
+
+@app.route("/_images/<path:path>")
+def serve_static_images(path):
+    return send_from_directory(images_dir, path)
+
+
+@app.route("/_sources/<path:path>")
+def serve_static_sources(path):
+    return send_from_directory(static_dir, path)
 
 
 """
